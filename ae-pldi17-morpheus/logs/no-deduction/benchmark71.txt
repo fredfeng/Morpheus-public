@@ -1,0 +1,298 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/83/input.json
+Specs: ../../benchmarks/pldi17/83/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Output table:p83_output1
+Input tables:p83_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p2`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `p1`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+# sketches with deduction: 8
+# sketches without deduction: 8
+# predicates with deduction: 18940
+# predicates without deduction: 18940
+# predicates pruned (NA or size): 1687
+# R calls: 20997
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 35.587
+Deduction on partial evaluation:4043.63
+R calls: 13213.1
+Total time: 22026.5
+[Percentage] R=59.9871 Z3=18.5196 other=21.4934
+==================================================
+R program: 
+TBL_3=gather(p83_input1,MORPH12960,MORPH12959,`p1`,`p2`)
+TBL_1=unite(TBL_3,MORPH12992,`p3`,`MORPH12960`)
+morpheus=spread(TBL_1,`MORPH12992`,`MORPH12959`)
+morpheus=as.data.frame(morpheus)
+morpheus

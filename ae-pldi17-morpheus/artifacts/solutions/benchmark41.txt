@@ -1,0 +1,137 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/32313602/how-can-i-split-my-data-frame-into-multiple-tables-and-put-them-into-e-list
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 41
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  test1_rater1 test2_rater1 test1_rater2 test2_rater2 row
+1            1            1            2            1   1
+2            3            3            3            3   3
+3            2            3            4            4   4
+4            3            2            1            3   5
+5            4            3            2            4   6
+6            3            1            1            3  10
+
+Output:
+
+   row  test rater1 rater2
+1    1 test1      1      2
+2    1 test2      1      1
+3    3 test1      3      3
+4    3 test2      3      3
+5    4 test1      2      4
+6    4 test2      3      4
+7    5 test1      3      1
+8    5 test2      2      3
+9    6 test1      4      2
+10   6 test2      3      4
+11  10 test1      3      1
+12  10 test2      1      3
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p41_input1,MORPH356,MORPH355,-`row`)
+
+   row     MORPH356 MORPH355
+1    1 test1_rater1        1
+2    3 test1_rater1        3
+3    4 test1_rater1        2
+4    5 test1_rater1        3
+5    6 test1_rater1        4
+6   10 test1_rater1        3
+7    1 test2_rater1        1
+8    3 test2_rater1        3
+9    4 test2_rater1        3
+10   5 test2_rater1        2
+11   6 test2_rater1        3
+12  10 test2_rater1        1
+13   1 test1_rater2        2
+14   3 test1_rater2        3
+15   4 test1_rater2        4
+16   5 test1_rater2        1
+17   6 test1_rater2        2
+18  10 test1_rater2        1
+19   1 test2_rater2        1
+20   3 test2_rater2        3
+21   4 test2_rater2        4
+22   5 test2_rater2        3
+23   6 test2_rater2        4
+24  10 test2_rater2        3
+
+TBL_1=separate(TBL_3,`MORPH356`,into=c('test','MORPH364'))
+
+   row  test MORPH364 MORPH355
+1    1 test1   rater1        1
+2    3 test1   rater1        3
+3    4 test1   rater1        2
+4    5 test1   rater1        3
+5    6 test1   rater1        4
+6   10 test1   rater1        3
+7    1 test2   rater1        1
+8    3 test2   rater1        3
+9    4 test2   rater1        3
+10   5 test2   rater1        2
+11   6 test2   rater1        3
+12  10 test2   rater1        1
+13   1 test1   rater2        2
+14   3 test1   rater2        3
+15   4 test1   rater2        4
+16   5 test1   rater2        1
+17   6 test1   rater2        2
+18  10 test1   rater2        1
+19   1 test2   rater2        1
+20   3 test2   rater2        3
+21   4 test2   rater2        4
+22   5 test2   rater2        3
+23   6 test2   rater2        4
+24  10 test2   rater2        3
+
+morpheus=spread(TBL_1,`MORPH364`,`MORPH355`)
+
+   row  test rater1 rater2
+1    1 test1      1      2
+2    1 test2      1      1
+3    3 test1      3      3
+4    3 test2      3      3
+5    4 test1      2      4
+6    4 test2      3      4
+7    5 test1      3      1
+8    5 test2      2      3
+9    6 test1      4      2
+10   6 test2      3      4
+11  10 test1      3      1
+12  10 test2      1      3
+
+
+R program:
+
+TBL_3=gather(p41_input1,MORPH356,MORPH355,-`row`)
+TBL_1=separate(TBL_3,`MORPH356`,into=c('test','MORPH364'))
+morpheus=spread(TBL_1,`MORPH364`,`MORPH355`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 11
+#partial programs with partial evaluation= 382
+#partial programs without partial evaluation= 532
+Total time= 2.10 s

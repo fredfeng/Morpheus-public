@@ -1,0 +1,27 @@
+\subsection{Solving an individual benchmark}
+
+Since running all benchmarks are very time-consuming, the reviewer can opt to run one benchmark at a time.
+
+To solve an existing benchmark:
+\begin{enumerate}
+\item Run the script:\\ 
+\code{\$./run-morpheus.sh benchmarks/1/input.json specs/spec2 out.txt}\\
+\item After completion, the log file from this run is available in \code{out.txt}.
+\end{enumerate}
+
+To solve a new benchmark:
+\begin{enumerate}
+\item The reviewer should provide inputs that meet the following requirements:
+  \begin{enumerate}
+  \item All input and output tables are in CSV format. 
+  \item All CSV files are separated by ``$\vert$" and the last CSV should be the output table
+  \item The entire string of specifying the input-output should be quoted!
+  \item As an example, the directory 'example/' contains a new benchmark that performs reshaping input1.csv and output1.csv are input and output tables, respectively. 
+  \end{enumerate}
+
+\item After that, run the script:\\
+\code{.\scriptsize \$./run-morpheus.sh "example/input1.csv$\vert$example/output1.csv" specs/spec2/ out.txt}
+\item In a few seconds, the output is available in \code{out.txt}.
+\end{enumerate}
+
+

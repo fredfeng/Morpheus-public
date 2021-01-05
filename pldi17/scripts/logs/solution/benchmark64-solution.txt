@@ -1,0 +1,6 @@
+TBL_3=gather(p64_input1,MORPH390,MORPH389,-`year`,-`roleInDebate`)
+TBL_1=separate(TBL_3,`MORPH390`,into=c('MORPH613','person'))
+morpheus=spread(TBL_1,`MORPH613`,`MORPH389`)
+morpheus=as.data.frame(morpheus)
+morpheus[,3] = as.numeric(morpheus[,3])
+morpheus

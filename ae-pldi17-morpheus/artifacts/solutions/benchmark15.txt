@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/29523974/cleaning-data-when-variables-are-column-names
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 15
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  Timepoint Group1 Error1_Group1 Group2 Error2_Group1
+1         7     60             4     60            14
+2        14     66             6     90            16
+
+Output:
+
+  Timepoint Group1 Group2 Error1 mGroup Error2
+1         7     60     60      4 Group1     14
+2        14     66     90      6 Group1     16
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p15_input1,MORPH596,MORPH595,`Error1_Group1`,`Error2_Group1`)
+
+  Timepoint Group1 Group2      MORPH596 MORPH595
+1         7     60     60 Error1_Group1        4
+2        14     66     90 Error1_Group1        6
+3         7     60     60 Error2_Group1       14
+4        14     66     90 Error2_Group1       16
+
+TBL_1=separate(TBL_3,`MORPH596`,into=c('MORPH629','mGroup'))
+
+  Timepoint Group1 Group2 MORPH629 mGroup MORPH595
+1         7     60     60   Error1 Group1        4
+2        14     66     90   Error1 Group1        6
+3         7     60     60   Error2 Group1       14
+4        14     66     90   Error2 Group1       16
+
+morpheus=spread(TBL_1,`MORPH629`,`MORPH595`)
+
+  Timepoint Group1 Group2 mGroup Error1 Error2
+1         7     60     60 Group1      4     14
+2        14     66     90 Group1      6     16
+
+morpheus=select(morpheus,1,2,3,5,4,6)
+
+  Timepoint Group1 Group2 Error1 mGroup Error2
+1         7     60     60      4 Group1     14
+2        14     66     90      6 Group1     16
+
+
+R program:
+
+TBL_3=gather(p15_input1,MORPH596,MORPH595,`Error1_Group1`,`Error2_Group1`)
+TBL_1=separate(TBL_3,`MORPH596`,into=c('MORPH629','mGroup'))
+morpheus=spread(TBL_1,`MORPH629`,`MORPH595`)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,2,3,5,4,6)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 3
+#sketches without SMT-based deduction= 11
+#partial programs with partial evaluation= 400
+#partial programs without partial evaluation= 905
+Total time= 3.63 s

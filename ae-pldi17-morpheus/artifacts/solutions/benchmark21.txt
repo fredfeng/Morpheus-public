@@ -1,0 +1,111 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/37351448/gathering-with-tidyr-from-wide-to-long-format-by-start-of-column-name
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 21
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  obs pre.data1 post.data1 pre.data2 post.data2
+1   1      0.40       0.12      0.61       0.15
+2   2      0.21       0.05      0.18       0.49
+3   3      0.48       0.85      0.00       0.62
+4   4      0.66       0.29      0.88       0.56
+
+Output:
+
+  obs  key data1 data2
+1   1 post  0.12  0.15
+2   1  pre  0.40  0.61
+3   2 post  0.05  0.49
+4   2  pre  0.21  0.18
+5   3 post  0.85  0.62
+6   3  pre  0.48  0.00
+7   4 post  0.29  0.56
+8   4  pre  0.66  0.88
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p21_input1,MORPH356,MORPH355,-`obs`)
+
+   obs   MORPH356 MORPH355
+1    1  pre.data1     0.40
+2    2  pre.data1     0.21
+3    3  pre.data1     0.48
+4    4  pre.data1     0.66
+5    1 post.data1     0.12
+6    2 post.data1     0.05
+7    3 post.data1     0.85
+8    4 post.data1     0.29
+9    1  pre.data2     0.61
+10   2  pre.data2     0.18
+11   3  pre.data2     0.00
+12   4  pre.data2     0.88
+13   1 post.data2     0.15
+14   2 post.data2     0.49
+15   3 post.data2     0.62
+16   4 post.data2     0.56
+
+TBL_1=separate(TBL_3,`MORPH356`,into=c('key','MORPH388'))
+
+   obs  key MORPH388 MORPH355
+1    1  pre    data1     0.40
+2    2  pre    data1     0.21
+3    3  pre    data1     0.48
+4    4  pre    data1     0.66
+5    1 post    data1     0.12
+6    2 post    data1     0.05
+7    3 post    data1     0.85
+8    4 post    data1     0.29
+9    1  pre    data2     0.61
+10   2  pre    data2     0.18
+11   3  pre    data2     0.00
+12   4  pre    data2     0.88
+13   1 post    data2     0.15
+14   2 post    data2     0.49
+15   3 post    data2     0.62
+16   4 post    data2     0.56
+
+morpheus=spread(TBL_1,`MORPH388`,`MORPH355`)
+
+  obs  key data1 data2
+1   1 post  0.12  0.15
+2   1  pre  0.40  0.61
+3   2 post  0.05  0.49
+4   2  pre  0.21  0.18
+5   3 post  0.85  0.62
+6   3  pre  0.48  0.00
+7   4 post  0.29  0.56
+8   4  pre  0.66  0.88
+
+
+R program:
+
+TBL_3=gather(p21_input1,MORPH356,MORPH355,-`obs`)
+TBL_1=separate(TBL_3,`MORPH356`,into=c('key','MORPH388'))
+morpheus=spread(TBL_1,`MORPH388`,`MORPH355`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 11
+#partial programs with partial evaluation= 389
+#partial programs without partial evaluation= 704
+Total time= 3.64 s

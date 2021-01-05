@@ -1,0 +1,5 @@
+TBL_3=gather(p23_input1,MORPH3988,MORPH3987,-`custno`)
+TBL_1=group_by(TBL_3,`custno`)
+morpheus=summarise(TBL_1,totalspent=sum(`MORPH3987`))
+morpheus=as.data.frame(morpheus)
+morpheus

@@ -1,0 +1,6 @@
+TBL_7=gather(p88_input1,MORPH8042,MORPH8041,-`id`,-`time`)
+TBL_3=separate(TBL_7,`MORPH8042`,into=c('MORPH8197','MORPH8198'))
+TBL_1=spread(TBL_3,`MORPH8197`,`MORPH8041`)
+morpheus=select(TBL_1,-`MORPH8198`)
+morpheus=as.data.frame(morpheus)
+morpheus

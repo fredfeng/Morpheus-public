@@ -1,0 +1,64 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/sql/10/input.json
+Specs: ../../benchmarks/sql/10/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:10
+Depth:1
+Output table:s10_output1
+Input tables:s10_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec4/*
+specs/spec4/anti_join.json compName: anti_join
+specs/spec4/distinct.json compName: distinct
+specs/spec4/filter.json compName: filter
+specs/spec4/group_by.json compName: group_by
+specs/spec4/inner_join.json compName: inner_join
+specs/spec4/intersect.json compName: intersect
+specs/spec4/select.json compName: select
+specs/spec4/summarise.json compName: summarise
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+# sketches with deduction: 2
+# sketches without deduction: 12
+# predicates with deduction: 621
+# predicates without deduction: 1737
+# predicates pruned (NA or size): 106
+# R calls: 1919
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 82.055
+Deduction on partial evaluation:349.416
+R calls: 1091.19
+Total time: 1635.05
+[Percentage] R=66.7375 Z3=26.3889 other=6.87361
+==================================================
+R program: 
+TBL_3=filter(s10_input1,`sname` == "stu2" | `sname` == "stu5")
+TBL_1=select(TBL_3,`sname`)
+morpheus=distinct(TBL_1)
+morpheus=as.data.frame(morpheus)
+morpheus

@@ -1,0 +1,123 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/24787647/how-can-i-get-means-in-each-column
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 55
+Category= C4
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  ID c_Al c_D c_Hy  occ
+1  C    0   0    1 2581
+2  D    1   0    1 1917
+3  E    0   0    1 2708
+4  F    0   1    0 2751
+5  G    1   1    0 1522
+
+Output:
+
+   Var      0      1
+1 c_Al 2680.0 1719.5
+2  c_D 2402.0 2136.5
+3 c_Hy 2136.5 2402.0
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_7=gather(p55_input1,Var,MORPH116131,-`ID`,-`occ`)
+
+   ID  occ  Var MORPH116131
+1   C 2581 c_Al           0
+2   D 1917 c_Al           1
+3   E 2708 c_Al           0
+4   F 2751 c_Al           0
+5   G 1522 c_Al           1
+6   C 2581  c_D           0
+7   D 1917  c_D           0
+8   E 2708  c_D           0
+9   F 2751  c_D           1
+10  G 1522  c_D           1
+11  C 2581 c_Hy           1
+12  D 1917 c_Hy           1
+13  E 2708 c_Hy           1
+14  F 2751 c_Hy           0
+15  G 1522 c_Hy           0
+
+TBL_3=group_by(TBL_7,`Var`,`MORPH116131`)
+
+Source: local data frame [15 x 4]
+Groups: Var, MORPH116131 [6]
+
+      ID   occ   Var MORPH116131
+   <chr> <dbl> <chr>       <dbl>
+1      C  2581  c_Al           0
+2      D  1917  c_Al           1
+3      E  2708  c_Al           0
+4      F  2751  c_Al           0
+5      G  1522  c_Al           1
+6      C  2581   c_D           0
+7      D  1917   c_D           0
+8      E  2708   c_D           0
+9      F  2751   c_D           1
+10     G  1522   c_D           1
+11     C  2581  c_Hy           1
+12     D  1917  c_Hy           1
+13     E  2708  c_Hy           1
+14     F  2751  c_Hy           0
+15     G  1522  c_Hy           0
+
+TBL_1=summarise(TBL_3,MORPH117459=mean(`occ`))
+
+Source: local data frame [6 x 3]
+Groups: Var [?]
+
+    Var MORPH116131 MORPH117459
+  <chr>       <dbl>       <dbl>
+1  c_Al           0      2680.0
+2  c_Al           1      1719.5
+3   c_D           0      2402.0
+4   c_D           1      2136.5
+5  c_Hy           0      2136.5
+6  c_Hy           1      2402.0
+
+morpheus=spread(TBL_1,`MORPH116131`,`MORPH117459`)
+
+Source: local data frame [3 x 3]
+Groups: Var [3]
+
+    Var      0      1
+* <chr>  <dbl>  <dbl>
+1  c_Al 2680.0 1719.5
+2   c_D 2402.0 2136.5
+3  c_Hy 2136.5 2402.0
+
+
+R program:
+
+TBL_7=gather(p55_input1,Var,MORPH116131,-`ID`,-`occ`)
+TBL_3=group_by(TBL_7,`Var`,`MORPH116131`)
+TBL_1=summarise(TBL_3,MORPH117459=mean(`occ`))
+morpheus=spread(TBL_1,`MORPH116131`,`MORPH117459`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 18
+#sketches without SMT-based deduction= 26
+#partial programs with partial evaluation= 11043
+#partial programs without partial evaluation= 128168
+Total time= 131.85 s

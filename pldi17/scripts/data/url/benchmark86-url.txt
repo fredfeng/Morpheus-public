@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/39369502/r-script-to-reshape-and-count-columns-within-dataset

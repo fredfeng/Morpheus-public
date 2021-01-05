@@ -1,0 +1,9 @@
+summarise  v= 6 0 -1 M
+spread  v= 1 0 -1 M
+gather  v= 2 0 -1 M
+filter  v= 10 0 -1 M
+mutate  v= 11 0 -1 M
+select  v= 3 0 -1 M
+unite  v= 5 0 -1 M
+separate  v= 4 0 -1 M
+inner_join v= 12 0 0 M

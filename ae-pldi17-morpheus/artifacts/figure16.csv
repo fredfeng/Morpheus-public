@@ -1,0 +1,11 @@
+Category,Description,#,No deduction (#Solved),No deduction (Time),Spec 1 (#Solved),Spec 1 (Time),Spec 2 (#Solved),Spec 2 (Time)
+C1,Reshaping dataframes from either 'long' to 'wide' or 'wide' to 'long',4,2,198.14,4,15.48,4,6.7
+C2,Arithmetic computations that produce values not present in the input tables,7,6,5.32,7,1.95,7,0.59
+C3,Combination of reshaping and string manipulation of cell contents,34,28,51.01,31,6.53,34,1.62
+C4,Reshaping and arithmetic computations,14,9,162.02,10,90.33,12,15.35
+C5,Combination of arithmetic computations and consolidation of information from multiple tables into a single table,11,7,8.72,10,3.16,11,3.17
+C6,Arithmetic computations and string manipulation tasks,2,1,280.61,2,49.33,2,3.02
+C7,Reshaping and consolidation tasks,1,0,300,1,135.32,1,130.92
+C8,Combination of reshaping and arithmetic computations and string manipulation,6,1,300,3,198.42,6,38.41
+C9,Combination of reshaping and arithmetic computations and consolidation,1,0,300,0,300,1,97.3
+,Total,80,54,95.53,68,8.57,78,3.59

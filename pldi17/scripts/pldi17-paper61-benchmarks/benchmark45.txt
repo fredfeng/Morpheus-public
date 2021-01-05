@@ -1,0 +1,89 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/32020811/how-to-delete-duplicated-duplicated-of-each-column-after-group-by-using-dplyr
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 45
+Category= C1
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  V1 V2  V3  V4  V5
+1  a  b   a EMP EMP
+2  a  b EMP   c EMP
+3  a  b EMP EMP   d
+4  x  y   h EMP EMP
+5  x  y EMP   k   e
+
+Output:
+
+  V1 V2 V3 V4 V5
+1  a  b  a  c  d
+2  x  y  h  k  e
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p45_input1,MORPH1029,MORPH1028,-`V1`,-`V2`)
+
+   V1 V2 MORPH1029 MORPH1028
+1   a  b        V3         a
+2   a  b        V3       EMP
+3   a  b        V3       EMP
+4   x  y        V3         h
+5   x  y        V3       EMP
+6   a  b        V4       EMP
+7   a  b        V4         c
+8   a  b        V4       EMP
+9   x  y        V4       EMP
+10  x  y        V4         k
+11  a  b        V5       EMP
+12  a  b        V5       EMP
+13  a  b        V5         d
+14  x  y        V5       EMP
+15  x  y        V5         e
+
+TBL_1=filter(TBL_3,`MORPH1028` != "EMP")
+
+  V1 V2 MORPH1029 MORPH1028
+1  a  b        V3         a
+2  x  y        V3         h
+3  a  b        V4         c
+4  x  y        V4         k
+5  a  b        V5         d
+6  x  y        V5         e
+
+morpheus=spread(TBL_1,`MORPH1029`,`MORPH1028`)
+
+  V1 V2 V3 V4 V5
+1  a  b  a  c  d
+2  x  y  h  k  e
+
+
+R program:
+
+TBL_3=gather(p45_input1,MORPH1029,MORPH1028,-`V1`,-`V2`)
+TBL_1=filter(TBL_3,`MORPH1028` != "EMP")
+morpheus=spread(TBL_1,`MORPH1029`,`MORPH1028`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 46
+#sketches without SMT-based deduction= 129
+#partial programs with partial evaluation= 4331
+#partial programs without partial evaluation= 9229
+Total time= 19.15 s

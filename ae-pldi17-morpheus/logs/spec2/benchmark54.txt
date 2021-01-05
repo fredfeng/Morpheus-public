@@ -1,0 +1,150 @@
+Morheus thread 3 finished.
+Loading benchmark: ../../benchmarks/pldi17/86/input.json
+Specs: ../../benchmarks/pldi17/86/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Output table:p86_output1
+Input tables:p86_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size4-ngram.txt
+Mapping from string to vector file: sketches/size4-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+Adding missing grouping variables: `species`
+Adding missing grouping variables: `species`
+Adding missing grouping variables: `species`
+Joining, by = c("sample_ID", "site")
+Joining, by = c("sample_ID", "species")
+Joining, by = "inf_status"
+Joining, by = c("sample_ID", "TOT")
+Joining, by = "TOT"
+Joining, by = c("sample_ID", "inf_status")
+Joining, by = "inf_status"
+Joining, by = c("sample_ID", "TOT")
+Joining, by = "TOT"
+Joining, by = c("sample_ID", "inf_status")
+Joining, by = "site"
+Joining, by = "species"
+Joining, by = c("site", "TOT")
+Joining, by = c("species", "TOT")
+Joining, by = c("site", "inf_status")
+Joining, by = c("species", "inf_status")
+Joining, by = "sample_ID"
+Joining, by = c("TOT", "inf_status")
+Joining, by = "sample_ID"
+Joining, by = c("TOT", "inf_status")
+Joining, by = c("TOT", "inf_status")
+Joining, by = c("TOT", "inf_status")
+Joining, by = c("sample_ID", "site")
+Joining, by = c("sample_ID", "species")
+Joining, by = "inf_status"
+Joining, by = c("species", "inf_status")
+Joining, by = c("sample_ID", "TOT")
+Joining, by = "TOT"
+Joining, by = c("species", "TOT")
+Joining, by = c("sample_ID", "inf_status")
+Joining, by = c("site", "inf_status")
+Joining, by = "inf_status"
+Joining, by = c("sample_ID", "TOT")
+Joining, by = c("site", "TOT")
+Joining, by = "TOT"
+Joining, by = c("sample_ID", "inf_status")
+Joining, by = "site"
+Joining, by = "species"
+Joining, by = c("sample_ID", "inf_status")
+Joining, by = c("sample_ID", "inf_status")
+Joining, by = c("site", "TOT")
+Joining, by = c("species", "TOT")
+Joining, by = c("sample_ID", "TOT")
+Joining, by = c("sample_ID", "TOT")
+Joining, by = c("site", "inf_status")
+Joining, by = c("species", "inf_status")
+Joining, by = "sample_ID"
+Joining, by = c("sample_ID", "species")
+Joining, by = c("TOT", "inf_status")
+Joining, by = c("sample_ID", "site")
+Joining, by = "sample_ID"
+Joining, by = c("TOT", "inf_status")
+Joining, by = "inf_status"
+Joining, by = "inf_status"
+Joining, by = "TOT"
+Joining, by = "TOT"
+Joining, by = "species"
+Joining, by = "site"
+Joining, by = "sample_ID"
+Joining, by = "sample_ID"
+Joining, by = c("sample_ID", "site")
+Joining, by = c("sample_ID", "species")
+Joining, by = "inf_status"
+Joining, by = c("sample_ID", "TOT")
+Joining, by = "TOT"
+Joining, by = c("sample_ID", "inf_status")
+Joining, by = "inf_status"
+Joining, by = c("sample_ID", "TOT")
+Joining, by = "TOT"
+Joining, by = c("sample_ID", "inf_status")
+Joining, by = "site"
+Joining, by = "species"
+Joining, by = c("site", "TOT")
+Joining, by = c("species", "TOT")
+Joining, by = c("site", "inf_status")
+Joining, by = c("species", "inf_status")
+Joining, by = "sample_ID"
+Joining, by = c("TOT", "inf_status")
+Joining, by = "sample_ID"
+Joining, by = c("TOT", "inf_status")
+# sketches with deduction: 120
+# sketches without deduction: 479
+# predicates with deduction: 29097
+# predicates without deduction: 77427
+# predicates pruned (NA or size): 35364
+# R calls: 114660
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 3217.72
+Deduction on partial evaluation:16882.6
+R calls: 87820.7
+Total time: 138002
+[Percentage] R=63.6374 Z3=14.5653 other=21.7973
+==================================================
+R program: 
+TBL_7=unite(p86_input1,MORPH42009,`species`,`inf_status`)
+TBL_3=group_by(TBL_7,`site`,`MORPH42009`)
+TBL_1=summarise(TBL_3,MORPH42025=sum(`TOT`))
+morpheus=spread(TBL_1,`MORPH42009`,`MORPH42025`)
+morpheus=as.data.frame(morpheus)
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

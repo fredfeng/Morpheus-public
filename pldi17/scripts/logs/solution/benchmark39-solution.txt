@@ -1,0 +1,5 @@
+TBL_3=inner_join(p39_input2,p39_input1)
+TBL_1=group_by(TBL_3,`x`)
+morpheus=summarise(TBL_1,z=sum(`z`))
+morpheus=as.data.frame(morpheus)
+morpheus

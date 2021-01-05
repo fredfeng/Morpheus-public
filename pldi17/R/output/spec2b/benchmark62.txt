@@ -1,0 +1,106 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/62/input.json
+Specs: ../../benchmarks/pldi17/62/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 0
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p62_output1
+Input tables:p62_input1 
+Sketch (Components):2 11 -1 1 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec2/*
+specs/spec2/filter.json compName: filter
+specs/spec2/gather.json compName: gather
+specs/spec2/group_by.json compName: group_by
+specs/spec2/inner_join.json compName: inner_join
+specs/spec2/mutate.json compName: mutate
+specs/spec2/select.json compName: select
+specs/spec2/separate.json compName: separate
+specs/spec2/spread.json compName: spread
+specs/spec2/summarise.json compName: summarise
+specs/spec2/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = c("V2", "V3")
+Joining, by = c("V2", "V4")
+Joining, by = "V2"
+Joining, by = c("V3", "V4")
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = c("V2", "V3")
+Joining, by = c("V2", "V4")
+Joining, by = "V2"
+Joining, by = c("V3", "V4")
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V4"
+# sketches with deduction: 88
+# sketches without deduction: 338
+# predicates with deduction: 4486
+# predicates without deduction: 4486
+# predicates pruned (NA or size): 1361
+# R calls: 6360
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 1548.98
+Deduction on partial evaluation:0
+R calls: 4112.05
+Total time: 7060.59
+[Percentage] R=58.2394 Z3=21.9384 other=19.8222
+==================================================
+R program: 
+TBL_3=spread(p62_input1,`V3`,`V4`)
+TBL_1=mutate(TBL_3,MORPH4835=BranchDBMS / CacheDBMS)
+morpheus=gather(TBL_1,MORPH4837,MORPH4836,-`V2`)
+morpheus=as.data.frame(morpheus)
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,5 @@
+TBL_3=unite(p85_input1,group_id,`band`,`non_spec`)
+TBL_1=group_by(TBL_3,`group_id`)
+morpheus=summarise(TBL_1,group_mean=mean(`reads`))
+morpheus=as.data.frame(morpheus)
+morpheus

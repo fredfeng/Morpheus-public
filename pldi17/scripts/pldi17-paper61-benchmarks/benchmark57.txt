@@ -1,0 +1,144 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/33850184/reshaping-a-data-frame-from-wide-to-long-in-r
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 57
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  Test temperature_sensor1 temperature_sensor2 pressure_sensor1
+1    1            22.51868            24.23571        11.346620
+2    2            20.69246            22.53656        11.798325
+3    3            33.94608            20.24266        11.479349
+4    4            24.10963            26.41655         8.250279
+5    5            26.50271            28.55482         9.926986
+6    6            27.10880            31.80768        11.575317
+  pressure_sensor2
+1        11.489648
+2         7.680483
+3         9.820589
+4        13.810615
+5        10.582618
+6         7.205214
+
+Output:
+
+   Test  sensor  pressure temperature
+1     1 sensor1 11.346620    22.51868
+2     1 sensor2 11.489648    24.23571
+3     2 sensor1 11.798325    20.69246
+4     2 sensor2  7.680483    22.53656
+5     3 sensor1 11.479349    33.94608
+6     3 sensor2  9.820589    20.24266
+7     4 sensor1  8.250279    24.10963
+8     4 sensor2 13.810615    26.41655
+9     5 sensor1  9.926986    26.50271
+10    5 sensor2 10.582618    28.55482
+11    6 sensor1 11.575317    27.10880
+12    6 sensor2  7.205214    31.80768
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p57_input1,MORPH356,MORPH355,-`Test`)
+
+   Test            MORPH356  MORPH355
+1     1 temperature_sensor1 22.518676
+2     2 temperature_sensor1 20.692462
+3     3 temperature_sensor1 33.946076
+4     4 temperature_sensor1 24.109634
+5     5 temperature_sensor1 26.502714
+6     6 temperature_sensor1 27.108796
+7     1 temperature_sensor2 24.235712
+8     2 temperature_sensor2 22.536558
+9     3 temperature_sensor2 20.242657
+10    4 temperature_sensor2 26.416545
+11    5 temperature_sensor2 28.554824
+12    6 temperature_sensor2 31.807679
+13    1    pressure_sensor1 11.346620
+14    2    pressure_sensor1 11.798325
+15    3    pressure_sensor1 11.479349
+16    4    pressure_sensor1  8.250279
+17    5    pressure_sensor1  9.926986
+18    6    pressure_sensor1 11.575317
+19    1    pressure_sensor2 11.489648
+20    2    pressure_sensor2  7.680483
+21    3    pressure_sensor2  9.820589
+22    4    pressure_sensor2 13.810615
+23    5    pressure_sensor2 10.582618
+24    6    pressure_sensor2  7.205214
+
+TBL_1=separate(TBL_3,`MORPH356`,into=c('MORPH387','sensor'))
+
+   Test    MORPH387  sensor  MORPH355
+1     1 temperature sensor1 22.518676
+2     2 temperature sensor1 20.692462
+3     3 temperature sensor1 33.946076
+4     4 temperature sensor1 24.109634
+5     5 temperature sensor1 26.502714
+6     6 temperature sensor1 27.108796
+7     1 temperature sensor2 24.235712
+8     2 temperature sensor2 22.536558
+9     3 temperature sensor2 20.242657
+10    4 temperature sensor2 26.416545
+11    5 temperature sensor2 28.554824
+12    6 temperature sensor2 31.807679
+13    1    pressure sensor1 11.346620
+14    2    pressure sensor1 11.798325
+15    3    pressure sensor1 11.479349
+16    4    pressure sensor1  8.250279
+17    5    pressure sensor1  9.926986
+18    6    pressure sensor1 11.575317
+19    1    pressure sensor2 11.489648
+20    2    pressure sensor2  7.680483
+21    3    pressure sensor2  9.820589
+22    4    pressure sensor2 13.810615
+23    5    pressure sensor2 10.582618
+24    6    pressure sensor2  7.205214
+
+morpheus=spread(TBL_1,`MORPH387`,`MORPH355`)
+
+   Test  sensor  pressure temperature
+1     1 sensor1 11.346620    22.51868
+2     1 sensor2 11.489648    24.23571
+3     2 sensor1 11.798325    20.69246
+4     2 sensor2  7.680483    22.53656
+5     3 sensor1 11.479349    33.94608
+6     3 sensor2  9.820589    20.24266
+7     4 sensor1  8.250279    24.10963
+8     4 sensor2 13.810615    26.41655
+9     5 sensor1  9.926986    26.50271
+10    5 sensor2 10.582618    28.55482
+11    6 sensor1 11.575317    27.10880
+12    6 sensor2  7.205214    31.80768
+
+
+R program:
+
+TBL_3=gather(p57_input1,MORPH356,MORPH355,-`Test`)
+TBL_1=separate(TBL_3,`MORPH356`,into=c('MORPH387','sensor'))
+morpheus=spread(TBL_1,`MORPH387`,`MORPH355`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 11
+#partial programs with partial evaluation= 392
+#partial programs without partial evaluation= 656
+Total time= 3.55 s

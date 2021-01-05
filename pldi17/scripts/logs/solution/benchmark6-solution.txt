@@ -1,0 +1,6 @@
+TBL_7=gather(p6_input1,MORPH36162,MORPH36161,-`GeneID`,-`T.8`)
+TBL_3=separate(TBL_7,`MORPH36162`,into=c('type','MORPH42956'))
+TBL_1=group_by(TBL_3,`GeneID`,`type`)
+morpheus=summarise(TBL_1,sum=sum(`MORPH36161`))
+morpheus=as.data.frame(morpheus)
+morpheus

@@ -1,0 +1,6 @@
+TBL_7=filter(p12_input1,`dest` == "SEA")
+TBL_3=group_by(TBL_7,`origin`)
+TBL_1=summarise(TBL_3,n=n())
+morpheus=mutate(TBL_1,freq=n / sum(n))
+morpheus=as.data.frame(morpheus)
+morpheus

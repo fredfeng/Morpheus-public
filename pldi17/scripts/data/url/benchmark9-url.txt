@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/30812886/how-to-apply-division-operation-across-values-in-a-single-column-based-on-other

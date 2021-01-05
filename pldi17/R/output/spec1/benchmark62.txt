@@ -1,0 +1,322 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/62/input.json
+Specs: ../../benchmarks/pldi17/62/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p62_output1
+Input tables:p62_input1 
+Sketch (Components):2 11 -1 1 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+Adding missing grouping variables: `V3`
+Adding missing grouping variables: `V3`
+Adding missing grouping variables: `V3`
+Adding missing grouping variables: `V3`
+Adding missing grouping variables: `V3`
+Adding missing grouping variables: `V3`
+Adding missing grouping variables: `V3`
+Adding missing grouping variables: `V3`
+Adding missing grouping variables: `V3`
+Adding missing grouping variables: `V3`
+Adding missing grouping variables: `V3`
+Adding missing grouping variables: `V3`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Adding missing grouping variables: `V2`
+Joining, by = c("V3", "V4")
+Joining, by = c("V3", "V4")
+Joining, by = c("V3", "V4")
+Joining, by = c("V3", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V3")
+Joining, by = c("V2", "V3")
+Joining, by = c("V2", "V3")
+Joining, by = c("V2", "V3")
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = c("V3", "V4")
+Joining, by = c("V3", "V4")
+Joining, by = c("V3", "V4")
+Joining, by = c("V3", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V3")
+Joining, by = c("V2", "V3")
+Joining, by = c("V2", "V3")
+Joining, by = c("V2", "V3")
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = c("V3", "V4")
+Joining, by = "V2"
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V3")
+Joining, by = c("V2", "V3")
+Joining, by = "V4"
+Joining, by = c("V2", "V4")
+Joining, by = "V3"
+Joining, by = c("V3", "V4")
+Joining, by = "V2"
+Joining, by = c("V3", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V3")
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = c("V3", "V4")
+Joining, by = "V2"
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V3")
+Joining, by = c("V2", "V3")
+Joining, by = "V4"
+Joining, by = c("V2", "V4")
+Joining, by = "V3"
+Joining, by = c("V3", "V4")
+Joining, by = "V2"
+Joining, by = c("V3", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V3")
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = c("V3", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V3")
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = c("V2", "V3")
+Joining, by = c("V2", "V4")
+Joining, by = "V2"
+Joining, by = c("V3", "V4")
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = c("V2", "V3")
+Joining, by = c("V2", "V4")
+Joining, by = "V2"
+Joining, by = c("V3", "V4")
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = c("V3", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = "V4"
+Joining, by = c("V3", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V3")
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = c("V3", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = "V4"
+Joining, by = c("V3", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V3")
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = c("V3", "V4")
+Joining, by = c("V2", "V4")
+Joining, by = c("V2", "V3")
+Joining, by = "V4"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V4"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V2"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+Joining, by = "V3"
+# sketches with deduction: 338
+# sketches without deduction: 338
+# predicates with deduction: 38470
+# predicates without deduction: 38470
+# predicates pruned (NA or size): 10524
+# R calls: 53117
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 1348.17
+Deduction on partial evaluation:8189.9
+R calls: 34645.5
+Total time: 54578.5
+[Percentage] R=63.4783 Z3=17.4759 other=19.0458
+==================================================
+R program: 
+TBL_3=spread(p62_input1,`V3`,`V4`)
+TBL_1=mutate(TBL_3,MORPH33715=BranchDBMS / CacheDBMS)
+morpheus=gather(TBL_1,MORPH33717,MORPH33716,-`V2`)
+morpheus=as.data.frame(morpheus)
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

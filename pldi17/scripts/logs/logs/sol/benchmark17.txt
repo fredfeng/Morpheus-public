@@ -1,0 +1,194 @@
+Morheus thread 3 finished.
+Loading benchmark: ../../benchmarks/pldi17/17/input.json
+Specs: ../../benchmarks/pldi17/17/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:17
+Depth:1
+Output table:p17_output1
+Input tables:p17_input1 
+Sketch (Components):10 1 -1 6 -1 -1 -1 7 -1 -1 -1 -1 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size4-ngram.txt
+Mapping from string to vector file: sketches/size4-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Group`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+Adding missing grouping variables: `Id`
+# sketches with deduction: 14
+# sketches without deduction: 36
+# predicates with deduction: 3491
+# predicates without deduction: 9332
+# predicates pruned (NA or size): 6048
+# R calls: 15494
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 248.345
+Deduction on partial evaluation:1886.31
+R calls: 27674
+Total time: 32612.5
+[Percentage] R=84.857 Z3=6.54552 other=8.59749
+==================================================
+R program: 
+TBL_7=filter(p17_input1,`Group` == "A")
+TBL_3=group_by(TBL_7,`Group`,`Var1`)
+TBL_1=summarise(TBL_3,MORPH3405=sum(`Var2`))
+morpheus=spread(TBL_1,`Var1`,`MORPH3405`)
+morpheus=as.data.frame(morpheus)
+morpheus

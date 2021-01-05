@@ -1,0 +1,14 @@
+
+
+tmp = read.table(text=
+"
+ H1 H2 H3
+ x a 1
+ x b 2
+ x c 3
+ y a 3
+ y b 3
+ y c 2
+", header=T)
+tmp1 = spread(tmp, H2,H3)
+print(tmp1)

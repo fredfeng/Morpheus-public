@@ -1,0 +1,5 @@
+TBL_3=gather(p21_input1,MORPH356,MORPH355,-`obs`)
+TBL_1=separate(TBL_3,`MORPH356`,into=c('key','MORPH388'))
+morpheus=spread(TBL_1,`MORPH388`,`MORPH355`)
+morpheus=as.data.frame(morpheus)
+morpheus

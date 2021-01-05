@@ -1,0 +1,110 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/29221824/boxplot-order-groups-by-the-mean-of-a-subset-of-each-group
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 62
+Category= C2
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+   score group category
+1     10    a1      big
+2      8    a1      big
+3      9    a1      big
+4      1    a1      big
+5      5    a1    small
+6      8    a2      big
+7      2    a2      big
+8      8    a2      big
+9      5    a2      big
+10     6    a2    small
+11     9    a3      big
+12     4    a3      big
+13     7    a3      big
+14     9    a3      big
+15     9    a3    small
+
+Output:
+
+  group mean
+1    a1 7.00
+2    a2 5.75
+3    a3 7.25
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=filter(p62_input1,`category` == "big")
+
+   score group category
+1     10    a1      big
+2      8    a1      big
+3      9    a1      big
+4      1    a1      big
+5      8    a2      big
+6      2    a2      big
+7      8    a2      big
+8      5    a2      big
+9      9    a3      big
+10     4    a3      big
+11     7    a3      big
+12     9    a3      big
+
+TBL_1=group_by(TBL_3,`group`)
+
+Source: local data frame [12 x 3]
+Groups: group [3]
+
+   score group category
+   <dbl> <chr>    <chr>
+1     10    a1      big
+2      8    a1      big
+3      9    a1      big
+4      1    a1      big
+5      8    a2      big
+6      2    a2      big
+7      8    a2      big
+8      5    a2      big
+9      9    a3      big
+10     4    a3      big
+11     7    a3      big
+12     9    a3      big
+
+morpheus=summarise(TBL_1,mean=mean(`score`))
+
+# A tibble: 3 x 2
+  group  mean
+  <chr> <dbl>
+1    a1  7.00
+2    a2  5.75
+3    a3  7.25
+
+
+R program:
+
+TBL_3=filter(p62_input1,`category` == "big")
+TBL_1=group_by(TBL_3,`group`)
+morpheus=summarise(TBL_1,mean=mean(`score`))
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 4
+#sketches without SMT-based deduction= 5
+#partial programs with partial evaluation= 55
+#partial programs without partial evaluation= 227
+Total time= .26 s

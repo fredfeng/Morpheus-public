@@ -1,0 +1,5 @@
+TBL_3=spread(p9_input1,`V3`,`V4`)
+TBL_1=mutate(TBL_3,Ratio=High / Low)
+morpheus=select(TBL_1,-`High`,-`Low`)
+morpheus=as.data.frame(morpheus)
+morpheus

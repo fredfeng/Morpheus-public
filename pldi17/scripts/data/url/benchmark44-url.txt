@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/31799009/r-merging-multiple-columns-into-one-by-group-twice-in-the-same-dataframe

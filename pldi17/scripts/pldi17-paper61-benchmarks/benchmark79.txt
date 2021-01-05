@@ -1,0 +1,62 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/22198951/calculate-mean-with-a-filter-on-a-columns-values
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 79
+Category= C2
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  id    dept employee salary
+1  1      CS   Yossi   21000
+2  2      EE    Pitt   23400
+3  3   Civil   Deepak  26800
+4  4 Physics    Golan  91000
+
+Output:
+
+   mean
+1 58900
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_1=filter(p79_input1,`salary` > 23400.000000)
+
+  id    dept employee salary
+1  3   Civil   Deepak  26800
+2  4 Physics    Golan  91000
+
+morpheus=summarise(TBL_1,mean=mean(`salary`))
+
+   mean
+1 58900
+
+
+R program:
+
+TBL_1=filter(p79_input1,`salary` > 23400.000000)
+morpheus=summarise(TBL_1,mean=mean(`salary`))
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 3
+#sketches without SMT-based deduction= 10
+#partial programs with partial evaluation= 17
+#partial programs without partial evaluation= 97
+Total time= .17 s

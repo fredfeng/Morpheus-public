@@ -1,0 +1,8 @@
+TBL_15=filter(p93_input1,`y` < 1.900000)
+TBL_7=group_by(TBL_15,`x`)
+TBL_3=summarise(TBL_7,a=mean(`y`))
+TBL_1=inner_join(TBL_3,p93_input1)
+morpheus=mutate(TBL_1,z=y / a)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,3,4,2,5)
+morpheus

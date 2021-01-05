@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/3835280/pivoting-rows-into-columns
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 74
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+      Which Color Response Count
+1   Control   Red        2    10
+2   Control  Blue        3    20
+3 Treatment   Red        1    14
+4 Treatment  Blue        4    21
+
+Output:
+
+  Color Count_Control Count_Treatment Response_Control Response_Treatment
+1  Blue            20              21                3                  4
+2   Red            10              14                2                  1
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p74_input1,MORPH72,MORPH71,`Response`,`Count`)
+
+      Which Color  MORPH72 MORPH71
+1   Control   Red Response       2
+2   Control  Blue Response       3
+3 Treatment   Red Response       1
+4 Treatment  Blue Response       4
+5   Control   Red    Count      10
+6   Control  Blue    Count      20
+7 Treatment   Red    Count      14
+8 Treatment  Blue    Count      21
+
+TBL_1=unite(TBL_3,MORPH83,`MORPH72`,`Which`)
+
+             MORPH83 Color MORPH71
+1   Response_Control   Red       2
+2   Response_Control  Blue       3
+3 Response_Treatment   Red       1
+4 Response_Treatment  Blue       4
+5      Count_Control   Red      10
+6      Count_Control  Blue      20
+7    Count_Treatment   Red      14
+8    Count_Treatment  Blue      21
+
+morpheus=spread(TBL_1,`MORPH83`,`MORPH71`)
+
+  Color Count_Control Count_Treatment Response_Control Response_Treatment
+1  Blue            20              21                3                  4
+2   Red            10              14                2                  1
+
+
+R program:
+
+TBL_3=gather(p74_input1,MORPH72,MORPH71,`Response`,`Count`)
+TBL_1=unite(TBL_3,MORPH83,`MORPH72`,`Which`)
+morpheus=spread(TBL_1,`MORPH83`,`MORPH71`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 8
+#partial programs with partial evaluation= 26
+#partial programs without partial evaluation= 99
+Total time= .21 s

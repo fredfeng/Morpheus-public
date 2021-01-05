@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= https://stackoverflow.com/questions/29146287/long-to-wide-data-with-tidyr
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 46
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  name group V1 V2
+1    A    g1 10  6
+2    A    g2 40  3
+3    B    g1 20  1
+4    B    g2 30  7
+
+Output:
+
+  name V1_g1 V1_g2 V2_g1 V2_g2
+1    A    10    40     6     3
+2    B    20    30     1     7
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p46_input1,MORPH72,MORPH71,`V1`,`V2`)
+
+  name group MORPH72 MORPH71
+1    A    g1      V1      10
+2    A    g2      V1      40
+3    B    g1      V1      20
+4    B    g2      V1      30
+5    A    g1      V2       6
+6    A    g2      V2       3
+7    B    g1      V2       1
+8    B    g2      V2       7
+
+TBL_1=unite(TBL_3,MORPH79,`MORPH72`,`group`)
+
+  name MORPH79 MORPH71
+1    A   V1_g1      10
+2    A   V1_g2      40
+3    B   V1_g1      20
+4    B   V1_g2      30
+5    A   V2_g1       6
+6    A   V2_g2       3
+7    B   V2_g1       1
+8    B   V2_g2       7
+
+morpheus=spread(TBL_1,`MORPH79`,`MORPH71`)
+
+  name V1_g1 V1_g2 V2_g1 V2_g2
+1    A    10    40     6     3
+2    B    20    30     1     7
+
+
+R program:
+
+TBL_3=gather(p46_input1,MORPH72,MORPH71,`V1`,`V2`)
+TBL_1=unite(TBL_3,MORPH79,`MORPH72`,`group`)
+morpheus=spread(TBL_1,`MORPH79`,`MORPH71`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 8
+#partial programs with partial evaluation= 20
+#partial programs without partial evaluation= 90
+Total time= .16 s

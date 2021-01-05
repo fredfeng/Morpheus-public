@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/25281774/problems-using-melt-and-mean-in-r

@@ -1,0 +1,102 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/31180006/clean-r-script-to-make-it-more-streamlined
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 66
+Category= C2
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  V51     Hour Group
+1   1 02:00:00   SBT
+2   1 08:00:00   SBS
+3   9 08:00:00   SBS
+4   4 18:00:00   SBS
+5   2 06:00:00   SBI
+6   6 11:00:00   SBT
+7   4 18:00:00   SBS
+8   6 10:00:00   SBI
+
+Output:
+
+  sum
+1  10
+2   8
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_7=group_by(p66_input1,`Hour`)
+
+Source: local data frame [8 x 3]
+Groups: Hour [6]
+
+    V51     Hour Group
+  <dbl>    <chr> <chr>
+1     1 02:00:00   SBT
+2     1 08:00:00   SBS
+3     9 08:00:00   SBS
+4     4 18:00:00   SBS
+5     2 06:00:00   SBI
+6     6 11:00:00   SBT
+7     4 18:00:00   SBS
+8     6 10:00:00   SBI
+
+TBL_3=summarise(TBL_7,sum=sum(`V51`))
+
+# A tibble: 6 x 2
+      Hour   sum
+     <chr> <dbl>
+1 02:00:00     1
+2 06:00:00     2
+3 08:00:00    10
+4 10:00:00     6
+5 11:00:00     6
+6 18:00:00     8
+
+TBL_1=filter(TBL_3,`sum` > 6.000000)
+
+# A tibble: 2 x 2
+      Hour   sum
+     <chr> <dbl>
+1 08:00:00    10
+2 18:00:00     8
+
+morpheus=select(TBL_1,`sum`)
+
+# A tibble: 2 x 1
+    sum
+  <dbl>
+1    10
+2     8
+
+
+R program:
+
+TBL_7=group_by(p66_input1,`Hour`)
+TBL_3=summarise(TBL_7,sum=sum(`V51`))
+TBL_1=filter(TBL_3,`sum` > 6.000000)
+morpheus=select(TBL_1,`sum`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 3
+#sketches without SMT-based deduction= 3
+#partial programs with partial evaluation= 35
+#partial programs without partial evaluation= 160
+Total time= .19 s

@@ -1,0 +1,65 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/22/input.json
+Specs: ../../benchmarks/pldi17/22/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:22
+Output table:p22_output1
+Input tables:p22_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+# sketches with deduction: 4
+# sketches without deduction: 4
+# predicates with deduction: 3061
+# predicates without deduction: 3061
+# predicates pruned (NA or size): 786
+# R calls: 3869
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 17.31
+Deduction on partial evaluation:647.97
+R calls: 3572.93
+Total time: 4900.36
+[Percentage] R=72.9117 Z3=13.5762 other=13.5122
+==================================================
+R program: 
+TBL_3=gather(p22_input1,MORPH2882,MORPH2881,`Passes`,`Tackles`)
+TBL_1=group_by(TBL_3,`MORPH2882`)
+morpheus=summarise(TBL_1,MORPH3033=mean(`MORPH2881`))
+morpheus=as.data.frame(morpheus)
+morpheus

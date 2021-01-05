@@ -1,0 +1,191 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/20/input.json
+Specs: ../../benchmarks/pldi17/20/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:20
+Output table:p20_output1
+Input tables:p20_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `action_rate`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `times`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+Adding missing grouping variables: `group`
+# sketches with deduction: 8
+# sketches without deduction: 8
+# predicates with deduction: 6763
+# predicates without deduction: 6763
+# predicates pruned (NA or size): 456
+# R calls: 7333
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 33.378
+Deduction on partial evaluation:1387.7
+R calls: 4623.95
+Total time: 7294.32
+[Percentage] R=63.3911 Z3=19.482 other=17.1269
+==================================================
+R program: 
+TBL_3=gather(p20_input1,MORPH3993,MORPH3992,`action_rate`,`action_rate2`)
+TBL_1=unite(TBL_3,MORPH4000,`MORPH3993`,`times`)
+morpheus=spread(TBL_1,`MORPH4000`,`MORPH3992`)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,4,5,2,3)
+morpheus

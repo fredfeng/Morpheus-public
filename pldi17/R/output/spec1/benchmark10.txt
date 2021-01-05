@@ -1,0 +1,1212 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/10/input.json
+Specs: ../../benchmarks/pldi17/10/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:10
+Depth:1
+Output table:p10_output1
+Input tables:p10_input1 
+Sketch (Components):3 2 -1 4 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `name`
+Adding missing grouping variables: `name`
+Adding missing grouping variables: `name`
+Adding missing grouping variables: `name`
+Adding missing grouping variables: `name`
+Adding missing grouping variables: `name`
+Adding missing grouping variables: `name`
+Adding missing grouping variables: `name`
+Adding missing grouping variables: `name`
+Adding missing grouping variables: `name`
+Adding missing grouping variables: `name`
+Adding missing grouping variables: `name`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `days`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Adding missing grouping variables: `date`
+Joining, by = c("name", "topics")
+Joining, by = c("name", "topics")
+Joining, by = c("name", "topics")
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("days", "name")
+Joining, by = c("days", "name")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "name")
+Joining, by = c("date", "name")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = c("date", "days")
+Joining, by = c("date", "days")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "topics"
+Joining, by = "topics"
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "name"
+Joining, by = "name"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "days"
+Joining, by = "days"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = "date"
+Joining, by = "date"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("name", "topics")
+Joining, by = c("name", "topics")
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("days", "name")
+Joining, by = c("days", "name")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "name")
+Joining, by = c("date", "name")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = c("date", "days")
+Joining, by = c("date", "days")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "topics"
+Joining, by = "topics"
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "name"
+Joining, by = "name"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "days"
+Joining, by = "days"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = "date"
+Joining, by = "date"
+Joining, by = "date"
+Joining, by = c("date", "days")
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = "name"
+Joining, by = "date"
+Joining, by = "topics"
+Joining, by = c("days", "name")
+Joining, by = "days"
+Joining, by = c("days", "topics")
+Joining, by = "days"
+Joining, by = "name"
+Joining, by = "topics"
+Joining, by = "days"
+Joining, by = c("date", "days")
+Joining, by = c("date", "days")
+Joining, by = "days"
+Joining, by = c("date", "name")
+Joining, by = "date"
+Joining, by = "name"
+Joining, by = "date"
+Joining, by = c("date", "topics")
+Joining, by = "topics"
+Joining, by = c("days", "name")
+Joining, by = "days"
+Joining, by = c("days", "name")
+Joining, by = "days"
+Joining, by = c("days", "topics")
+Joining, by = c("days", "topics")
+Joining, by = "name"
+Joining, by = "topics"
+Joining, by = c("name", "topics")
+Joining, by = "topics"
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "days"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = "date"
+Joining, by = c("date", "days")
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = "name"
+Joining, by = "date"
+Joining, by = "topics"
+Joining, by = c("days", "name")
+Joining, by = "days"
+Joining, by = c("days", "topics")
+Joining, by = "days"
+Joining, by = "name"
+Joining, by = "topics"
+Joining, by = "days"
+Error: object 'tidyR' not found
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error: object 'tidyR' not found
+Error: object 'R' not found
+Error: object 'R' not found
+Error: object 'probability' not found
+Error: object 'probability' not found
+Error: object 'tidyR' not found
+Error: object 'R' not found
+Error: object 'probability' not found
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = c("date", "days")
+Joining, by = c("name", "topics")
+Joining, by = "days"
+Joining, by = c("date", "name")
+Joining, by = c("days", "topics")
+Joining, by = c("date", "topics")
+Joining, by = c("days", "name")
+Joining, by = "date"
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("name", "topics")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = c("date", "days")
+Joining, by = c("name", "topics")
+Joining, by = "days"
+Joining, by = c("date", "name")
+Joining, by = c("days", "topics")
+Joining, by = c("date", "topics")
+Joining, by = c("days", "name")
+Joining, by = "date"
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("name", "topics")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("name", "topics")
+Joining, by = c("days", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("date", "name")
+Joining, by = c("date", "days")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("date", "days")
+Joining, by = c("date", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("days", "topics")
+Joining, by = c("name", "topics")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = c("date", "days")
+Joining, by = c("date", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("days", "topics")
+Joining, by = c("name", "topics")
+Joining, by = "topics"
+Joining, by = "name"
+Joining, by = "days"
+Joining, by = "date"
+# sketches with deduction: 118
+# sketches without deduction: 118
+# predicates with deduction: 46209
+# predicates without deduction: 46209
+# predicates pruned (NA or size): 6336
+# R calls: 56864
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 472.589
+Deduction on partial evaluation:9808.74
+R calls: 31783.8
+Total time: 51938.4
+[Percentage] R=61.1951 Z3=19.7952 other=19.0096
+==================================================
+R program: 
+TBL_3=separate(p10_input1,`topics`,into=c('MORPH9883','MORPH9884'))
+TBL_1=gather(TBL_3,MORPH9886,MORPH9885,`MORPH9883`,`MORPH9884`)
+morpheus=select(TBL_1,-`MORPH9885`)
+morpheus=as.data.frame(morpheus)
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

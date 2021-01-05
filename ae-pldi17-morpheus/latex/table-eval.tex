@@ -1,0 +1,41 @@
+\begin{figure*}[!t]
+{\small 
+\begin{center}
+\begin{tabular}{|ccc|cc|cc|cc|}
+\hline
+\multirow{2}{*}{Category} & \multirow{2}{*}{Description} & \multirow{2}{*}{\#} & \multicolumn{2}{c|}{No deduction} & \multicolumn{2}{c|}{Spec 1} & \multicolumn{2}{c|}{Spec 2 }\\
+&&&\#Solved & Time& \#Solved & Time& \#Solved & Time\\
+\hline
+\hline
+C1 & \multicolumn{1}{m{5.6cm}}{\emph{Reshaping} dataframes from either ``long'' to ``wide'' or ``wide'' to ``long''} & 4 & 2 & 198.14 & 4 & 15.48 & 4 &6.70\\
+\hline
+C2 & \multicolumn{1}{m{5.6cm}}{\emph{Arithmetic computations} that produce values not present in the input tables} & 7 & 6 & 5.32 & 7 & 1.95 & 7 & 0.59\\
+\hline
+C3 & \multicolumn{1}{m{5.6cm}}{Combination of \emph{reshaping} and \emph{string manipulation} of cell contents} & 34 & 28 & 51.01 & 31 & 6.53 & 34 & 1.63\\
+\hline
+C4 & \multicolumn{1}{m{5.6cm}}{\emph{Reshaping} and \emph{arithmetic computations}} & 14 & 9 & 162.02 & 10 & 90.33 & 12 & 15.35\\
+\hline
+C5 & \multicolumn{1}{m{5.6cm}}{Combination of \emph{arithmetic computations} and \emph{consolidation} of information from multiple tables into a single table} & 11 & 7 & 8.72 & 10 & 3.16 & 11 & 3.17\\
+\hline
+C6 & \multicolumn{1}{m{5.6cm}}{\emph{Arithmetic computations} and \emph{string manipulation} tasks} & 2 & 1 & 280.61 & 2 & 49.33 & 2 & 3.03\\
+\hline
+C7 & \multicolumn{1}{m{5.6cm}}{\emph{Reshaping} and \emph{consolidation} tasks} & 1 & 0 & \xmark & 1 & 135.32 & 1 & 130.92\\
+\hline
+C8 & \multicolumn{1}{m{5.6cm}}{Combination of \emph{reshaping}, \emph{arithmetic computations} and \emph{string manipulation}} & 6 & 1 & \xmark & 3 & 198.42 & 6 & 38.42\\
+\hline
+C9 & \multicolumn{1}{m{5.6cm}}{Combination of \emph{reshaping}, \emph{arithmetic computations} and  \emph{consolidation}} & 1 & 0 & \xmark & 0 & \xmark & 1 & 97.3\\
+\hline
+\hline
+\multicolumn{2}{|c}{\multirow{2}{*}{Total}} & \multirow{2}{*}{80} & 54 & \multirow{2}{*}{95.53} & 68 & \multirow{2}{*}{8.57} & 78 & \multirow{2}{*}{3.59}\\
+&&&(67.5\%) && (85.0\%) && (97.5\%)&\\
+\hline
+\end{tabular}
+\end{center}
+}
+\vspace{-0.1in}
+\caption{Summary of experimental results. All times are median in seconds and \xmark \ indicates a timeout ($>$ 5 minutes).}
+%\caption{\toolname performance using multiple specifications with different levels of precision}
+ %Properties P1, P2 and P3 correspond to reshaping, computation and consolidation tasks. Times are in seconds and $\bot$ indicates a timeout ($>$ 5 minutes).}
+ \label{tbl:fig16}
+\vspace{-0.1in}
+\end{figure*}

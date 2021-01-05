@@ -1,0 +1,88 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/41/input.json
+Specs: ../../benchmarks/pldi17/41/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 0
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p41_output1
+Input tables:p41_input1 p41_input2 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+Joining, by = "miRNA"
+# sketches with deduction: 3
+# sketches without deduction: 3
+# predicates with deduction: 80
+# predicates without deduction: 80
+# predicates pruned (NA or size): 0
+# R calls: 173
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 22.109
+Deduction on partial evaluation:0
+R calls: 270.736
+Total time: 114.547
+[Percentage] R=236.354 Z3=19.3012 other=-155.655
+==================================================
+R program: 
+TBL_3=inner_join(p41_input2,p41_input1)
+TBL_1=group_by(TBL_3,`ID`)
+morpheus=summarise(TBL_1,MORPH43=mean(`logFC`))
+morpheus=as.data.frame(morpheus)
+morpheus

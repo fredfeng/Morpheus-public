@@ -1,0 +1,404 @@
+Morheus thread 3 finished.
+Loading benchmark: ../../benchmarks/pldi17/18/input.json
+Specs: ../../benchmarks/pldi17/18/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 0
+----------------------------------
+BenchmarkId:18
+Depth:1
+Output table:p18_output1
+Input tables:p18_input1 
+Sketch (Components):1 6 -1 7 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size4-ngram.txt
+Mapping from string to vector file: sketches/size4-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Joining, by = c("sender", "recipient")
+Joining, by = c("sender", "recipient")
+Joining, by = c("sender", "recipient")
+Joining, by = c("sender", "recipient")
+Joining, by = c("message.id", "recipient")
+Joining, by = c("message.id", "recipient")
+Joining, by = c("message.id", "recipient")
+Joining, by = c("message.id", "recipient")
+Joining, by = c("message.id", "sender")
+Joining, by = c("message.id", "sender")
+Joining, by = c("message.id", "sender")
+Joining, by = c("message.id", "sender")
+Joining, by = "recipient"
+Joining, by = "recipient"
+Joining, by = "recipient"
+Joining, by = "recipient"
+Joining, by = "sender"
+Joining, by = "sender"
+Joining, by = "sender"
+Joining, by = "sender"
+Joining, by = "message.id"
+Joining, by = "message.id"
+Joining, by = "message.id"
+Joining, by = "message.id"
+Joining, by = c("sender", "recipient")
+Joining, by = c("sender", "recipient")
+Joining, by = c("sender", "recipient")
+Joining, by = c("sender", "recipient")
+Joining, by = c("message.id", "recipient")
+Joining, by = c("message.id", "recipient")
+Joining, by = c("message.id", "recipient")
+Joining, by = c("message.id", "recipient")
+Joining, by = c("message.id", "sender")
+Joining, by = c("message.id", "sender")
+Joining, by = c("message.id", "sender")
+Joining, by = c("message.id", "sender")
+Joining, by = "recipient"
+Joining, by = "recipient"
+Joining, by = "recipient"
+Joining, by = "recipient"
+Joining, by = "sender"
+Joining, by = "sender"
+Joining, by = "sender"
+Joining, by = "sender"
+Joining, by = "message.id"
+Joining, by = "message.id"
+Joining, by = "message.id"
+Joining, by = "message.id"
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `sender`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+Adding missing grouping variables: `message.id`
+# sketches with deduction: 20
+# sketches without deduction: 26
+# predicates with deduction: 27746
+# predicates without deduction: 27746
+# predicates pruned (NA or size): 2917
+# R calls: 36273
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 188.081
+Deduction on partial evaluation:0
+R calls: 22452.2
+Total time: 28402.9
+[Percentage] R=79.0491 Z3=0.66219 other=20.2887
+==================================================
+R program: 
+TBL_7=gather(p18_input1,MORPH16643,MORPH16642,`sender`,`recipient`)
+TBL_3=group_by(TBL_7,`MORPH16643`,`MORPH16642`)
+TBL_1=summarise(TBL_3,MORPH16650=n())
+morpheus=spread(TBL_1,`MORPH16643`,`MORPH16650`)
+morpheus=as.data.frame(morpheus)
+morpheus
+There were 11 warnings (use warnings() to see them)

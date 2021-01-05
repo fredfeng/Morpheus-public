@@ -1,0 +1,5 @@
+TBL_3=inner_join(p43_input1,p43_input2)
+TBL_1=mutate(TBL_3,ExposureNew=Exposure / factor)
+morpheus=select(TBL_1,-`Exposure`,-`factor`)
+morpheus=as.data.frame(morpheus)
+morpheus

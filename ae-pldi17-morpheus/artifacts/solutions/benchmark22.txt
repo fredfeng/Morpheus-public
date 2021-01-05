@@ -1,0 +1,89 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/39656670/pivot-table-on-r-using-dplyr-or-tidyr
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 22
+Category= C4
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  Player    Team Shots Passes Tackles
+1 Abdoun Algeria     0      6       0
+2    Abe   Japan     3    101      14
+3 Abidal  France     0     91       6
+4  Abreu Uruguay     5     15       0
+
+Output:
+
+      Var  Mean
+1  Passes 53.25
+2 Tackles  5.00
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p22_input1,Var,MORPH2221,`Passes`,`Tackles`)
+
+  Player    Team Shots     Var MORPH2221
+1 Abdoun Algeria     0  Passes         6
+2    Abe   Japan     3  Passes       101
+3 Abidal  France     0  Passes        91
+4  Abreu Uruguay     5  Passes        15
+5 Abdoun Algeria     0 Tackles         0
+6    Abe   Japan     3 Tackles        14
+7 Abidal  France     0 Tackles         6
+8  Abreu Uruguay     5 Tackles         0
+
+TBL_1=group_by(TBL_3,`Var`)
+
+Source: local data frame [8 x 5]
+Groups: Var [2]
+
+  Player    Team Shots     Var MORPH2221
+   <chr>   <chr> <dbl>   <chr>     <dbl>
+1 Abdoun Algeria     0  Passes         6
+2    Abe   Japan     3  Passes       101
+3 Abidal  France     0  Passes        91
+4  Abreu Uruguay     5  Passes        15
+5 Abdoun Algeria     0 Tackles         0
+6    Abe   Japan     3 Tackles        14
+7 Abidal  France     0 Tackles         6
+8  Abreu Uruguay     5 Tackles         0
+
+morpheus=summarise(TBL_1,Mean=mean(`MORPH2221`))
+
+# A tibble: 2 x 2
+      Var  Mean
+    <chr> <dbl>
+1  Passes 53.25
+2 Tackles  5.00
+
+
+R program:
+
+TBL_3=gather(p22_input1,Var,MORPH2221,`Passes`,`Tackles`)
+TBL_1=group_by(TBL_3,`Var`)
+morpheus=summarise(TBL_1,Mean=mean(`MORPH2221`))
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 5
+#sketches without SMT-based deduction= 6
+#partial programs with partial evaluation= 150
+#partial programs without partial evaluation= 1522
+Total time= 1.46 s

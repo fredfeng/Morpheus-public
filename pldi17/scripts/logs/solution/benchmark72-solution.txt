@@ -1,0 +1,5 @@
+TBL_3=filter(p72_input1,`category` == "big")
+TBL_1=group_by(TBL_3,`group`)
+morpheus=summarise(TBL_1,mean=mean(`score`))
+morpheus=as.data.frame(morpheus)
+morpheus

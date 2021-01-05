@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/25102617/are-there-more-elegant-ways-to-transform-ragged-data-into-a-tidy-dataframe
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 10
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+        date days                name        topics
+1 2012-06-12  1.0      Intro to stats probability|R
+2 2012-07-13  6.0 Stats Winter school  R|regression
+3 2012-08-04  0.5         TidyR tools   tidyR|dplyr
+
+Output:
+
+        date days                name      value2
+1 2012-06-12  1.0      Intro to stats probability
+2 2012-07-13  6.0 Stats Winter school           R
+3 2012-08-04  0.5         TidyR tools       tidyR
+4 2012-06-12  1.0      Intro to stats           R
+5 2012-07-13  6.0 Stats Winter school  regression
+6 2012-08-04  0.5         TidyR tools       dplyr
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=separate(p10_input1,`topics`,into=c('MORPH338','MORPH339'))
+
+        date days                name    MORPH338   MORPH339
+1 2012-06-12  1.0      Intro to stats probability          R
+2 2012-07-13  6.0 Stats Winter school           R regression
+3 2012-08-04  0.5         TidyR tools       tidyR      dplyr
+
+TBL_1=gather(TBL_3,MORPH341,value2,`MORPH338`,`MORPH339`)
+
+        date days                name MORPH341      value2
+1 2012-06-12  1.0      Intro to stats MORPH338 probability
+2 2012-07-13  6.0 Stats Winter school MORPH338           R
+3 2012-08-04  0.5         TidyR tools MORPH338       tidyR
+4 2012-06-12  1.0      Intro to stats MORPH339           R
+5 2012-07-13  6.0 Stats Winter school MORPH339  regression
+6 2012-08-04  0.5         TidyR tools MORPH339       dplyr
+
+morpheus=select(TBL_1,-`MORPH341`)
+
+        date days                name      value2
+1 2012-06-12  1.0      Intro to stats probability
+2 2012-07-13  6.0 Stats Winter school           R
+3 2012-08-04  0.5         TidyR tools       tidyR
+4 2012-06-12  1.0      Intro to stats           R
+5 2012-07-13  6.0 Stats Winter school  regression
+6 2012-08-04  0.5         TidyR tools       dplyr
+
+
+R program:
+
+TBL_3=separate(p10_input1,`topics`,into=c('MORPH338','MORPH339'))
+TBL_1=gather(TBL_3,MORPH341,value2,`MORPH338`,`MORPH339`)
+morpheus=select(TBL_1,-`MORPH341`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 26
+#sketches without SMT-based deduction= 118
+#partial programs with partial evaluation= 174
+#partial programs without partial evaluation= 1542
+Total time= 2.27 s

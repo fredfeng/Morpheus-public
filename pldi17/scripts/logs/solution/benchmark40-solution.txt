@@ -1,0 +1,7 @@
+TBL_5=group_by(p40_input1,`event_id`,`location`)
+TBL_2=summarise(TBL_5,mean_inc=mean(`income`))
+morpheus=inner_join(p40_input1,TBL_2)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,4,2,3)
+morpheus=arrange(morpheus,`mean_inc`)
+morpheus

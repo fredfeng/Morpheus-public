@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/29775461/tidyr-repeated-measures-multiple-variables-wide-format
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 3
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  Person Time Score1 Score2
+1   greg  Pre     75     76
+2   greg Post     86     85
+3  sally  Pre     85     86
+4  sally Post     80     78
+
+Output:
+
+  Person Post_Score1 Post_Score2 Pre_Score1 Pre_Score2
+1   greg          86          85         75         76
+2  sally          80          78         85         86
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p3_input1,MORPH72,MORPH71,`Score1`,`Score2`)
+
+  Person Time MORPH72 MORPH71
+1   greg  Pre  Score1      75
+2   greg Post  Score1      86
+3  sally  Pre  Score1      85
+4  sally Post  Score1      80
+5   greg  Pre  Score2      76
+6   greg Post  Score2      85
+7  sally  Pre  Score2      86
+8  sally Post  Score2      78
+
+TBL_1=unite(TBL_3,MORPH80,`Time`,`MORPH72`)
+
+  Person     MORPH80 MORPH71
+1   greg  Pre_Score1      75
+2   greg Post_Score1      86
+3  sally  Pre_Score1      85
+4  sally Post_Score1      80
+5   greg  Pre_Score2      76
+6   greg Post_Score2      85
+7  sally  Pre_Score2      86
+8  sally Post_Score2      78
+
+morpheus=spread(TBL_1,`MORPH80`,`MORPH71`)
+
+  Person Post_Score1 Post_Score2 Pre_Score1 Pre_Score2
+1   greg          86          85         75         76
+2  sally          80          78         85         86
+
+
+R program:
+
+TBL_3=gather(p3_input1,MORPH72,MORPH71,`Score1`,`Score2`)
+TBL_1=unite(TBL_3,MORPH80,`Time`,`MORPH72`)
+morpheus=spread(TBL_1,`MORPH80`,`MORPH71`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 8
+#partial programs with partial evaluation= 22
+#partial programs without partial evaluation= 93
+Total time= .22 s

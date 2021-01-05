@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/30941737/simple-table-with-dplyr-on-sequence-data

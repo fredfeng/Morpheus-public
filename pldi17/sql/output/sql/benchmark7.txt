@@ -1,0 +1,64 @@
+Morheus thread 1 finished.
+Loading benchmark: ../../benchmarks/sql/7/input.json
+Specs: ../../benchmarks/sql/7/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:7
+Depth:1
+Output table:s7_output1
+Input tables:s7_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec4/*
+specs/spec4/anti_join.json compName: anti_join
+specs/spec4/distinct.json compName: distinct
+specs/spec4/filter.json compName: filter
+specs/spec4/group_by.json compName: group_by
+specs/spec4/inner_join.json compName: inner_join
+specs/spec4/intersect.json compName: intersect
+specs/spec4/select.json compName: select
+specs/spec4/summarise.json compName: summarise
+Ngram re-reranked sketch file: sketches/size12-ngram.txt
+Mapping from string to vector file: sketches/size12-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+# sketches with deduction: 1
+# sketches without deduction: 2
+# predicates with deduction: 6
+# predicates without deduction: 27
+# predicates pruned (NA or size): 0
+# R calls: 40
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 12.169
+Deduction on partial evaluation:4.244
+R calls: 261.088
+Total time: 51.282
+[Percentage] R=509.122 Z3=32.0054 other=-441.127
+==================================================
+R program: 
+TBL_1=group_by(s7_input1,`level`)
+morpheus=summarise(TBL_1,MORPH22=mean(`age`))
+morpheus=as.data.frame(morpheus)
+morpheus

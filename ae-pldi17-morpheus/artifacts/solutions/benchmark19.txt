@@ -1,0 +1,141 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/30941737/simple-table-with-dplyr-on-sequence-data
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 19
+Category= C4
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+                     12:10                    12:20                    12:30
+1                  nuclear                  nuclear                  nuclear
+2                  nuclear                  nuclear                    child
+3                    child                    child                    child
+4                    child                    child                    child
+5                    child                    child                    child
+6 nuclear and acquaintance nuclear and acquaintance nuclear and acquaintance
+7 nuclear and acquaintance nuclear and acquaintance nuclear and acquaintance
+8                notnotnot                notnotnot                notnotnot
+9                  nuclear                  nuclear                  nuclear
+
+Output:
+
+                     value 12:10 12:20 12:30
+1                    child     3     3     4
+2                notnotnot     1     1     1
+3                  nuclear     3     3     2
+4 nuclear and acquaintance     2     2     2
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_7=gather(p19_input1,MORPH38,value,`12:10`,`12:20`,`12:30`)
+
+   MORPH38                    value
+1    12:10                  nuclear
+2    12:10                  nuclear
+3    12:10                    child
+4    12:10                    child
+5    12:10                    child
+6    12:10 nuclear and acquaintance
+7    12:10 nuclear and acquaintance
+8    12:10                notnotnot
+9    12:10                  nuclear
+10   12:20                  nuclear
+11   12:20                  nuclear
+12   12:20                    child
+13   12:20                    child
+14   12:20                    child
+15   12:20 nuclear and acquaintance
+16   12:20 nuclear and acquaintance
+17   12:20                notnotnot
+18   12:20                  nuclear
+19   12:30                  nuclear
+20   12:30                    child
+21   12:30                    child
+22   12:30                    child
+23   12:30                    child
+24   12:30 nuclear and acquaintance
+25   12:30 nuclear and acquaintance
+26   12:30                notnotnot
+27   12:30                  nuclear
+
+TBL_3=group_by(TBL_7,`MORPH38`,`value`)
+
+Source: local data frame [27 x 2]
+Groups: MORPH38, value [12]
+
+   MORPH38                    value
+     <chr>                    <chr>
+1    12:10                  nuclear
+2    12:10                  nuclear
+3    12:10                    child
+4    12:10                    child
+5    12:10                    child
+6    12:10 nuclear and acquaintance
+7    12:10 nuclear and acquaintance
+8    12:10                notnotnot
+9    12:10                  nuclear
+10   12:20                  nuclear
+# ... with 17 more rows
+
+TBL_1=summarise(TBL_3,MORPH39=n())
+
+Source: local data frame [12 x 3]
+Groups: MORPH38 [?]
+
+   MORPH38                    value MORPH39
+     <chr>                    <chr>   <int>
+1    12:10                    child       3
+2    12:10                notnotnot       1
+3    12:10                  nuclear       3
+4    12:10 nuclear and acquaintance       2
+5    12:20                    child       3
+6    12:20                notnotnot       1
+7    12:20                  nuclear       3
+8    12:20 nuclear and acquaintance       2
+9    12:30                    child       4
+10   12:30                notnotnot       1
+11   12:30                  nuclear       2
+12   12:30 nuclear and acquaintance       2
+
+morpheus=spread(TBL_1,`MORPH38`,`MORPH39`)
+
+# A tibble: 4 x 4
+                     value 12:10 12:20 12:30
+*                    <chr> <int> <int> <int>
+1                    child     3     3     4
+2                notnotnot     1     1     1
+3                  nuclear     3     3     2
+4 nuclear and acquaintance     2     2     2
+
+
+R program:
+
+TBL_7=gather(p19_input1,MORPH38,value,`12:10`,`12:20`,`12:30`)
+TBL_3=group_by(TBL_7,`MORPH38`,`value`)
+TBL_1=summarise(TBL_3,MORPH39=n())
+morpheus=spread(TBL_1,`MORPH38`,`MORPH39`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 7
+#sketches without SMT-based deduction= 26
+#partial programs with partial evaluation= 60
+#partial programs without partial evaluation= 85
+Total time= .56 s

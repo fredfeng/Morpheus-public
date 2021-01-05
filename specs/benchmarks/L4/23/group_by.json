@@ -1,0 +1,17 @@
+{
+  "id":7,
+  "name":"group_by",
+  "arguments":
+  [
+    "Table", 
+    "ColList"
+  ],
+  "template":"group_by(#Table0,#Unknown)",
+  "constraint":
+  [
+  "(declare-const CO_SPEC Int)(declare-const CI_SPEC Int)(declare-const RO_SPEC Int)(declare-const RI_SPEC Int)(assert (= RO_SPEC RI_SPEC))(assert (= CO_SPEC CI_SPEC))",
+  "(declare-const IG_SPEC Int)(declare-const OG_SPEC Int)(declare-const FRESH_K_SPEC Int)(assert (= OG_SPEC (+ FRESH_K_SPEC IG_SPEC)))(assert (>= FRESH_K_SPEC 1))",
+  "(declare-const IH_SPEC Int)(declare-const OH_SPEC Int)(assert (= IH_SPEC OH_SPEC))",
+  "(declare-const IC_SPEC Int)(declare-const OC_SPEC Int)(assert (= IC_SPEC OC_SPEC))"
+  ]
+}

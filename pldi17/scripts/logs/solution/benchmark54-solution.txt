@@ -1,0 +1,6 @@
+TBL_7=gather(p54_input1,key,MORPH16493,`Year.1`,`Year.2`)
+TBL_3=filter(TBL_7,`Strategy` != "Demand")
+TBL_1=group_by(TBL_3,`Geotype`,`key`)
+morpheus=summarise(TBL_1,sumVal=sum(`MORPH16493`))
+morpheus=as.data.frame(morpheus)
+morpheus

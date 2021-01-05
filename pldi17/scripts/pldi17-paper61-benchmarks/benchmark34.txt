@@ -1,0 +1,89 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/30374143/recursive-error-in-dplyr-mutate
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 34
+Category= C5
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input1:
+
+  size mult
+1    1    K
+2    2    M
+3    3    G
+
+Input2:
+
+  value mult
+1   230    K
+2   128    M
+3   420    G
+
+Output:
+
+  size mult total
+1    1    K   230
+2    2    M    64
+3    3    G   140
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=inner_join(p34_input2,p34_input1)
+
+  value mult size
+1   230    K    1
+2   128    M    2
+3   420    G    3
+
+TBL_1=mutate(TBL_3,total=value / size)
+
+  value mult size total
+1   230    K    1   230
+2   128    M    2    64
+3   420    G    3   140
+
+morpheus=select(TBL_1,-`value`)
+
+  mult size total
+1    K    1   230
+2    M    2    64
+3    G    3   140
+
+morpheus=select(morpheus,2,1,3)
+
+  size mult total
+1    1    K   230
+2    2    M    64
+3    3    G   140
+
+
+R program:
+
+TBL_3=inner_join(p34_input2,p34_input1)
+TBL_1=mutate(TBL_3,total=value / size)
+morpheus=select(TBL_1,-`value`)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,2,1,3)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 7
+#sketches without SMT-based deduction= 7
+#partial programs with partial evaluation= 35
+#partial programs without partial evaluation= 148
+Total time= .24 s

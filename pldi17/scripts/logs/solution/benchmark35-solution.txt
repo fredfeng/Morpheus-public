@@ -1,0 +1,6 @@
+TBL_3=inner_join(p35_input2,p35_input1)
+TBL_1=mutate(TBL_3,total=value / size)
+morpheus=select(TBL_1,-`value`)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,2,1,3)
+morpheus

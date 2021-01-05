@@ -1,0 +1,5 @@
+TBL_3=gather(p56_input1,MORPH2,MORPH1,-`posture`,-`code`)
+TBL_1=unite(TBL_3,MORPH302,`posture`,`MORPH2`)
+morpheus=spread(TBL_1,`MORPH302`,`MORPH1`)
+morpheus=as.data.frame(morpheus)
+morpheus

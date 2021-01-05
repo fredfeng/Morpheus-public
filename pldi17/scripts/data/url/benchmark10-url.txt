@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/25102617/are-there-more-elegant-ways-to-transform-ragged-data-into-a-tidy-dataframe

@@ -1,0 +1,17 @@
+{
+  "id":5,
+  "name":"unite",
+  "arguments":
+  [
+    "Table", 
+    "ColName",
+    "ColName",
+    "string"
+  ],
+  "template":"unite(#table,#STR0,`#0`,`#1`)",
+  "constraint":
+  [
+  "(declare-const CO_SPEC Int)(declare-const CI_SPEC Int)(declare-const RO_SPEC Int)(declare-const RI_SPEC Int)(assert (= RO_SPEC RI_SPEC))(assert (= CO_SPEC (- CI_SPEC 1)))",
+  "(define-sort Set () (Array Int Bool))(declare-const SET_I_SPEC (Set))(declare-const SET_O_SPEC (Set))(assert (not (= SET_I_SPEC SET_O_SPEC)))"
+  ]
+}

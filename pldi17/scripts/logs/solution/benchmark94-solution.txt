@@ -1,0 +1,4 @@
+TBL_1=filter(p94_input1,`salary` > 23400.000000)
+morpheus=summarise(TBL_1,mean=mean(`salary`))
+morpheus=as.data.frame(morpheus)
+morpheus

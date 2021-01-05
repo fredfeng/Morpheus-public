@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/31180006/clean-r-script-to-make-it-more-streamlined

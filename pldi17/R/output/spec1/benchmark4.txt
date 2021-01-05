@@ -1,0 +1,300 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/4/input.json
+Specs: ../../benchmarks/pldi17/4/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:4
+Depth:1
+Output table:p4_output1
+Input tables:p4_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `A`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `Year`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+Adding missing grouping variables: `id`
+# sketches with deduction: 8
+# sketches without deduction: 8
+# predicates with deduction: 18622
+# predicates without deduction: 18622
+# predicates pruned (NA or size): 1023
+# R calls: 19677
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 37.516
+Deduction on partial evaluation:3980.65
+R calls: 11710.8
+Total time: 20529.4
+[Percentage] R=57.0442 Z3=19.5727 other=23.383
+==================================================
+R program: 
+TBL_3=gather(p4_input1,MORPH12830,MORPH12829,`A`,`B`)
+TBL_1=unite(TBL_3,MORPH12837,`MORPH12830`,`Year`)
+morpheus=spread(TBL_1,`MORPH12837`,`MORPH12829`)
+morpheus=as.data.frame(morpheus)
+morpheus

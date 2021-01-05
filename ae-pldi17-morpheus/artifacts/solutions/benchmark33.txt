@@ -1,0 +1,98 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/34594641/dplyr-summary-table-for-multiple-variables
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 33
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  mpg_min cyl_min vs_min am_min gear_min carb_min mpg_q25 cyl_q25 vs_q25 am_q25
+1    10.4       4      0      0        3        1  15.425       4      0      0
+  gear_q25 carb_q25
+1        3        2
+
+Output:
+
+   var  min    q25
+1   am  0.0  0.000
+2 carb  1.0  2.000
+3  cyl  4.0  4.000
+4 gear  3.0  3.000
+5  mpg 10.4 15.425
+6   vs  0.0  0.000
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p33_input1,MORPH7988,MORPH7987,`mpg_min`,`cyl_min`,`vs_min`,`am_min`,`gear_min`,`carb_min`,`mpg_q25`,`cyl_q25`,`vs_q25`,`am_q25`,`gear_q25`,`carb_q25`)
+
+   MORPH7988 MORPH7987
+1    mpg_min    10.400
+2    cyl_min     4.000
+3     vs_min     0.000
+4     am_min     0.000
+5   gear_min     3.000
+6   carb_min     1.000
+7    mpg_q25    15.425
+8    cyl_q25     4.000
+9     vs_q25     0.000
+10    am_q25     0.000
+11  gear_q25     3.000
+12  carb_q25     2.000
+
+TBL_1=separate(TBL_3,`MORPH7988`,into=c('var','MORPH7992'))
+
+    var MORPH7992 MORPH7987
+1   mpg       min    10.400
+2   cyl       min     4.000
+3    vs       min     0.000
+4    am       min     0.000
+5  gear       min     3.000
+6  carb       min     1.000
+7   mpg       q25    15.425
+8   cyl       q25     4.000
+9    vs       q25     0.000
+10   am       q25     0.000
+11 gear       q25     3.000
+12 carb       q25     2.000
+
+morpheus=spread(TBL_1,`MORPH7992`,`MORPH7987`)
+
+   var  min    q25
+1   am  0.0  0.000
+2 carb  1.0  2.000
+3  cyl  4.0  4.000
+4 gear  3.0  3.000
+5  mpg 10.4 15.425
+6   vs  0.0  0.000
+
+
+R program:
+
+TBL_3=gather(p33_input1,MORPH7988,MORPH7987,`mpg_min`,`cyl_min`,`vs_min`,`am_min`,`gear_min`,`carb_min`,`mpg_q25`,`cyl_q25`,`vs_q25`,`am_q25`,`gear_q25`,`carb_q25`)
+TBL_1=separate(TBL_3,`MORPH7988`,into=c('var','MORPH7992'))
+morpheus=spread(TBL_1,`MORPH7992`,`MORPH7987`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 3
+#sketches without SMT-based deduction= 11
+#partial programs with partial evaluation= 1462
+#partial programs without partial evaluation= 10338
+Total time= 9.96 s

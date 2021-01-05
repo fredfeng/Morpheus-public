@@ -1,0 +1,68 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/39/input.json
+Specs: ../../benchmarks/pldi17/39/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p39_output1
+Input tables:p39_input1 p39_input2 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+Joining, by = "x"
+# sketches with deduction: 3
+# sketches without deduction: 3
+# predicates with deduction: 6
+# predicates without deduction: 22
+# predicates pruned (NA or size): 0
+# R calls: 58
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 25.536
+Deduction on partial evaluation:3.732
+R calls: 275.782
+Total time: 76.907
+[Percentage] R=358.592 Z3=38.0564 other=-296.648
+==================================================
+R program: 
+TBL_3=inner_join(p39_input2,p39_input1)
+TBL_1=group_by(TBL_3,`x`)
+morpheus=summarise(TBL_1,MORPH10=sum(`z`))
+morpheus=as.data.frame(morpheus)
+morpheus

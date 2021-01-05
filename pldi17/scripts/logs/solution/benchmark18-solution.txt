@@ -1,0 +1,6 @@
+TBL_7=gather(p18_input1,MORPH4133,address,`sender`,`recipient`)
+TBL_3=group_by(TBL_7,`MORPH4133`,`address`)
+TBL_1=summarise(TBL_3,MORPH4140=n())
+morpheus=spread(TBL_1,`MORPH4133`,`MORPH4140`)
+morpheus=as.data.frame(morpheus)
+morpheus

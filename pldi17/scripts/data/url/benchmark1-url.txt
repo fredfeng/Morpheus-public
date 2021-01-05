@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/39066811/long-to-wide-with-dplyr

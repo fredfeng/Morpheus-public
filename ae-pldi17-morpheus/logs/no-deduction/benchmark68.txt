@@ -1,0 +1,560 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/79/input.json
+Specs: ../../benchmarks/pldi17/79/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Output table:p79_output1
+Input tables:p79_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Adding missing grouping variables: `mpg`
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "am")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "am")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "vs")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = c("mpg", "cyl")
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "vs"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "cyl"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+Joining, by = "mpg"
+# sketches with deduction: 52
+# sketches without deduction: 52
+# predicates with deduction: 200670
+# predicates without deduction: 200670
+# predicates pruned (NA or size): 23410
+# R calls: 229879
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 208.136
+Deduction on partial evaluation:43547.7
+R calls: 161697
+Total time: 261211
+[Percentage] R=61.903 Z3=16.7512 other=21.3458
+==================================================
+R program: 
+TBL_3=unite(p79_input1,MORPH109402,`am`,`vs`)
+TBL_1=group_by(TBL_3,`MORPH109402`)
+morpheus=summarise(TBL_1,MORPH109430=n())
+morpheus=as.data.frame(morpheus)
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

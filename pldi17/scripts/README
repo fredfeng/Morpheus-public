@@ -1,0 +1,7 @@
+1. Put all logs into 'logs' directory
+
+2. Run ./logs/preprocessing.sh
+
+3. Run ./generate-all.sh
+
+All your the output files should now be in the clean directory.

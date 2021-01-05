@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/37351448/gathering-with-tidyr-from-wide-to-long-format-by-start-of-column-name

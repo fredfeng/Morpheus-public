@@ -1,0 +1,91 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/38511378/finding-the-mean-of-a-value-based-on-multiple-variables
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 73
+Category= C6
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  vial_id band non_spec      reads
+1       1    1        1 -1.7906249
+2       2    0        0  1.3883798
+3       3    0        1  0.4490315
+4       4    2        1  0.9137950
+5       5    1        1 -1.5885563
+6       6    2        1  0.4183408
+
+Output:
+
+  group_id group_mean
+1      0_0  1.3883798
+2      0_1  0.4490315
+3      1_1 -1.6895906
+4      2_1  0.6660679
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=unite(p73_input1,group_id,`band`,`non_spec`)
+
+  vial_id group_id      reads
+1       1      1_1 -1.7906249
+2       2      0_0  1.3883798
+3       3      0_1  0.4490315
+4       4      2_1  0.9137950
+5       5      1_1 -1.5885563
+6       6      2_1  0.4183408
+
+TBL_1=group_by(TBL_3,`group_id`)
+
+Source: local data frame [6 x 3]
+Groups: group_id [4]
+
+  vial_id group_id      reads
+*   <dbl>    <chr>      <dbl>
+1       1      1_1 -1.7906249
+2       2      0_0  1.3883798
+3       3      0_1  0.4490315
+4       4      2_1  0.9137950
+5       5      1_1 -1.5885563
+6       6      2_1  0.4183408
+
+morpheus=summarise(TBL_1,group_mean=mean(`reads`))
+
+# A tibble: 4 x 2
+  group_id group_mean
+     <chr>      <dbl>
+1      0_0  1.3883798
+2      0_1  0.4490315
+3      1_1 -1.6895906
+4      2_1  0.6660679
+
+
+R program:
+
+TBL_3=unite(p73_input1,group_id,`band`,`non_spec`)
+TBL_1=group_by(TBL_3,`group_id`)
+morpheus=summarise(TBL_1,group_mean=mean(`reads`))
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 13
+#sketches without SMT-based deduction= 52
+#partial programs with partial evaluation= 230
+#partial programs without partial evaluation= 3245
+Total time= 3.40 s

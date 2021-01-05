@@ -1,0 +1,111 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/37292968/fast-way-vectorization-to-apply-a-list-of-functions-to-corresponding-columns
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 11
+Category= C8
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+       expr     time
+1 base__1d4  4203379
+2 base__1d4  4219165
+3 base__1d5 59249811
+4 base__1d5 59249833
+5 dplyr_1d4  4911550
+6 dplyr_1d4  4911533
+7 dplyr_1d5 72271322
+8 dplyr_1d5 63373463
+
+Output:
+
+  size     base    dplyr     ratio
+1  1d4  4211272  4911542 0.8574237
+2  1d5 59249822 67822392 0.8736027
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_15=group_by(p11_input1,`expr`)
+
+Source: local data frame [8 x 2]
+Groups: expr [4]
+
+       expr     time
+      <chr>    <dbl>
+1 base__1d4  4203379
+2 base__1d4  4219165
+3 base__1d5 59249811
+4 base__1d5 59249833
+5 dplyr_1d4  4911550
+6 dplyr_1d4  4911533
+7 dplyr_1d5 72271322
+8 dplyr_1d5 63373463
+
+TBL_7=summarise(TBL_15,MORPH6832=mean(`time`))
+
+# A tibble: 4 x 2
+       expr MORPH6832
+      <chr>     <dbl>
+1 base__1d4   4211272
+2 base__1d5  59249822
+3 dplyr_1d4   4911542
+4 dplyr_1d5  67822392
+
+TBL_3=separate(TBL_7,`expr`,into=c('MORPH6835','size'))
+
+# A tibble: 4 x 3
+  MORPH6835  size MORPH6832
+*     <chr> <chr>     <dbl>
+1      base   1d4   4211272
+2      base   1d5  59249822
+3     dplyr   1d4   4911542
+4     dplyr   1d5  67822392
+
+TBL_1=spread(TBL_3,`MORPH6835`,`MORPH6832`)
+
+# A tibble: 2 x 3
+   size     base    dplyr
+* <chr>    <dbl>    <dbl>
+1   1d4  4211272  4911542
+2   1d5 59249822 67822392
+
+morpheus=mutate(TBL_1,ratio=base / dplyr)
+
+# A tibble: 2 x 4
+   size     base    dplyr     ratio
+  <chr>    <dbl>    <dbl>     <dbl>
+1   1d4  4211272  4911542 0.8574237
+2   1d5 59249822 67822392 0.8736027
+
+
+R program:
+
+TBL_15=group_by(p11_input1,`expr`)
+TBL_7=summarise(TBL_15,MORPH6832=mean(`time`))
+TBL_3=separate(TBL_7,`expr`,into=c('MORPH6835','size'))
+TBL_1=spread(TBL_3,`MORPH6835`,`MORPH6832`)
+morpheus=mutate(TBL_1,ratio=base / dplyr)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 69
+#sketches without SMT-based deduction= 274
+#partial programs with partial evaluation= 2379
+#partial programs without partial evaluation= 8543
+Total time= 14.29 s

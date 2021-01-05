@@ -1,0 +1,123 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/39956852/r-sum-every-n-rows-across-n-columns
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 52
+Category= C4
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  Geotype   Strategy Year.1 Year.2
+1       A     Demand      1      5
+2       A Strategy_1      2      6
+3       A Strategy_2      3      7
+4       B     Demand      8      8
+5       B Strategy_1      9      9
+6       B Strategy_2     10     10
+
+Output:
+
+  Geotype Year.1 Year.2
+1       A      5     13
+2       B     19     19
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_15=gather(p52_input1,MORPH49865,MORPH49864,`Year.1`,`Year.2`)
+
+   Geotype   Strategy MORPH49865 MORPH49864
+1        A     Demand     Year.1          1
+2        A Strategy_1     Year.1          2
+3        A Strategy_2     Year.1          3
+4        B     Demand     Year.1          8
+5        B Strategy_1     Year.1          9
+6        B Strategy_2     Year.1         10
+7        A     Demand     Year.2          5
+8        A Strategy_1     Year.2          6
+9        A Strategy_2     Year.2          7
+10       B     Demand     Year.2          8
+11       B Strategy_1     Year.2          9
+12       B Strategy_2     Year.2         10
+
+TBL_7=filter(TBL_15,`Strategy` != "Demand")
+
+  Geotype   Strategy MORPH49865 MORPH49864
+1       A Strategy_1     Year.1          2
+2       A Strategy_2     Year.1          3
+3       B Strategy_1     Year.1          9
+4       B Strategy_2     Year.1         10
+5       A Strategy_1     Year.2          6
+6       A Strategy_2     Year.2          7
+7       B Strategy_1     Year.2          9
+8       B Strategy_2     Year.2         10
+
+TBL_3=group_by(TBL_7,`Geotype`,`MORPH49865`)
+
+Source: local data frame [8 x 4]
+Groups: Geotype, MORPH49865 [4]
+
+  Geotype   Strategy MORPH49865 MORPH49864
+    <chr>      <chr>      <chr>      <dbl>
+1       A Strategy_1     Year.1          2
+2       A Strategy_2     Year.1          3
+3       B Strategy_1     Year.1          9
+4       B Strategy_2     Year.1         10
+5       A Strategy_1     Year.2          6
+6       A Strategy_2     Year.2          7
+7       B Strategy_1     Year.2          9
+8       B Strategy_2     Year.2         10
+
+TBL_1=summarise(TBL_3,MORPH51377=sum(`MORPH49864`))
+
+Source: local data frame [4 x 3]
+Groups: Geotype [?]
+
+  Geotype MORPH49865 MORPH51377
+    <chr>      <chr>      <dbl>
+1       A     Year.1          5
+2       A     Year.2         13
+3       B     Year.1         19
+4       B     Year.2         19
+
+morpheus=spread(TBL_1,`MORPH49865`,`MORPH51377`)
+
+Source: local data frame [2 x 3]
+Groups: Geotype [2]
+
+  Geotype Year.1 Year.2
+*   <chr>  <dbl>  <dbl>
+1       A      5     13
+2       B     19     19
+
+
+R program:
+
+TBL_15=gather(p52_input1,MORPH49865,MORPH49864,`Year.1`,`Year.2`)
+TBL_7=filter(TBL_15,`Strategy` != "Demand")
+TBL_3=group_by(TBL_7,`Geotype`,`MORPH49865`)
+TBL_1=summarise(TBL_3,MORPH51377=sum(`MORPH49864`))
+morpheus=spread(TBL_1,`MORPH49865`,`MORPH51377`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 59
+#sketches without SMT-based deduction= 142
+#partial programs with partial evaluation= 30512
+#partial programs without partial evaluation= 155920
+Total time= 291.96 s

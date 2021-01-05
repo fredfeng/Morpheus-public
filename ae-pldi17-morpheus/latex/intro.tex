@@ -1,0 +1,7 @@
+\section{Introduction}
+
+This report describes how to reproduce the main results of the PLDI'17 paper ``Component-based Synthesis of Table Consolidation and Transformation Tasks from Examples''. We consider the main results of the paper to be the ``Summary of experimental results'' presented in Figure 16 and the ``Cumulative running time of \toolname'' presented in Figure 17.
+
+To facilitate the reviewing process we provide a virtual machine image available at \url{https://www.google.com/drive/}. We have installed \toolname on this virtual machine and created bash scripts to run \toolname and collect the results.
+
+After downloading and importing the virtual machine, the reviewer can find all files related to \toolname in the directory \code{/home/morpheus/ae-pldi17-morpheus}. In the remainder of this report, we will refer to subdirectories of this directory. For instance, in the subdirectory \code{artifacts} the reviewer can find the files ``\emph{figure16.csv}'' and ``\emph{figure17.pdf}'' that correspond to the main results presented in the paper. The subdirectory \code{artifacts/solutions} provides a description of each benchmark and shows how \toolname can be used to solve them. In particular, the reviewer can find: (i) Stackoverflow post, (ii) input-output tables, (iii) synthesized solution by \toolname, and (iv) statistics on the running time and impact of deduction.

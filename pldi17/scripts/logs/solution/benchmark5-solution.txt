@@ -1,0 +1,7 @@
+TBL_3=gather(p5_input1,MORPH394,P,-`ID`,-`T`)
+TBL_1=separate(TBL_3,`MORPH394`,into=c('MORPH469','Channel'))
+morpheus=select(TBL_1,-`MORPH469`)
+morpheus=as.data.frame(morpheus)
+morpheus[,3] = as.numeric(morpheus[,3])
+morpheus=select(morpheus,1,3,2,4)
+morpheus

@@ -1,0 +1,109 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/26019915/how-to-spread-or-cast-multiple-values-in-r
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 76
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+     x y value.1 value.2
+1  red a       1      13
+2  red b       2      14
+3  red c       3      15
+4  red d       4      16
+5 blue a       5      17
+6 blue b       6      18
+7 blue c       7      19
+8 blue d       8      20
+
+Output:
+
+     x value.1_a value.1_b value.1_c value.1_d value.2_a value.2_b value.2_c
+1 blue         5         6         7         8        17        18        19
+2  red         1         2         3         4        13        14        15
+  value.2_d
+1        20
+2        16
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p76_input1,MORPH72,MORPH71,`value.1`,`value.2`)
+
+      x y MORPH72 MORPH71
+1   red a value.1       1
+2   red b value.1       2
+3   red c value.1       3
+4   red d value.1       4
+5  blue a value.1       5
+6  blue b value.1       6
+7  blue c value.1       7
+8  blue d value.1       8
+9   red a value.2      13
+10  red b value.2      14
+11  red c value.2      15
+12  red d value.2      16
+13 blue a value.2      17
+14 blue b value.2      18
+15 blue c value.2      19
+16 blue d value.2      20
+
+TBL_1=unite(TBL_3,MORPH79,`MORPH72`,`y`)
+
+      x   MORPH79 MORPH71
+1   red value.1_a       1
+2   red value.1_b       2
+3   red value.1_c       3
+4   red value.1_d       4
+5  blue value.1_a       5
+6  blue value.1_b       6
+7  blue value.1_c       7
+8  blue value.1_d       8
+9   red value.2_a      13
+10  red value.2_b      14
+11  red value.2_c      15
+12  red value.2_d      16
+13 blue value.2_a      17
+14 blue value.2_b      18
+15 blue value.2_c      19
+16 blue value.2_d      20
+
+morpheus=spread(TBL_1,`MORPH79`,`MORPH71`)
+
+     x value.1_a value.1_b value.1_c value.1_d value.2_a value.2_b value.2_c
+1 blue         5         6         7         8        17        18        19
+2  red         1         2         3         4        13        14        15
+  value.2_d
+1        20
+2        16
+
+
+R program:
+
+TBL_3=gather(p76_input1,MORPH72,MORPH71,`value.1`,`value.2`)
+TBL_1=unite(TBL_3,MORPH79,`MORPH72`,`y`)
+morpheus=spread(TBL_1,`MORPH79`,`MORPH71`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 8
+#partial programs with partial evaluation= 20
+#partial programs without partial evaluation= 90
+Total time= .17 s

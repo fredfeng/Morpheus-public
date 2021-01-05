@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/29523974/cleaning-data-when-variables-are-column-names

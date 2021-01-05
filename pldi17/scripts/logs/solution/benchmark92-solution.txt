@@ -1,0 +1,8 @@
+TBL_7=filter(p92_input1,`year` > 2014.000000)
+TBL_3=group_by(TBL_7,`type`)
+TBL_1=summarise(TBL_3,freq=n())
+morpheus=inner_join(TBL_1,p92_input1)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,3,4,1,2)
+morpheus=arrange(morpheus,`obs`)
+morpheus

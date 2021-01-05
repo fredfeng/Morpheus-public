@@ -1,0 +1,5 @@
+TBL_3=filter(p78_input1,`name` == "Kerry")
+TBL_1=select(TBL_3,-`name`)
+morpheus=spread(TBL_1,`sex`,`n`)
+morpheus=as.data.frame(morpheus)
+morpheus

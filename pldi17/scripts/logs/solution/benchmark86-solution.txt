@@ -1,0 +1,6 @@
+TBL_7=unite(p86_input1,MORPH42009,`species`,`inf_status`)
+TBL_3=group_by(TBL_7,`site`,`MORPH42009`)
+TBL_1=summarise(TBL_3,MORPH42025=sum(`TOT`))
+morpheus=spread(TBL_1,`MORPH42009`,`MORPH42025`)
+morpheus=as.data.frame(morpheus)
+morpheus

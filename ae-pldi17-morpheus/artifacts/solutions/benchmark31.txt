@@ -1,0 +1,102 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/33401788/dplyr-using-mutate-like-rowmeans
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 31
+Category= C9
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+   id a b c
+1 101 1 2 3
+2 102 2 2 3
+3 103 3 2 3
+
+Output:
+
+   id     mean a b c
+1 101 2.000000 1 2 3
+2 102 2.333333 2 2 3
+3 103 2.666667 3 2 3
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_7=gather(p31_input1,MORPH26762,MORPH26761,-`id`)
+
+   id MORPH26762 MORPH26761
+1 101          a          1
+2 102          a          2
+3 103          a          3
+4 101          b          2
+5 102          b          2
+6 103          b          2
+7 101          c          3
+8 102          c          3
+9 103          c          3
+
+TBL_3=group_by(TBL_7,`id`)
+
+Source: local data frame [9 x 3]
+Groups: id [3]
+
+     id MORPH26762 MORPH26761
+  <dbl>      <chr>      <dbl>
+1   101          a          1
+2   102          a          2
+3   103          a          3
+4   101          b          2
+5   102          b          2
+6   103          b          2
+7   101          c          3
+8   102          c          3
+9   103          c          3
+
+TBL_1=summarise(TBL_3,mean=mean(`MORPH26761`))
+
+# A tibble: 3 x 2
+     id     mean
+  <dbl>    <dbl>
+1   101 2.000000
+2   102 2.333333
+3   103 2.666667
+
+morpheus=inner_join(TBL_1,p31_input1)
+
+# A tibble: 3 x 5
+     id     mean     a     b     c
+  <dbl>    <dbl> <dbl> <dbl> <dbl>
+1   101 2.000000     1     2     3
+2   102 2.333333     2     2     3
+3   103 2.666667     3     2     3
+
+
+R program:
+
+TBL_7=gather(p31_input1,MORPH26762,MORPH26761,-`id`)
+TBL_3=group_by(TBL_7,`id`)
+TBL_1=summarise(TBL_3,mean=mean(`MORPH26761`))
+morpheus=inner_join(TBL_1,p31_input1)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 46
+#sketches without SMT-based deduction= 125
+#partial programs with partial evaluation= 16082
+#partial programs without partial evaluation= 51417
+Total time= 97.30 s

@@ -1,0 +1,5 @@
+TBL_3=filter(p84_input1,`d` > 0.000000)
+TBL_1=group_by(TBL_3,`a`,`b`)
+morpheus=summarise(TBL_1,mean_d=mean(`d`))
+morpheus=as.data.frame(morpheus)
+morpheus

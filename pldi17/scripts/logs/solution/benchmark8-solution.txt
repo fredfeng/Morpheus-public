@@ -1,0 +1,8 @@
+TBL_15=group_by(p8_input1,`Name`)
+TBL_7=summarise(TBL_15,avg2=mean(`Rate2`))
+TBL_3=inner_join(TBL_7,p8_input1)
+TBL_1=group_by(TBL_3,`Name`,`avg2`)
+morpheus=summarise(TBL_1,avg1=mean(`Rate1`))
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,3,2)
+morpheus

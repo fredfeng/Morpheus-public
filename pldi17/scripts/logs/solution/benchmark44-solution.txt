@@ -1,0 +1,5 @@
+TBL_3=gather(p44_input1,MORPH492,MORPH491,-`Day`)
+TBL_1=separate(TBL_3,`MORPH492`,into=c('Group','MORPH548'))
+morpheus=spread(TBL_1,`MORPH548`,`MORPH491`)
+morpheus=as.data.frame(morpheus)
+morpheus

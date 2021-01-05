@@ -1,0 +1,69 @@
+Morheus thread 3 finished.
+Loading benchmark: ../../benchmarks/pldi17/33/input.json
+Specs: ../../benchmarks/pldi17/33/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p33_output1
+Input tables:p33_input1
+Sketch (Components):3 1 -1 4 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size4-ngram.txt
+Mapping from string to vector file: sketches/size4-map.txt
+begin to synthesize.....
+# sketches with deduction: 6
+# sketches without deduction: 51
+# predicates with deduction: 8227
+# predicates without deduction: 35013
+# predicates pruned (NA or size): 25480
+# R calls: 62589
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 342.514
+Deduction on partial evaluation:7084.45
+R calls: 54975.1
+Total time: 75146.4
+[Percentage] R=73.1573 Z3=9.88333 other=16.9593
+==================================================
+R program:
+TBL_7=gather(p33_input1,MORPH26186,MORPH26185,-`rowname`,-`CA`)
+TBL_3=separate(TBL_7,`MORPH26186`,into=c('MORPH26841','MORPH26842'))
+TBL_1=spread(TBL_3,`MORPH26841`,`MORPH26185`)
+morpheus=select(TBL_1,-`rowname`,-`MORPH26842`)
+morpheus=as.data.frame(morpheus)
+morpheus[,3] = as.numeric(morpheus[,3])
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,97 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/36660152/concatenating-words-without-quotes-in-r-for-groupby-in-dplyr
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 68
+Category= C6
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+   mpg cyl vs am
+1 21.0   6  0  1
+2 21.0   6  0  1
+3 22.8   4  1  1
+4 21.4   6  1  0
+5 18.7   8  0  0
+6 18.1   6  1  0
+7 14.3   8  0  0
+8 24.4   4  1  0
+
+Output:
+
+  vs_am countofvalues
+1   0_0             2
+2   0_1             2
+3   1_0             3
+4   1_1             1
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=unite(p68_input1,vs_am,`am`,`vs`)
+
+   mpg cyl vs_am
+1 21.0   6   1_0
+2 21.0   6   1_0
+3 22.8   4   1_1
+4 21.4   6   0_1
+5 18.7   8   0_0
+6 18.1   6   0_1
+7 14.3   8   0_0
+8 24.4   4   0_1
+
+TBL_1=group_by(TBL_3,`vs_am`)
+
+Source: local data frame [8 x 3]
+Groups: vs_am [4]
+
+    mpg   cyl vs_am
+* <dbl> <dbl> <chr>
+1  21.0     6   1_0
+2  21.0     6   1_0
+3  22.8     4   1_1
+4  21.4     6   0_1
+5  18.7     8   0_0
+6  18.1     6   0_1
+7  14.3     8   0_0
+8  24.4     4   0_1
+
+morpheus=summarise(TBL_1,countofvalues=n())
+
+# A tibble: 4 x 2
+  vs_am countofvalues
+  <chr>         <int>
+1   0_0             2
+2   0_1             3
+3   1_0             2
+4   1_1             1
+
+
+R program:
+
+TBL_3=unite(p68_input1,vs_am,`am`,`vs`)
+TBL_1=group_by(TBL_3,`vs_am`)
+morpheus=summarise(TBL_1,countofvalues=n())
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 14
+#sketches without SMT-based deduction= 52
+#partial programs with partial evaluation= 177
+#partial programs without partial evaluation= 2554
+Total time= 2.65 s

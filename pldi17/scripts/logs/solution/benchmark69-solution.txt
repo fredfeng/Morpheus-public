@@ -1,0 +1,7 @@
+TBL_15=group_by(p69_input1,`qs`,`Ans`)
+TBL_7=summarise(TBL_15,MORPH1836=n())
+TBL_3=mutate(TBL_7,MORPH1839=MORPH1836 / sum(MORPH1836))
+TBL_1=select(TBL_3,`Ans`,`MORPH1839`)
+morpheus=spread(TBL_1,`Ans`,`MORPH1839`)
+morpheus=as.data.frame(morpheus)
+morpheus

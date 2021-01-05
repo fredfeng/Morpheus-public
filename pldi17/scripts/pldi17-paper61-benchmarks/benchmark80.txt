@@ -1,0 +1,107 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/34944841/data-manipulation
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 80
+Category= C1
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  order_id Prod1 prod2 Prod3 Prod4 Prod5
+1        A     1     0     1     1     1
+2        B     0     0     1     1     0
+3        C     1     1     0     1     1
+
+Output:
+
+   order_id   var
+1         A Prod1
+2         C Prod1
+3         C prod2
+4         A Prod3
+5         B Prod3
+6         A Prod4
+7         B Prod4
+8         C Prod4
+9         A Prod5
+10        C Prod5
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p80_input1,var,MORPH1244,-`order_id`)
+
+   order_id   var MORPH1244
+1         A Prod1         1
+2         B Prod1         0
+3         C Prod1         1
+4         A prod2         0
+5         B prod2         0
+6         C prod2         1
+7         A Prod3         1
+8         B Prod3         1
+9         C Prod3         0
+10        A Prod4         1
+11        B Prod4         1
+12        C Prod4         1
+13        A Prod5         1
+14        B Prod5         0
+15        C Prod5         1
+
+TBL_1=filter(TBL_3,`MORPH1244` > 0.000000)
+
+   order_id   var MORPH1244
+1         A Prod1         1
+2         C Prod1         1
+3         C prod2         1
+4         A Prod3         1
+5         B Prod3         1
+6         A Prod4         1
+7         B Prod4         1
+8         C Prod4         1
+9         A Prod5         1
+10        C Prod5         1
+
+morpheus=select(TBL_1,`order_id`,`var`)
+
+   order_id   var
+1         A Prod1
+2         C Prod1
+3         C prod2
+4         A Prod3
+5         B Prod3
+6         A Prod4
+7         B Prod4
+8         C Prod4
+9         A Prod5
+10        C Prod5
+
+
+R program:
+
+TBL_3=gather(p80_input1,var,MORPH1244,-`order_id`)
+TBL_1=filter(TBL_3,`MORPH1244` > 0.000000)
+morpheus=select(TBL_1,`order_id`,`var`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 5
+#sketches without SMT-based deduction= 17
+#partial programs with partial evaluation= 316
+#partial programs without partial evaluation= 2170
+Total time= 2.18 s

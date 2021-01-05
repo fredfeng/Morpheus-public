@@ -1,0 +1,5 @@
+TBL_3=gather(p22_input1,Var,MORPH2221,`Passes`,`Tackles`)
+TBL_1=group_by(TBL_3,`Var`)
+morpheus=summarise(TBL_1,Mean=mean(`MORPH2221`))
+morpheus=as.data.frame(morpheus)
+morpheus

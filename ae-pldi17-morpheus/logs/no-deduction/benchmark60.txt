@@ -1,0 +1,364 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/63/input.json
+Specs: ../../benchmarks/pldi17/63/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Output table:p63_output1
+Input tables:p63_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `lower.limit`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `median`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Variables`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+Adding missing grouping variables: `Market`
+# sketches with deduction: 8
+# sketches without deduction: 8
+# predicates with deduction: 19942
+# predicates without deduction: 19942
+# predicates pruned (NA or size): 3566
+# R calls: 23745
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 33.596
+Deduction on partial evaluation:4205.81
+R calls: 15284.4
+Total time: 24195.9
+[Percentage] R=63.1694 Z3=17.5212 other=19.3094
+==================================================
+R program: 
+TBL_3=gather(p63_input1,MORPH12902,MORPH12901,-`Market`,-`Variables`)
+TBL_1=unite(TBL_3,MORPH13198,`Variables`,`MORPH12902`)
+morpheus=spread(TBL_1,`MORPH13198`,`MORPH12901`)
+morpheus=as.data.frame(morpheus)
+morpheus

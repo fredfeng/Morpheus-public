@@ -1,0 +1,7 @@
+TBL_7=gather(p14_input1,MORPH144074,MORPH144073,-`ID`)
+TBL_3=separate(TBL_7,`MORPH144074`,into=c('MORPH144281','value'))
+TBL_1=filter(TBL_3,`MORPH144073` > 0.000000)
+morpheus=select(TBL_1,`ID`,`value`)
+morpheus=as.data.frame(morpheus)
+morpheus[,2] = as.numeric(morpheus[,2])
+morpheus

@@ -1,0 +1,158 @@
+Morheus thread 3 finished.
+Loading benchmark: ../../benchmarks/sql/1/input.json
+Specs: ../../benchmarks/sql/1/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:s1_output1
+Input tables:s1_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec4/*
+specs/spec4/anti_join.json compName: anti_join
+specs/spec4/distinct.json compName: distinct
+specs/spec4/filter.json compName: filter
+specs/spec4/group_by.json compName: group_by
+specs/spec4/inner_join.json compName: inner_join
+specs/spec4/intersect.json compName: intersect
+specs/spec4/select.json compName: select
+specs/spec4/summarise.json compName: summarise
+Ngram re-reranked sketch file: sketches/size4-ngram.txt
+Mapping from string to vector file: sketches/size4-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+Adding missing grouping variables: `S_name`
+# sketches with deduction: 1
+# sketches without deduction: 2
+# predicates with deduction: 64
+# predicates without deduction: 578
+# predicates pruned (NA or size): 165
+# R calls: 814
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 17.146
+Deduction on partial evaluation:157.052
+R calls: 806.224
+Total time: 909.995
+[Percentage] R=88.5965 Z3=19.1427 other=-7.73927
+==================================================
+R program: 
+TBL_7=group_by(s1_input1,`S_name`,`level`)
+TBL_3=summarise(TBL_7,MORPH1=n())
+TBL_1=filter(TBL_3,`S_name` == "stu1" | `S_name` == "stu5")
+morpheus=select(TBL_1,`S_name`)
+morpheus=as.data.frame(morpheus)
+morpheus

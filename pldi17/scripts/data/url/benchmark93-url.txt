@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/26885345/dplyr-using-filter-group-by-from-within-mutate-command

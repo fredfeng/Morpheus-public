@@ -1,0 +1,91 @@
+mutate
+filter
+select
+summarise
+spread
+inner_join
+gather
+separate
+unite
+group_by summarise
+mutate select
+filter select
+gather mutate
+filter filter
+mutate filter
+gather select
+mutate spread
+filter mutate
+filter summarise
+gather filter
+gather spread
+separate spread
+select mutate
+select spread
+gather separate
+inner_join mutate
+unite spread
+mutate summarise
+select summarise
+inner_join select
+separate mutate
+gather unite
+spread select
+inner_join filter
+spread mutate
+summarise mutate
+filter spread
+summarise spread
+mutate inner_join
+mutate inner_join
+select inner_join
+select inner_join
+separate select
+separate filter
+gather inner_join
+gather inner_join
+unite mutate
+separate inner_join
+separate inner_join
+mutate gather
+summarise filter
+summarise select
+inner_join summarise
+gather summarise
+filter inner_join
+filter inner_join
+mutate separate
+select gather
+summarise inner_join
+summarise inner_join
+spread filter
+separate gather
+spread summarise
+filter gather
+unite select
+mutate unite
+filter separate
+spread inner_join
+spread inner_join
+inner_join gather
+separate unite
+unite unite
+inner_join spread
+select separate
+filter unite
+select unite
+spread gather
+unite filter
+separate summarise
+summarise gather
+unite separate
+inner_join unite
+summarise separate
+unite summarise
+spread separate
+spread unite
+summarise unite
+unite gather
+unite inner_join
+unite inner_join
+inner_join separate

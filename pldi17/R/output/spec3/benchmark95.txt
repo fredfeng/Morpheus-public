@@ -1,0 +1,66 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/95/input.json
+Specs: ../../benchmarks/pldi17/95/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p95_output1
+Input tables:p95_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+# sketches with deduction: 5
+# sketches without deduction: 17
+# predicates with deduction: 316
+# predicates without deduction: 2170
+# predicates pruned (NA or size): 76
+# R calls: 2319
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 106.067
+Deduction on partial evaluation:273.814
+R calls: 1467.6
+Total time: 2181.9
+[Percentage] R=67.2623 Z3=17.4106 other=15.3271
+==================================================
+R program: 
+TBL_3=gather(p95_input1,MORPH1245,MORPH1244,-`order_id`)
+TBL_1=filter(TBL_3,`MORPH1244` > 0.000000)
+morpheus=select(TBL_1,`order_id`,`MORPH1245`)
+morpheus=as.data.frame(morpheus)
+morpheus

@@ -1,0 +1,8 @@
+TBL_15=gather(p7_input1,MORPH72960,MORPH72959,-`GeneID`,-`D.8`)
+TBL_7=separate(TBL_15,`MORPH72960`,into=c('MORPH73167','pt.num'))
+TBL_3=spread(TBL_7,`MORPH73167`,`MORPH72959`)
+TBL_1=mutate(TBL_3,Ratio=D / T)
+morpheus=select(TBL_1,-`D.8`)
+morpheus=as.data.frame(morpheus)
+morpheus[,2] = as.numeric(morpheus[,2])
+morpheus

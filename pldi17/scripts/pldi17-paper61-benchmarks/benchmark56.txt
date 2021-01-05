@@ -1,0 +1,112 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/32070474/how-to-loop-set-of-commands-with-different-variable-each-time-in-r
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 56
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  sample  BMI var1_LRR var1_BAF var2_LRR var2_BAF var3_LRR var3_BAF var200_LRR
+1     AA 18.9     0.27     0.99     0.18     0.99     0.11        1       0.20
+2     BB 27.1     0.23     1.00     0.13     0.99     0.17        1       0.23
+  var200_BAF
+1       0.99
+2       0.99
+
+Output:
+
+  sample  BMI varNew  BAF  LRR
+1     AA 18.9   var1 0.99 0.27
+2     AA 18.9   var2 0.99 0.18
+3     AA 18.9 var200 0.99 0.20
+4     AA 18.9   var3 1.00 0.11
+5     BB 27.1   var1 1.00 0.23
+6     BB 27.1   var2 0.99 0.13
+7     BB 27.1 var200 0.99 0.23
+8     BB 27.1   var3 1.00 0.17
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p56_input1,MORPH118,MORPH117,-`sample`,-`BMI`)
+
+   sample  BMI   MORPH118 MORPH117
+1      AA 18.9   var1_LRR     0.27
+2      BB 27.1   var1_LRR     0.23
+3      AA 18.9   var1_BAF     0.99
+4      BB 27.1   var1_BAF     1.00
+5      AA 18.9   var2_LRR     0.18
+6      BB 27.1   var2_LRR     0.13
+7      AA 18.9   var2_BAF     0.99
+8      BB 27.1   var2_BAF     0.99
+9      AA 18.9   var3_LRR     0.11
+10     BB 27.1   var3_LRR     0.17
+11     AA 18.9   var3_BAF     1.00
+12     BB 27.1   var3_BAF     1.00
+13     AA 18.9 var200_LRR     0.20
+14     BB 27.1 var200_LRR     0.23
+15     AA 18.9 var200_BAF     0.99
+16     BB 27.1 var200_BAF     0.99
+
+TBL_1=separate(TBL_3,`MORPH118`,into=c('varNew','MORPH186'))
+
+   sample  BMI varNew MORPH186 MORPH117
+1      AA 18.9   var1      LRR     0.27
+2      BB 27.1   var1      LRR     0.23
+3      AA 18.9   var1      BAF     0.99
+4      BB 27.1   var1      BAF     1.00
+5      AA 18.9   var2      LRR     0.18
+6      BB 27.1   var2      LRR     0.13
+7      AA 18.9   var2      BAF     0.99
+8      BB 27.1   var2      BAF     0.99
+9      AA 18.9   var3      LRR     0.11
+10     BB 27.1   var3      LRR     0.17
+11     AA 18.9   var3      BAF     1.00
+12     BB 27.1   var3      BAF     1.00
+13     AA 18.9 var200      LRR     0.20
+14     BB 27.1 var200      LRR     0.23
+15     AA 18.9 var200      BAF     0.99
+16     BB 27.1 var200      BAF     0.99
+
+morpheus=spread(TBL_1,`MORPH186`,`MORPH117`)
+
+  sample  BMI varNew  BAF  LRR
+1     AA 18.9   var1 0.99 0.27
+2     AA 18.9   var2 0.99 0.18
+3     AA 18.9 var200 0.99 0.20
+4     AA 18.9   var3 1.00 0.11
+5     BB 27.1   var1 1.00 0.23
+6     BB 27.1   var2 0.99 0.13
+7     BB 27.1 var200 0.99 0.23
+8     BB 27.1   var3 1.00 0.17
+
+
+R program:
+
+TBL_3=gather(p56_input1,MORPH118,MORPH117,-`sample`,-`BMI`)
+TBL_1=separate(TBL_3,`MORPH118`,into=c('varNew','MORPH186'))
+morpheus=spread(TBL_1,`MORPH186`,`MORPH117`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 11
+#partial programs with partial evaluation= 121
+#partial programs without partial evaluation= 415
+Total time= .94 s

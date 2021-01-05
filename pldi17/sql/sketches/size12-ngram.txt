@@ -1,0 +1,46 @@
+filter
+select
+summarise
+inner_join
+distinct
+anti_join
+intersect
+group_by summarise
+filter select
+filter summarise
+select summarise
+inner_join select
+select distinct
+inner_join filter
+filter distinct
+select inner_join
+select inner_join
+summarise filter
+summarise select
+inner_join summarise
+anti_join filter
+anti_join select
+filter inner_join
+filter inner_join
+filter intersect
+filter intersect
+intersect select
+intersect filter
+summarise inner_join
+summarise inner_join
+select anti_join
+select anti_join
+filter anti_join
+filter anti_join
+select intersect
+select intersect
+inner_join distinct
+anti_join summarise
+summarise distinct
+intersect summarise
+summarise anti_join
+summarise anti_join
+anti_join distinct
+summarise intersect
+summarise intersect
+intersect distinct

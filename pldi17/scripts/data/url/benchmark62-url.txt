@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/35825137/r-calculate-the-speed-up-factor-from-data-frame

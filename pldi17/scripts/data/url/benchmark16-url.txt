@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/29756767/r-summarize-qualitative-data-based-on-quantitative-subsets-dplyr

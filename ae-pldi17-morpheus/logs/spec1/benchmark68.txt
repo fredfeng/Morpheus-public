@@ -1,0 +1,196 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/79/input.json
+Specs: ../../benchmarks/pldi17/79/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Output table:p79_output1
+Input tables:p79_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec2/*
+specs/spec2/filter.json compName: filter
+specs/spec2/gather.json compName: gather
+specs/spec2/group_by.json compName: group_by
+specs/spec2/inner_join.json compName: inner_join
+specs/spec2/mutate.json compName: mutate
+specs/spec2/select.json compName: select
+specs/spec2/separate.json compName: separate
+specs/spec2/spread.json compName: spread
+specs/spec2/summarise.json compName: summarise
+specs/spec2/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `vs`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Adding missing grouping variables: `cyl`
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("vs", "am")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+Joining, by = c("cyl", "vs")
+# sketches with deduction: 35
+# sketches without deduction: 52
+# predicates with deduction: 7098
+# predicates without deduction: 45019
+# predicates pruned (NA or size): 2635
+# R calls: 53300
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 245.592
+Deduction on partial evaluation:4889.47
+R calls: 31306.5
+Total time: 47268
+[Percentage] R=66.2319 Z3=10.8637 other=22.9044
+==================================================
+R program: 
+TBL_3=unite(p79_input1,MORPH31319,`am`,`vs`)
+TBL_1=group_by(TBL_3,`MORPH31319`)
+morpheus=summarise(TBL_1,MORPH31347=n())
+morpheus=as.data.frame(morpheus)
+morpheus
+There were 46 warnings (use warnings() to see them)

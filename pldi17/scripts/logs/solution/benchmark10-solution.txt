@@ -1,0 +1,5 @@
+TBL_3=separate(p10_input1,`topics`,into=c('MORPH338','MORPH339'))
+TBL_1=gather(TBL_3,MORPH341,value2,`MORPH338`,`MORPH339`)
+morpheus=select(TBL_1,-`MORPH341`)
+morpheus=as.data.frame(morpheus)
+morpheus

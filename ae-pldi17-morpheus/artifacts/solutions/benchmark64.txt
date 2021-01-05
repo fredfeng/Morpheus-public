@@ -1,0 +1,115 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/27724106/group-by-and-conditionally-count
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 64
+Category= C2
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  ST Rfips   zip Year  dist.km
+1 PA 42107 17972 2010  0.00000
+2 VA 51760 23226 2005 42.46894
+3 RI 44001  2806 2010 28.11234
+4 NJ 34001  8330 2008 36.85470
+5 PA 51061 20118 2007  0.00000
+6 VT 50023  5681 2006 49.72765
+7 NY 36029 14072 2005  0.00000
+8 PA 42101 19115 2008 30.19372
+9 NC 37019 28451 2009  0.00000
+
+Output:
+
+  ST total
+1 NC     1
+2 NY     1
+3 PA     2
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_7=group_by(p64_input1,`ST`,`dist.km`)
+
+Source: local data frame [9 x 5]
+Groups: ST, dist.km [8]
+
+     ST Rfips   zip  Year  dist.km
+  <chr> <dbl> <dbl> <dbl>    <dbl>
+1    PA 42107 17972  2010  0.00000
+2    VA 51760 23226  2005 42.46894
+3    RI 44001  2806  2010 28.11234
+4    NJ 34001  8330  2008 36.85470
+5    PA 51061 20118  2007  0.00000
+6    VT 50023  5681  2006 49.72765
+7    NY 36029 14072  2005  0.00000
+8    PA 42101 19115  2008 30.19372
+9    NC 37019 28451  2009  0.00000
+
+TBL_3=summarise(TBL_7,total=n())
+
+Source: local data frame [8 x 3]
+Groups: ST [?]
+
+     ST  dist.km total
+  <chr>    <dbl> <int>
+1    NC  0.00000     1
+2    NJ 36.85470     1
+3    NY  0.00000     1
+4    PA  0.00000     2
+5    PA 30.19372     1
+6    RI 28.11234     1
+7    VA 42.46894     1
+8    VT 49.72765     1
+
+TBL_1=filter(TBL_3,`dist.km` < 28.112340)
+
+Source: local data frame [3 x 3]
+Groups: ST [3]
+
+     ST dist.km total
+  <chr>   <dbl> <int>
+1    NC       0     1
+2    NY       0     1
+3    PA       0     2
+
+morpheus=select(TBL_1,`ST`,`total`)
+
+Source: local data frame [3 x 2]
+Groups: ST [3]
+
+     ST total
+  <chr> <int>
+1    NC     1
+2    NY     1
+3    PA     2
+
+
+R program:
+
+TBL_7=group_by(p64_input1,`ST`,`dist.km`)
+TBL_3=summarise(TBL_7,total=n())
+TBL_1=filter(TBL_3,`dist.km` < 28.112340)
+morpheus=select(TBL_1,`ST`,`total`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 3
+#sketches without SMT-based deduction= 3
+#partial programs with partial evaluation= 40
+#partial programs without partial evaluation= 529
+Total time= .59 s

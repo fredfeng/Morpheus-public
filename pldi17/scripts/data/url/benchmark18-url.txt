@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/34553225/whats-a-better-way-to-summarize-this-data-frame

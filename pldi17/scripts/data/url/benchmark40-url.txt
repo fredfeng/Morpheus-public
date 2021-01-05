@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/36783872/r-dplyr-how-to-include-more-columns-from-the-original-data-frame-data-table-a

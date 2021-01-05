@@ -1,0 +1,9 @@
+TBL_5=group_by(p30_input1,`sym`,`a2`)
+TBL_3=group_by(p30_input1,`a1`,`a2`)
+TBL_2=summarise(TBL_5,b2.mean=mean(`b2`))
+TBL_1=summarise(TBL_3,b1.mean=mean(`b2`))
+morpheus=inner_join(TBL_1,TBL_2)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,4,1,3,2,5)
+morpheus=arrange(morpheus,`b1.mean`)
+morpheus

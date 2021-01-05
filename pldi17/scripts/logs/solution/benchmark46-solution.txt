@@ -1,0 +1,5 @@
+TBL_3=gather(p46_input1,MORPH1029,MORPH1028,-`V1`,-`V2`)
+TBL_1=filter(TBL_3,`MORPH1028` != "EMP")
+morpheus=spread(TBL_1,`MORPH1029`,`MORPH1028`)
+morpheus=as.data.frame(morpheus)
+morpheus

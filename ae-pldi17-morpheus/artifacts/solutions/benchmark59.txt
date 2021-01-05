@@ -1,0 +1,109 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/35825137/r-calculate-the-speed-up-factor-from-data-frame
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 59
+Category= C4
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+       V2         V3 V4
+1  CCRG10 BranchDBMS  2
+2  CCRG10  CacheDBMS  3
+3  CCRG20 BranchDBMS  7
+4  CCRG20  CacheDBMS  2
+5  CCRG30 BranchDBMS 15
+6  CCRG30  CacheDBMS  5
+7  CCRG40 BranchDBMS 62
+8  CCRG40  CacheDBMS  7
+9  CCRG50 BranchDBMS 58
+10 CCRG50  CacheDBMS 11
+
+Output:
+
+       V2        key      value
+1  CCRG10 BranchDBMS  2.0000000
+2  CCRG20 BranchDBMS  7.0000000
+3  CCRG30 BranchDBMS 15.0000000
+4  CCRG40 BranchDBMS 62.0000000
+5  CCRG50 BranchDBMS 58.0000000
+6  CCRG10  CacheDBMS  3.0000000
+7  CCRG20  CacheDBMS  2.0000000
+8  CCRG30  CacheDBMS  5.0000000
+9  CCRG40  CacheDBMS  7.0000000
+10 CCRG50  CacheDBMS 11.0000000
+11 CCRG10    wtimRes  0.6666667
+12 CCRG20    wtimRes  3.5000000
+13 CCRG30    wtimRes  3.0000000
+14 CCRG40    wtimRes  8.8571429
+15 CCRG50    wtimRes  5.2727273
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=spread(p59_input1,`V3`,`V4`)
+
+      V2 BranchDBMS CacheDBMS
+1 CCRG10          2         3
+2 CCRG20          7         2
+3 CCRG30         15         5
+4 CCRG40         62         7
+5 CCRG50         58        11
+
+TBL_1=mutate(TBL_3,MORPH712=BranchDBMS / CacheDBMS)
+
+      V2 BranchDBMS CacheDBMS  MORPH712
+1 CCRG10          2         3 0.6666667
+2 CCRG20          7         2 3.5000000
+3 CCRG30         15         5 3.0000000
+4 CCRG40         62         7 8.8571429
+5 CCRG50         58        11 5.2727273
+
+morpheus=gather(TBL_1,key,value,-`V2`)
+
+       V2        key      value
+1  CCRG10 BranchDBMS  2.0000000
+2  CCRG20 BranchDBMS  7.0000000
+3  CCRG30 BranchDBMS 15.0000000
+4  CCRG40 BranchDBMS 62.0000000
+5  CCRG50 BranchDBMS 58.0000000
+6  CCRG10  CacheDBMS  3.0000000
+7  CCRG20  CacheDBMS  2.0000000
+8  CCRG30  CacheDBMS  5.0000000
+9  CCRG40  CacheDBMS  7.0000000
+10 CCRG50  CacheDBMS 11.0000000
+11 CCRG10   MORPH712  0.6666667
+12 CCRG20   MORPH712  3.5000000
+13 CCRG30   MORPH712  3.0000000
+14 CCRG40   MORPH712  8.8571429
+15 CCRG50   MORPH712  5.2727273
+
+
+R program:
+
+TBL_3=spread(p59_input1,`V3`,`V4`)
+TBL_1=mutate(TBL_3,MORPH712=BranchDBMS / CacheDBMS)
+morpheus=gather(TBL_1,key,value,-`V2`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 70
+#sketches without SMT-based deduction= 338
+#partial programs with partial evaluation= 341
+#partial programs without partial evaluation= 1782
+Total time= 4.29 s

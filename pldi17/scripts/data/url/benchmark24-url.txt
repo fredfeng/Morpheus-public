@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/35277274/r-data-frame-get-value-from-variable-which-is-selected-by-another-variable-vect

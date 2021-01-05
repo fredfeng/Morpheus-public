@@ -1,0 +1,95 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/33549927/counting-the-times-a-value-in-a-vector-is-different-per-combination-of-4-other-v
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 25
+Category= C8
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  a b
+1 1 1
+2 1 2
+3 4 3
+4 4 3
+5 1 2
+6 1 2
+
+Output:
+
+  key_ab e
+1    1_2 3
+2    4_3 2
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_7=filter(p25_input1,`b` > 1.000000)
+
+  a b
+1 1 2
+2 4 3
+3 4 3
+4 1 2
+5 1 2
+
+TBL_3=unite(TBL_7,key_ab,`a`,`b`)
+
+  key_ab
+1    1_2
+2    4_3
+3    4_3
+4    1_2
+5    1_2
+
+TBL_1=group_by(TBL_3,`key_ab`)
+
+Source: local data frame [5 x 1]
+Groups: key_ab [2]
+
+  key_ab
+*  <chr>
+1    1_2
+2    4_3
+3    4_3
+4    1_2
+5    1_2
+
+morpheus=summarise(TBL_1,e=n())
+
+# A tibble: 2 x 2
+  key_ab     e
+   <chr> <int>
+1    1_2     3
+2    4_3     2
+
+
+R program:
+
+TBL_7=filter(p25_input1,`b` > 1.000000)
+TBL_3=unite(TBL_7,key_ab,`a`,`b`)
+TBL_1=group_by(TBL_3,`key_ab`)
+morpheus=summarise(TBL_1,e=n())
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 263
+#sketches without SMT-based deduction= 537
+#partial programs with partial evaluation= 5346
+#partial programs without partial evaluation= 25487
+Total time= 27.94 s

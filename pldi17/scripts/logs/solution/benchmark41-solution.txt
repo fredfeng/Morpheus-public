@@ -1,0 +1,5 @@
+TBL_3=inner_join(p41_input2,p41_input1)
+TBL_1=group_by(TBL_3,`ID`)
+morpheus=summarise(TBL_1,AvgLogFC=mean(`logFC`))
+morpheus=as.data.frame(morpheus)
+morpheus

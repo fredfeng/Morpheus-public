@@ -1,0 +1,71 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/35/input.json
+Specs: ../../benchmarks/pldi17/35/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p35_output1
+Input tables:p35_input1 p35_input2 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+Joining, by = "mult"
+Joining, by = "mult"
+Joining, by = "mult"
+# sketches with deduction: 7
+# sketches without deduction: 7
+# predicates with deduction: 35
+# predicates without deduction: 148
+# predicates pruned (NA or size): 0
+# R calls: 317
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 46.705
+Deduction on partial evaluation:18.899
+R calls: 363.254
+Total time: 242.753
+[Percentage] R=149.639 Z3=27.025 other=-76.6643
+==================================================
+R program: 
+TBL_3=inner_join(p35_input2,p35_input1)
+TBL_1=mutate(TBL_3,total=value / size)
+morpheus=select(TBL_1,-`value`)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,2,1,3)
+morpheus

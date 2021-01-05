@@ -1,0 +1,6 @@
+TBL_7=gather(p82_input1,genre,MORPH22554,`Action`,`Sci.Fi`)
+TBL_3=filter(TBL_7,`MORPH22554` > 0.000000)
+TBL_1=group_by(TBL_3,`genre`)
+morpheus=summarise(TBL_1,average=mean(`Rating`))
+morpheus=as.data.frame(morpheus)
+morpheus

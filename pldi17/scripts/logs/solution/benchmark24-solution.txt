@@ -1,0 +1,6 @@
+TBL_3=gather(p24_input1,MORPH1429,value,-`id`,-`var`)
+TBL_1=filter(TBL_3,`value` > 1090.000000)
+morpheus=select(TBL_1,-`MORPH1429`)
+morpheus=as.data.frame(morpheus)
+morpheus=arrange(morpheus,`id`)
+morpheus

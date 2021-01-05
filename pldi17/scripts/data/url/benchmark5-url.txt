@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/29844056/how-to-transform-data-frame-with-different-column-names-from-wide-to-long-with

@@ -1,0 +1,113 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= https://stackoverflow.com/questions/32993797/r-rowsums-if-colnames-match-two-arguments-in-a-second-attribute-table
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 28
+Category= C5
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input1:
+
+  ID  Species Value
+1  1 Callvulg  0.55
+2  2 Callvulg  0.67
+3  3 Callvulg  0.10
+4  1 Empenigr 11.13
+5  2 Empenigr  0.17
+6  3 Empenigr  1.55
+7  1 Rhodtome  0.17
+8  2 Rhodtome  1.55
+9  3 Rhodtome  3.00
+
+Input2:
+
+   Species Attribute
+1 Callvulg        MI
+2 Empenigr        MI
+3 Rhodtome        PI
+
+Output:
+
+  ID Total
+1  1 11.68
+2  2  0.84
+3  3  1.65
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_7=inner_join(p28_input2,p28_input1)
+
+   Species Attribute ID Value
+1 Callvulg        MI  1  0.55
+2 Callvulg        MI  2  0.67
+3 Callvulg        MI  3  0.10
+4 Empenigr        MI  1 11.13
+5 Empenigr        MI  2  0.17
+6 Empenigr        MI  3  1.55
+7 Rhodtome        PI  1  0.17
+8 Rhodtome        PI  2  1.55
+9 Rhodtome        PI  3  3.00
+
+TBL_3=filter(TBL_7,`Attribute` == "MI")
+
+   Species Attribute ID Value
+1 Callvulg        MI  1  0.55
+2 Callvulg        MI  2  0.67
+3 Callvulg        MI  3  0.10
+4 Empenigr        MI  1 11.13
+5 Empenigr        MI  2  0.17
+6 Empenigr        MI  3  1.55
+
+TBL_1=group_by(TBL_3,`ID`)
+
+Source: local data frame [6 x 4]
+Groups: ID [3]
+
+   Species Attribute    ID Value
+     <chr>     <chr> <dbl> <dbl>
+1 Callvulg        MI     1  0.55
+2 Callvulg        MI     2  0.67
+3 Callvulg        MI     3  0.10
+4 Empenigr        MI     1 11.13
+5 Empenigr        MI     2  0.17
+6 Empenigr        MI     3  1.55
+
+morpheus=summarise(TBL_1,Total=sum(`Value`))
+
+# A tibble: 3 x 2
+     ID Total
+  <dbl> <dbl>
+1     1 11.68
+2     2  0.84
+3     3  1.65
+
+
+R program:
+
+TBL_7=inner_join(p28_input2,p28_input1)
+TBL_3=filter(TBL_7,`Attribute` == "MI")
+TBL_1=group_by(TBL_3,`ID`)
+morpheus=summarise(TBL_1,Total=sum(`Value`))
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 8
+#sketches without SMT-based deduction= 8
+#partial programs with partial evaluation= 949
+#partial programs without partial evaluation= 3642
+Total time= 4.55 s

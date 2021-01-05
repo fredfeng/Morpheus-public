@@ -1,0 +1,7 @@
+TBL_15=filter(p16_input1,`W2` > 26.860000)
+TBL_7=group_by(TBL_15,`Color`)
+TBL_3=summarise(TBL_7,sumCount=n())
+TBL_1=group_by(TBL_3,`Color`,`sumCount`)
+morpheus=summarise(TBL_1,sumMean=mean(`sumCount`))
+morpheus=as.data.frame(morpheus)
+morpheus

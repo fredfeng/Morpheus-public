@@ -1,0 +1,6 @@
+TBL_7=gather(p81_input1,MORPH2127,MORPH2126,`Var1`,`Var2`)
+TBL_3=separate(TBL_7,`Subject`,into=c('SubjectNew','MORPH2137'))
+TBL_1=unite(TBL_3,MORPH2142,`MORPH2127`,`MORPH2137`)
+morpheus=spread(TBL_1,`MORPH2142`,`MORPH2126`)
+morpheus=as.data.frame(morpheus)
+morpheus

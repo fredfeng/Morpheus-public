@@ -1,0 +1,120 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/34553225/whats-a-better-way-to-summarize-this-data-frame
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 18
+Category= C4
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  message.id sender recipient
+1          1      A         A
+2          1      A         C
+3          2      A         B
+4          3      B         C
+5          3      C         D
+6          3      D         B
+
+Output:
+
+  address recipient sender
+1       A         1      3
+2       B         2      1
+3       C         2      1
+4       D         1      1
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_7=gather(p18_input1,MORPH4133,address,`sender`,`recipient`)
+
+   message.id MORPH4133 address
+1           1    sender       A
+2           1    sender       A
+3           2    sender       A
+4           3    sender       B
+5           3    sender       C
+6           3    sender       D
+7           1 recipient       A
+8           1 recipient       C
+9           2 recipient       B
+10          3 recipient       C
+11          3 recipient       D
+12          3 recipient       B
+
+TBL_3=group_by(TBL_7,`MORPH4133`,`address`)
+
+Source: local data frame [12 x 3]
+Groups: MORPH4133, address [8]
+
+   message.id MORPH4133 address
+        <dbl>     <chr>   <chr>
+1           1    sender       A
+2           1    sender       A
+3           2    sender       A
+4           3    sender       B
+5           3    sender       C
+6           3    sender       D
+7           1 recipient       A
+8           1 recipient       C
+9           2 recipient       B
+10          3 recipient       C
+11          3 recipient       D
+12          3 recipient       B
+
+TBL_1=summarise(TBL_3,MORPH4140=n())
+
+Source: local data frame [8 x 3]
+Groups: MORPH4133 [?]
+
+  MORPH4133 address MORPH4140
+      <chr>   <chr>     <int>
+1 recipient       A         1
+2 recipient       B         2
+3 recipient       C         2
+4 recipient       D         1
+5    sender       A         3
+6    sender       B         1
+7    sender       C         1
+8    sender       D         1
+
+morpheus=spread(TBL_1,`MORPH4133`,`MORPH4140`)
+
+# A tibble: 4 x 3
+  address recipient sender
+*   <chr>     <int>  <int>
+1       A         1      3
+2       B         2      1
+3       C         2      1
+4       D         1      1
+
+
+R program:
+
+TBL_7=gather(p18_input1,MORPH4133,address,`sender`,`recipient`)
+TBL_3=group_by(TBL_7,`MORPH4133`,`address`)
+TBL_1=summarise(TBL_3,MORPH4140=n())
+morpheus=spread(TBL_1,`MORPH4133`,`MORPH4140`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 20
+#sketches without SMT-based deduction= 26
+#partial programs with partial evaluation= 2078
+#partial programs without partial evaluation= 6637
+Total time= 9.05 s

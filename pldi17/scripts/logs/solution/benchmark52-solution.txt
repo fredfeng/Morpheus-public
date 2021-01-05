@@ -1,0 +1,5 @@
+TBL_3=gather(p52_input1,MORPH118,MORPH117,-`Scenario`)
+TBL_1=separate(TBL_3,`MORPH118`,into=c('varNew','MORPH194'))
+morpheus=spread(TBL_1,`MORPH194`,`MORPH117`)
+morpheus=as.data.frame(morpheus)
+morpheus

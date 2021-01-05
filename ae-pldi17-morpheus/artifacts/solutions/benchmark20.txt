@@ -1,0 +1,99 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/37332076/from-long-to-wide-data-with-multiple-columns
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 20
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  group  times action_rate action_rate2
+1     a before        0.10         0.20
+2     a  after        0.15         0.25
+3     b before        0.20         0.30
+4     b  after        0.18         0.28
+
+Output:
+
+  group action_rate_after action_rate_before action_rate2_after
+1     a              0.15                0.1               0.25
+2     b              0.18                0.2               0.28
+  action_rate2_before
+1                 0.2
+2                 0.3
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p20_input1,MORPH72,MORPH71,`action_rate`,`action_rate2`)
+
+  group  times      MORPH72 MORPH71
+1     a before  action_rate    0.10
+2     a  after  action_rate    0.15
+3     b before  action_rate    0.20
+4     b  after  action_rate    0.18
+5     a before action_rate2    0.20
+6     a  after action_rate2    0.25
+7     b before action_rate2    0.30
+8     b  after action_rate2    0.28
+
+TBL_1=unite(TBL_3,MORPH77,`MORPH72`,`times`)
+
+  group             MORPH77 MORPH71
+1     a  action_rate_before    0.10
+2     a   action_rate_after    0.15
+3     b  action_rate_before    0.20
+4     b   action_rate_after    0.18
+5     a action_rate2_before    0.20
+6     a  action_rate2_after    0.25
+7     b action_rate2_before    0.30
+8     b  action_rate2_after    0.28
+
+morpheus=spread(TBL_1,`MORPH77`,`MORPH71`)
+
+  group action_rate_after action_rate_before action_rate2_after
+1     a              0.15                0.1               0.25
+2     b              0.18                0.2               0.28
+  action_rate2_before
+1                 0.2
+2                 0.3
+
+morpheus=select(morpheus,1,4,5,2,3)
+
+  group action_rate2_after action_rate2_before action_rate_after
+1     a               0.25                 0.2              0.15
+2     b               0.28                 0.3              0.18
+  action_rate_before
+1                0.1
+2                0.2
+
+
+R program:
+
+TBL_3=gather(p20_input1,MORPH72,MORPH71,`action_rate`,`action_rate2`)
+TBL_1=unite(TBL_3,MORPH77,`MORPH72`,`times`)
+morpheus=spread(TBL_1,`MORPH77`,`MORPH71`)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,4,5,2,3)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 8
+#partial programs with partial evaluation= 17
+#partial programs without partial evaluation= 88
+Total time= .21 s

@@ -1,0 +1,68 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/34/input.json
+Specs: ../../benchmarks/pldi17/34/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 0
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p34_output1
+Input tables:p34_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+# sketches with deduction: 3
+# sketches without deduction: 11
+# predicates with deduction: 36788
+# predicates without deduction: 36788
+# predicates pruned (NA or size): 3195
+# R calls: 40164
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 70.013
+Deduction on partial evaluation:0
+R calls: 42403.1
+Total time: 52366
+[Percentage] R=80.9746 Z3=0.133699 other=18.8917
+==================================================
+R program: 
+TBL_3=gather(p34_input1,MORPH19555,MORPH19554,`mpg_min`,`cyl_min`,`vs_min`,`am_min`,`gear_min`,`carb_min`,`mpg_q25`,`cyl_q25`,`vs_q25`,`am_q25`,`gear_q25`,`carb_q25`)
+TBL_1=separate(TBL_3,`MORPH19555`,into=c('MORPH19558','MORPH19559'))
+morpheus=spread(TBL_1,`MORPH19559`,`MORPH19554`)
+morpheus=as.data.frame(morpheus)
+morpheus
+Warning message:
+Too few values at 10 locations: 2, 3, 4, 5, 6, 8, 9, 10, 11, 12 

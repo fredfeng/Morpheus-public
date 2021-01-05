@@ -1,0 +1,5 @@
+TBL_3=unite(p79_input1,vs_am,`am`,`vs`)
+TBL_1=group_by(TBL_3,`vs_am`)
+morpheus=summarise(TBL_1,countofvalues=n())
+morpheus=as.data.frame(morpheus)
+morpheus

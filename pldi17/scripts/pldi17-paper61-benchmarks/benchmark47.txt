@@ -1,0 +1,98 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/30471828/create-conditional-new-variables-in-r
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 47
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+     id age_1 age_2 favCol_1 favCol_2
+1 user1    20    21     blue      red
+2 user2    25    34      red     blue
+3 user3    32    33     blue      red
+
+Output:
+
+     id panel age favCol
+1 user1     1  20   blue
+2 user1     2  21    red
+3 user2     1  25    red
+4 user2     2  34   blue
+5 user3     1  32   blue
+6 user3     2  33    red
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p47_input1,MORPH2,MORPH1,-`id`)
+
+      id   MORPH2 MORPH1
+1  user1    age_1     20
+2  user2    age_1     25
+3  user3    age_1     32
+4  user1    age_2     21
+5  user2    age_2     34
+6  user3    age_2     33
+7  user1 favCol_1   blue
+8  user2 favCol_1    red
+9  user3 favCol_1   blue
+10 user1 favCol_2    red
+11 user2 favCol_2   blue
+12 user3 favCol_2    red
+
+TBL_1=separate(TBL_3,`MORPH2`,into=c('MORPH33','panel'))
+
+      id MORPH33 panel MORPH1
+1  user1     age     1     20
+2  user2     age     1     25
+3  user3     age     1     32
+4  user1     age     2     21
+5  user2     age     2     34
+6  user3     age     2     33
+7  user1  favCol     1   blue
+8  user2  favCol     1    red
+9  user3  favCol     1   blue
+10 user1  favCol     2    red
+11 user2  favCol     2   blue
+12 user3  favCol     2    red
+
+morpheus=spread(TBL_1,`MORPH33`,`MORPH1`)
+
+     id panel age favCol
+1 user1     1  20   blue
+2 user1     2  21    red
+3 user2     1  25    red
+4 user2     2  34   blue
+5 user3     1  32   blue
+6 user3     2  33    red
+
+
+R program:
+
+TBL_3=gather(p47_input1,MORPH2,MORPH1,-`id`)
+TBL_1=separate(TBL_3,`MORPH2`,into=c('MORPH33','panel'))
+morpheus=spread(TBL_1,`MORPH33`,`MORPH1`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 1
+#sketches without SMT-based deduction= 10
+#partial programs with partial evaluation= 9
+#partial programs without partial evaluation= 29
+Total time= .13 s

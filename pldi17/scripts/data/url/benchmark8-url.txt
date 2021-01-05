@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/21982987/mean-per-group-in-a-data-frame

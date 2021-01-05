@@ -1,0 +1,13 @@
+{
+  "id":8,
+  "depth":3,
+  "input":
+  [
+    "b8_input1"
+  ],
+  "output":"b8_output1",
+  "sketch":
+  [
+    3,2,-1,0,-1,-1,-1
+  ]
+}

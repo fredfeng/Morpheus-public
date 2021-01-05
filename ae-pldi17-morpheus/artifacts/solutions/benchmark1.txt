@@ -1,0 +1,91 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/39066811/long-to-wide-with-dplyr
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 1
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+   round var1 var2 nam        val
+1 round1   22   33 foo 0.16912201
+2 round2   11   44 foo 0.18570826
+3 round1   22   33 bar 0.12410581
+4 round2   11   44 bar 0.03258235
+
+Output:
+
+  nam val_round1 val_round2 var1_round1 var1_round2 var2_round1 var2_round2
+1 bar  0.1241058 0.03258235          22          11          33          44
+2 foo  0.1691220 0.18570826          22          11          33          44
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p1_input1,MORPH2,MORPH1,-`round`,-`nam`)
+
+    round nam MORPH2      MORPH1
+1  round1 foo   var1 22.00000000
+2  round2 foo   var1 11.00000000
+3  round1 bar   var1 22.00000000
+4  round2 bar   var1 11.00000000
+5  round1 foo   var2 33.00000000
+6  round2 foo   var2 44.00000000
+7  round1 bar   var2 33.00000000
+8  round2 bar   var2 44.00000000
+9  round1 foo    val  0.16912201
+10 round2 foo    val  0.18570826
+11 round1 bar    val  0.12410581
+12 round2 bar    val  0.03258235
+
+TBL_1=unite(TBL_3,MORPH159,`MORPH2`,`round`)
+
+      MORPH159 nam      MORPH1
+1  var1_round1 foo 22.00000000
+2  var1_round2 foo 11.00000000
+3  var1_round1 bar 22.00000000
+4  var1_round2 bar 11.00000000
+5  var2_round1 foo 33.00000000
+6  var2_round2 foo 44.00000000
+7  var2_round1 bar 33.00000000
+8  var2_round2 bar 44.00000000
+9   val_round1 foo  0.16912201
+10  val_round2 foo  0.18570826
+11  val_round1 bar  0.12410581
+12  val_round2 bar  0.03258235
+
+morpheus=spread(TBL_1,`MORPH159`,`MORPH1`)
+
+  nam val_round1 val_round2 var1_round1 var1_round2 var2_round1 var2_round2
+1 bar  0.1241058 0.03258235          22          11          33          44
+2 foo  0.1691220 0.18570826          22          11          33          44
+
+
+R program:
+
+TBL_3=gather(p1_input1,MORPH2,MORPH1,-`round`,-`nam`)
+TBL_1=unite(TBL_3,MORPH159,`MORPH2`,`round`)
+morpheus=spread(TBL_1,`MORPH159`,`MORPH1`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 1
+#sketches without SMT-based deduction= 8
+#partial programs with partial evaluation= 158
+#partial programs without partial evaluation= 303
+Total time= 1.35 s

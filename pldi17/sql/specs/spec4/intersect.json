@@ -1,0 +1,15 @@
+{
+  "id":15,
+  "name":"intersect",
+  "arguments":
+  [
+    "Table", 
+    "Table"
+  ],
+  "template":"intersect(#Table0,#Table1)",
+  "constraint":
+  [
+  "(declare-const CO_SPEC Int)(declare-const RO_SPEC Int)(declare-const CI_SPEC Int)(declare-const CI2_SPEC Int)(declare-const RI_SPEC Int)(declare-const RI2_SPEC Int)(assert (and (= CO_SPEC 1) (= CI2_SPEC 1) (= CI_SPEC 1)))",
+  "(define-sort Set () (Array Int Bool))(declare-const SET_I_SPEC (Set))(declare-const SET_I2_SPEC (Set))(declare-const SET_O_SPEC (Set))(assert (= SET_I2_SPEC SET_O_SPEC))(assert (= SET_I_SPEC SET_O_SPEC))"
+  ]
+}

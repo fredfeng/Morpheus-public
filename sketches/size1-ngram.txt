@@ -1,0 +1,9 @@
+mutate
+filter
+select
+summarise
+spread
+inner_join
+gather
+separate
+unite

@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/38618110/calculate-rowmeans-on-a-range-of-column-variable-number

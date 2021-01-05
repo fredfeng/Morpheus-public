@@ -1,0 +1,7 @@
+TBL_3=gather(p38_input1,MORPH672,MORPH671,-`id`,-`sex`)
+TBL_1=separate(TBL_3,`MORPH672`,into=c('MORPH791','number'))
+morpheus=spread(TBL_1,`MORPH791`,`MORPH671`)
+morpheus=as.data.frame(morpheus)
+morpheus[,3] = as.numeric(morpheus[,3])
+morpheus[,4] = as.numeric(morpheus[,4])
+morpheus

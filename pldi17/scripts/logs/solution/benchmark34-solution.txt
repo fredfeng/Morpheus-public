@@ -1,0 +1,5 @@
+TBL_3=gather(p34_input1,MORPH7988,MORPH7987,`mpg_min`,`cyl_min`,`vs_min`,`am_min`,`gear_min`,`carb_min`,`mpg_q25`,`cyl_q25`,`vs_q25`,`am_q25`,`gear_q25`,`carb_q25`)
+TBL_1=separate(TBL_3,`MORPH7988`,into=c('var','MORPH7992'))
+morpheus=spread(TBL_1,`MORPH7992`,`MORPH7987`)
+morpheus=as.data.frame(morpheus)
+morpheus

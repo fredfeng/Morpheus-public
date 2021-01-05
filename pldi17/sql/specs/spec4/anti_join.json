@@ -1,0 +1,16 @@
+{
+  "id":17,
+  "name":"anti_join",
+  "arguments":
+  [
+    "Table",
+    "Table"
+  ],
+  "template":"anti_join(#Table0,#Table1)",
+  "constraint":
+  [
+  "(declare-const CO_SPEC Int)(declare-const RO_SPEC Int)(declare-const CI_SPEC Int)(declare-const CI2_SPEC Int)(declare-const RI_SPEC Int)(declare-const RI2_SPEC Int)(assert (= CO_SPEC CI_SPEC))(assert (< RO_SPEC RI_SPEC))(assert (> RO_SPEC 0))",
+  "(define-sort Set () (Array Int Bool))(declare-const SET_I_SPEC (Set))(declare-const SET_I2_SPEC (Set))(declare-const SET_O_SPEC (Set))(assert (= SET_I_SPEC SET_O_SPEC))(assert (not (= (intersect SET_I2_SPEC SET_O_SPEC) ((as const Set) false))))"
+
+  ]
+}

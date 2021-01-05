@@ -1,0 +1,154 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/32328727/combine-values-on-matching-strings
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 40
+Category= C5
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input1:
+
+     ID          miRNA
+1   ID1  hsa-miR-512-1
+2   ID1  hsa-miR-512-2
+3   ID1   hsa-miR-1323
+4   ID1    hsa-miR-498
+5   ID1   hsa-miR-520e
+6   ID1  hsa-miR-515-1
+7   ID1   hsa-miR-519e
+8   ID1   hsa-miR-520f
+9   ID2    hsa-miR-495
+10  ID2   hsa-miR-376c
+11  ID2 hsa-miR-376a-2
+12  ID2    hsa-miR-654
+13  ID2   hsa-miR-376b
+14  ID2 hsa-miR-376a-1
+15  ID2    hsa-miR-300
+16  ID2 hsa-miR-1185-1
+17  ID2 hsa-miR-1185-2
+18 ID24   hsa-miR-1179
+19 ID24    hsa-miR-7-2
+20 ID24   hsa-miR-3677
+21 ID25    hsa-miR-940
+22 ID25   hsa-miR-4717
+
+Input2:
+
+            miRNA logFC
+1   hsa-miR-512-1  13.0
+2   hsa-miR-512-2 123.0
+3    hsa-miR-1323  53.0
+4     hsa-miR-498   4.2
+5    hsa-miR-520e  12.0
+6   hsa-miR-515-1   1.0
+7    hsa-miR-519e  56.0
+8    hsa-miR-520f 113.0
+9     hsa-miR-495  11.0
+10   hsa-miR-376c  11.0
+11 hsa-miR-376a-2 113.0
+12    hsa-miR-654  13.0
+13   hsa-miR-376b 123.0
+14 hsa-miR-376a-1 567.0
+15    hsa-miR-300 757.0
+16 hsa-miR-1185-1   6.0
+17 hsa-miR-1185-2  35.0
+18   hsa-miR-1179   2.0
+19    hsa-miR-7-2   2.0
+20   hsa-miR-3677   1.0
+21    hsa-miR-940 134.0
+22   hsa-miR-4717 566.0
+
+Output:
+
+    ID   AvgLogFC
+1  ID1  46.900000
+2  ID2 181.777778
+3 ID24   1.666667
+4 ID25 350.000000
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=inner_join(p40_input2,p40_input1)
+
+            miRNA logFC   ID
+1   hsa-miR-512-1  13.0  ID1
+2   hsa-miR-512-2 123.0  ID1
+3    hsa-miR-1323  53.0  ID1
+4     hsa-miR-498   4.2  ID1
+5    hsa-miR-520e  12.0  ID1
+6   hsa-miR-515-1   1.0  ID1
+7    hsa-miR-519e  56.0  ID1
+8    hsa-miR-520f 113.0  ID1
+9     hsa-miR-495  11.0  ID2
+10   hsa-miR-376c  11.0  ID2
+11 hsa-miR-376a-2 113.0  ID2
+12    hsa-miR-654  13.0  ID2
+13   hsa-miR-376b 123.0  ID2
+14 hsa-miR-376a-1 567.0  ID2
+15    hsa-miR-300 757.0  ID2
+16 hsa-miR-1185-1   6.0  ID2
+17 hsa-miR-1185-2  35.0  ID2
+18   hsa-miR-1179   2.0 ID24
+19    hsa-miR-7-2   2.0 ID24
+20   hsa-miR-3677   1.0 ID24
+21    hsa-miR-940 134.0 ID25
+22   hsa-miR-4717 566.0 ID25
+
+TBL_1=group_by(TBL_3,`ID`)
+
+Source: local data frame [22 x 3]
+Groups: ID [4]
+
+           miRNA logFC    ID
+           <chr> <dbl> <chr>
+1  hsa-miR-512-1  13.0   ID1
+2  hsa-miR-512-2 123.0   ID1
+3   hsa-miR-1323  53.0   ID1
+4    hsa-miR-498   4.2   ID1
+5   hsa-miR-520e  12.0   ID1
+6  hsa-miR-515-1   1.0   ID1
+7   hsa-miR-519e  56.0   ID1
+8   hsa-miR-520f 113.0   ID1
+9    hsa-miR-495  11.0   ID2
+10  hsa-miR-376c  11.0   ID2
+# ... with 12 more rows
+
+morpheus=summarise(TBL_1,AvgLogFC=mean(`logFC`))
+
+# A tibble: 4 x 2
+     ID   AvgLogFC
+  <chr>      <dbl>
+1   ID1  46.900000
+2   ID2 181.777778
+3  ID24   1.666667
+4  ID25 350.000000
+
+
+R program:
+
+TBL_3=inner_join(p40_input2,p40_input1)
+TBL_1=group_by(TBL_3,`ID`)
+morpheus=summarise(TBL_1,AvgLogFC=mean(`logFC`))
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 3
+#sketches without SMT-based deduction= 3
+#partial programs with partial evaluation= 6
+#partial programs without partial evaluation= 30
+Total time= .07 s

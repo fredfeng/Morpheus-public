@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/37292968/fast-way-vectorization-to-apply-a-list-of-functions-to-corresponding-columns

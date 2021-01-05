@@ -1,0 +1,6 @@
+TBL_3=gather(p15_input1,MORPH596,MORPH595,`Error1_Group1`,`Error2_Group1`)
+TBL_1=separate(TBL_3,`MORPH596`,into=c('MORPH629','mGroup'))
+morpheus=spread(TBL_1,`MORPH629`,`MORPH595`)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,2,3,5,4,6)
+morpheus

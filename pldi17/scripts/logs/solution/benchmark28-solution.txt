@@ -1,0 +1,6 @@
+TBL_9=group_by(p28_input1,`prod`,`clnt`)
+TBL_4=summarise(TBL_9,mean.order=mean(`order`))
+TBL_1=inner_join(p28_input2,TBL_4)
+morpheus=select(TBL_1,-`id`,-`order`)
+morpheus=as.data.frame(morpheus)
+morpheus

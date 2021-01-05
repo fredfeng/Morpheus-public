@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/29447325/collapsing-multiple-columns-containing-the-same-variable-into-one-column

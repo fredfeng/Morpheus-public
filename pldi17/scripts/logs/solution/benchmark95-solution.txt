@@ -1,0 +1,5 @@
+TBL_3=gather(p95_input1,var,MORPH1244,-`order_id`)
+TBL_1=filter(TBL_3,`MORPH1244` > 0.000000)
+morpheus=select(TBL_1,`order_id`,`var`)
+morpheus=as.data.frame(morpheus)
+morpheus

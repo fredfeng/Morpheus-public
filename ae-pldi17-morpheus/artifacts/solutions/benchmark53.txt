@@ -1,0 +1,125 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/29237802/transposing-complex-data-frame-in-r
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 53
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+   posture code  HR  EE a
+1  cycling  A03 102 100 3
+2 standing  A03  99  99 4
+3  sitting  A03  98  67 5
+4  walking  A03  97  78 3
+5  cycling  B01 111  76 5
+6 standing  B01 100  88 4
+7  sitting  B01  78  34 4
+8  walking  B01  99  99 2
+
+Output:
+
+  code cycling_a cycling_EE cycling_HR sitting_a sitting_EE sitting_HR
+1  A03         3        100        102         5         67         98
+2  B01         5         76        111         4         34         78
+  standing_a standing_EE standing_HR walking_a walking_EE walking_HR
+1          4          99          99         3         78         97
+2          4          88         100         2         99         99
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p53_input1,MORPH2,MORPH1,-`posture`,-`code`)
+
+    posture code MORPH2 MORPH1
+1   cycling  A03     HR    102
+2  standing  A03     HR     99
+3   sitting  A03     HR     98
+4   walking  A03     HR     97
+5   cycling  B01     HR    111
+6  standing  B01     HR    100
+7   sitting  B01     HR     78
+8   walking  B01     HR     99
+9   cycling  A03     EE    100
+10 standing  A03     EE     99
+11  sitting  A03     EE     67
+12  walking  A03     EE     78
+13  cycling  B01     EE     76
+14 standing  B01     EE     88
+15  sitting  B01     EE     34
+16  walking  B01     EE     99
+17  cycling  A03      a      3
+18 standing  A03      a      4
+19  sitting  A03      a      5
+20  walking  A03      a      3
+21  cycling  B01      a      5
+22 standing  B01      a      4
+23  sitting  B01      a      4
+24  walking  B01      a      2
+
+TBL_1=unite(TBL_3,MORPH302,`posture`,`MORPH2`)
+
+      MORPH302 code MORPH1
+1   cycling_HR  A03    102
+2  standing_HR  A03     99
+3   sitting_HR  A03     98
+4   walking_HR  A03     97
+5   cycling_HR  B01    111
+6  standing_HR  B01    100
+7   sitting_HR  B01     78
+8   walking_HR  B01     99
+9   cycling_EE  A03    100
+10 standing_EE  A03     99
+11  sitting_EE  A03     67
+12  walking_EE  A03     78
+13  cycling_EE  B01     76
+14 standing_EE  B01     88
+15  sitting_EE  B01     34
+16  walking_EE  B01     99
+17   cycling_a  A03      3
+18  standing_a  A03      4
+19   sitting_a  A03      5
+20   walking_a  A03      3
+21   cycling_a  B01      5
+22  standing_a  B01      4
+23   sitting_a  B01      4
+24   walking_a  B01      2
+
+morpheus=spread(TBL_1,`MORPH302`,`MORPH1`)
+
+  code cycling_a cycling_EE cycling_HR sitting_a sitting_EE sitting_HR
+1  A03         3        100        102         5         67         98
+2  B01         5         76        111         4         34         78
+  standing_a standing_EE standing_HR walking_a walking_EE walking_HR
+1          4          99          99         3         78         97
+2          4          88         100         2         99         99
+
+
+R program:
+
+TBL_3=gather(p53_input1,MORPH2,MORPH1,-`posture`,-`code`)
+TBL_1=unite(TBL_3,MORPH302,`posture`,`MORPH2`)
+morpheus=spread(TBL_1,`MORPH302`,`MORPH1`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 1
+#sketches without SMT-based deduction= 8
+#partial programs with partial evaluation= 198
+#partial programs without partial evaluation= 374
+Total time= 2.31 s

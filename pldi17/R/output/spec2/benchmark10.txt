@@ -1,0 +1,121 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/10/input.json
+Specs: ../../benchmarks/pldi17/10/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:10
+Depth:1
+Output table:p10_output1
+Input tables:p10_input1 
+Sketch (Components):3 2 -1 4 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec2/*
+specs/spec2/filter.json compName: filter
+specs/spec2/gather.json compName: gather
+specs/spec2/group_by.json compName: group_by
+specs/spec2/inner_join.json compName: inner_join
+specs/spec2/mutate.json compName: mutate
+specs/spec2/select.json compName: select
+specs/spec2/separate.json compName: separate
+specs/spec2/spread.json compName: spread
+specs/spec2/summarise.json compName: summarise
+specs/spec2/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Joining, by = c("date", "days")
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = "name"
+Joining, by = "date"
+Joining, by = "topics"
+Joining, by = c("days", "name")
+Joining, by = "days"
+Joining, by = c("days", "topics")
+Joining, by = "days"
+Joining, by = "name"
+Joining, by = "topics"
+Joining, by = c("date", "days")
+Joining, by = c("date", "days")
+Joining, by = "days"
+Joining, by = c("date", "name")
+Joining, by = "date"
+Joining, by = "name"
+Joining, by = "date"
+Joining, by = c("date", "topics")
+Joining, by = "topics"
+Joining, by = c("days", "name")
+Joining, by = "days"
+Joining, by = c("days", "name")
+Joining, by = "days"
+Joining, by = c("days", "topics")
+Joining, by = c("days", "topics")
+Joining, by = "name"
+Joining, by = "topics"
+Joining, by = c("name", "topics")
+Joining, by = c("date", "days")
+Joining, by = "days"
+Joining, by = "date"
+Joining, by = "name"
+Joining, by = "date"
+Joining, by = "topics"
+Joining, by = c("days", "name")
+Joining, by = "days"
+Joining, by = c("days", "topics")
+Joining, by = "days"
+Joining, by = "name"
+Joining, by = "topics"
+Joining, by = c("date", "days")
+Joining, by = c("date", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("days", "topics")
+Joining, by = c("name", "topics")
+Joining, by = c("date", "days")
+Joining, by = c("date", "name")
+Joining, by = c("date", "topics")
+Joining, by = c("days", "name")
+Joining, by = c("days", "topics")
+Joining, by = c("name", "topics")
+# sketches with deduction: 35
+# sketches without deduction: 118
+# predicates with deduction: 1237
+# predicates without deduction: 3746
+# predicates pruned (NA or size): 1359
+# R calls: 6130
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 539.54
+Deduction on partial evaluation:546.6
+R calls: 3682.1
+Total time: 5726.79
+[Percentage] R=64.2961 Z3=18.966 other=16.738
+==================================================
+R program: 
+TBL_3=separate(p10_input1,`topics`,into=c('MORPH1111','MORPH1112'))
+TBL_1=gather(TBL_3,MORPH1114,MORPH1113,`MORPH1111`,`MORPH1112`)
+morpheus=select(TBL_1,-`MORPH1113`)
+morpheus=as.data.frame(morpheus)
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

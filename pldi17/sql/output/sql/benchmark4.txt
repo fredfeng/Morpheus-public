@@ -1,0 +1,472 @@
+Morheus thread 4 finished.
+Loading benchmark: ../../benchmarks/sql/4/input.json
+Specs: ../../benchmarks/sql/4/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:4
+Depth:1
+Output table:s4_output1
+Input tables:s4_input1 
+Sketch (Components):3 10 -1 6 -1 -1 -1 7 -1 -1 -1 -1 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec4/*
+specs/spec4/anti_join.json compName: anti_join
+specs/spec4/distinct.json compName: distinct
+specs/spec4/filter.json compName: filter
+specs/spec4/group_by.json compName: group_by
+specs/spec4/inner_join.json compName: inner_join
+specs/spec4/intersect.json compName: intersect
+specs/spec4/select.json compName: select
+specs/spec4/summarise.json compName: summarise
+Ngram re-reranked sketch file: sketches/size5-ngram.txt
+Mapping from string to vector file: sketches/size5-map.txt
+begin to synthesize.....
+Joining, by = c("S_key", "S_name")
+Joining, by = c("S_key", "S_name")
+Joining, by = c("meets_at", "S_name")
+Joining, by = c("meets_at", "S_name")
+Joining, by = c("meets_at", "S_key")
+Joining, by = c("meets_at", "S_key")
+Joining, by = c("C_name", "S_name")
+Joining, by = c("C_name", "S_name")
+Joining, by = c("C_name", "S_key")
+Joining, by = c("C_name", "S_key")
+Joining, by = c("C_name", "meets_at")
+Joining, by = c("C_name", "meets_at")
+Joining, by = "S_name"
+Joining, by = "S_name"
+Joining, by = "S_key"
+Joining, by = "S_key"
+Joining, by = "meets_at"
+Joining, by = "meets_at"
+Joining, by = "C_name"
+Joining, by = "C_name"
+Joining, by = c("S_key", "S_name")
+Joining, by = c("S_key", "S_name")
+Joining, by = c("meets_at", "S_name")
+Joining, by = c("meets_at", "S_name")
+Joining, by = c("meets_at", "S_key")
+Joining, by = c("meets_at", "S_key")
+Joining, by = c("C_name", "S_name")
+Joining, by = c("C_name", "S_name")
+Joining, by = c("C_name", "S_key")
+Joining, by = c("C_name", "S_key")
+Joining, by = c("C_name", "meets_at")
+Joining, by = c("C_name", "meets_at")
+Joining, by = "S_name"
+Joining, by = "S_name"
+Joining, by = "S_key"
+Joining, by = "S_key"
+Joining, by = "meets_at"
+Joining, by = "meets_at"
+Joining, by = "C_name"
+Joining, by = "C_name"
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `C_name`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `S_key`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+Adding missing grouping variables: `meets_at`
+# sketches with deduction: 5
+# sketches without deduction: 18
+# predicates with deduction: 984
+# predicates without deduction: 9049
+# predicates pruned (NA or size): 791
+# R calls: 10001
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 138.306
+Deduction on partial evaluation:2876.4
+R calls: 5881.7
+Total time: 11608
+[Percentage] R=50.6693 Z3=25.9709 other=23.3597
+==================================================
+R program: 
+TBL_15=filter(s4_input1,`S_name` != "stu8")
+TBL_7=group_by(TBL_15,`meets_at`,`S_name`)
+TBL_3=summarise(TBL_7,MORPH144=n()) %>% ungroup()
+TBL_1=filter(TBL_3,`MORPH144` == max(`MORPH144`))
+morpheus=select(TBL_1,`S_name`)
+morpheus=as.data.frame(morpheus)
+morpheus

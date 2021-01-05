@@ -1,0 +1,5 @@
+TBL_3=gather(p83_input1,MORPH132,MORPH131,`p1`,`p2`)
+TBL_1=unite(TBL_3,MORPH164,`p3`,`MORPH132`)
+morpheus=spread(TBL_1,`MORPH164`,`MORPH131`)
+morpheus=as.data.frame(morpheus)
+morpheus

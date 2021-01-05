@@ -1,0 +1,5 @@
+TBL_3=gather(p60_input1,MORPH356,MORPH355,-`Test`)
+TBL_1=separate(TBL_3,`MORPH356`,into=c('MORPH387','sensor'))
+morpheus=spread(TBL_1,`MORPH387`,`MORPH355`)
+morpheus=as.data.frame(morpheus)
+morpheus

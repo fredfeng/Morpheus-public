@@ -1,0 +1,154 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/27750945/expanding-csv-data-in-r
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 61
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  year roleInDebate Clarity_1 Effort_1 Clarity_2 Effort_2 Clarity_3 Effort_3
+1 2006            x         3        5        10        4         5        7
+2 2009            y         2        8         3        1         6        8
+3 2013            r         7       10         7        4         5        2
+4 2020            q         4        4         2        9         2        8
+5 2004            b         8        8         3        4         9        5
+
+Output:
+
+   year roleInDebate person Clarity Effort
+1  2004            b      1       8      8
+2  2004            b      2       3      4
+3  2004            b      3       9      5
+4  2006            x      1       3      5
+5  2006            x      2      10      4
+6  2006            x      3       5      7
+7  2009            y      1       2      8
+8  2009            y      2       3      1
+9  2009            y      3       6      8
+10 2013            r      1       7     10
+11 2013            r      2       7      4
+12 2013            r      3       5      2
+13 2020            q      1       4      4
+14 2020            q      2       2      9
+15 2020            q      3       2      8
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p61_input1,MORPH390,MORPH389,-`year`,-`roleInDebate`)
+
+   year roleInDebate  MORPH390 MORPH389
+1  2006            x Clarity_1        3
+2  2009            y Clarity_1        2
+3  2013            r Clarity_1        7
+4  2020            q Clarity_1        4
+5  2004            b Clarity_1        8
+6  2006            x  Effort_1        5
+7  2009            y  Effort_1        8
+8  2013            r  Effort_1       10
+9  2020            q  Effort_1        4
+10 2004            b  Effort_1        8
+11 2006            x Clarity_2       10
+12 2009            y Clarity_2        3
+13 2013            r Clarity_2        7
+14 2020            q Clarity_2        2
+15 2004            b Clarity_2        3
+16 2006            x  Effort_2        4
+17 2009            y  Effort_2        1
+18 2013            r  Effort_2        4
+19 2020            q  Effort_2        9
+20 2004            b  Effort_2        4
+21 2006            x Clarity_3        5
+22 2009            y Clarity_3        6
+23 2013            r Clarity_3        5
+24 2020            q Clarity_3        2
+25 2004            b Clarity_3        9
+26 2006            x  Effort_3        7
+27 2009            y  Effort_3        8
+28 2013            r  Effort_3        2
+29 2020            q  Effort_3        8
+30 2004            b  Effort_3        5
+
+TBL_1=separate(TBL_3,`MORPH390`,into=c('MORPH613','person'))
+
+   year roleInDebate MORPH613 person MORPH389
+1  2006            x  Clarity      1        3
+2  2009            y  Clarity      1        2
+3  2013            r  Clarity      1        7
+4  2020            q  Clarity      1        4
+5  2004            b  Clarity      1        8
+6  2006            x   Effort      1        5
+7  2009            y   Effort      1        8
+8  2013            r   Effort      1       10
+9  2020            q   Effort      1        4
+10 2004            b   Effort      1        8
+11 2006            x  Clarity      2       10
+12 2009            y  Clarity      2        3
+13 2013            r  Clarity      2        7
+14 2020            q  Clarity      2        2
+15 2004            b  Clarity      2        3
+16 2006            x   Effort      2        4
+17 2009            y   Effort      2        1
+18 2013            r   Effort      2        4
+19 2020            q   Effort      2        9
+20 2004            b   Effort      2        4
+21 2006            x  Clarity      3        5
+22 2009            y  Clarity      3        6
+23 2013            r  Clarity      3        5
+24 2020            q  Clarity      3        2
+25 2004            b  Clarity      3        9
+26 2006            x   Effort      3        7
+27 2009            y   Effort      3        8
+28 2013            r   Effort      3        2
+29 2020            q   Effort      3        8
+30 2004            b   Effort      3        5
+
+morpheus=spread(TBL_1,`MORPH613`,`MORPH389`)
+
+   year roleInDebate person Clarity Effort
+1  2004            b      1       8      8
+2  2004            b      2       3      4
+3  2004            b      3       9      5
+4  2006            x      1       3      5
+5  2006            x      2      10      4
+6  2006            x      3       5      7
+7  2009            y      1       2      8
+8  2009            y      2       3      1
+9  2009            y      3       6      8
+10 2013            r      1       7     10
+11 2013            r      2       7      4
+12 2013            r      3       5      2
+13 2020            q      1       4      4
+14 2020            q      2       2      9
+15 2020            q      3       2      8
+
+
+R program:
+
+TBL_3=gather(p61_input1,MORPH390,MORPH389,-`year`,-`roleInDebate`)
+TBL_1=separate(TBL_3,`MORPH390`,into=c('MORPH613','person'))
+morpheus=spread(TBL_1,`MORPH613`,`MORPH389`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 11
+#partial programs with partial evaluation= 454
+#partial programs without partial evaluation= 698
+Total time= 1.73 s

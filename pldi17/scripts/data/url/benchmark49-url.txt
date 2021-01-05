@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/30471828/create-conditional-new-variables-in-r

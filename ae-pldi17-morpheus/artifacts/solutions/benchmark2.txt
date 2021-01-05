@@ -1,0 +1,95 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/30592094/r-spreading-multiple-columns-with-tidyr
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 2
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  month student A B
+1     1     Amy 9 6
+2     2     Amy 7 7
+3     3     Amy 6 8
+4     1     Bob 8 5
+5     2     Bob 6 6
+6     3     Bob 9 7
+
+Output:
+
+  month Amy_A Amy_B Bob_A Bob_B
+1     1     9     6     8     5
+2     2     7     7     6     6
+3     3     6     8     9     7
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p2_input1,MORPH102,MORPH101,`A`,`B`)
+
+   month student MORPH102 MORPH101
+1      1     Amy        A        9
+2      2     Amy        A        7
+3      3     Amy        A        6
+4      1     Bob        A        8
+5      2     Bob        A        6
+6      3     Bob        A        9
+7      1     Amy        B        6
+8      2     Amy        B        7
+9      3     Amy        B        8
+10     1     Bob        B        5
+11     2     Bob        B        6
+12     3     Bob        B        7
+
+TBL_1=unite(TBL_3,MORPH110,`student`,`MORPH102`)
+
+   month MORPH110 MORPH101
+1      1    Amy_A        9
+2      2    Amy_A        7
+3      3    Amy_A        6
+4      1    Bob_A        8
+5      2    Bob_A        6
+6      3    Bob_A        9
+7      1    Amy_B        6
+8      2    Amy_B        7
+9      3    Amy_B        8
+10     1    Bob_B        5
+11     2    Bob_B        6
+12     3    Bob_B        7
+
+morpheus=spread(TBL_1,`MORPH110`,`MORPH101`)
+
+  month Amy_A Amy_B Bob_A Bob_B
+1     1     9     6     8     5
+2     2     7     7     6     6
+3     3     6     8     9     7
+
+
+R program:
+
+TBL_3=gather(p2_input1,MORPH102,MORPH101,`A`,`B`)
+TBL_1=unite(TBL_3,MORPH110,`student`,`MORPH102`)
+morpheus=spread(TBL_1,`MORPH110`,`MORPH101`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 8
+#partial programs with partial evaluation= 26
+#partial programs without partial evaluation= 131
+Total time= .29 s

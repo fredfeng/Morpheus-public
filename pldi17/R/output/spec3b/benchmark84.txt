@@ -1,0 +1,67 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/84/input.json
+Specs: ../../benchmarks/pldi17/84/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 0
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p84_output1
+Input tables:p84_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+# sketches with deduction: 4
+# sketches without deduction: 5
+# predicates with deduction: 1844
+# predicates without deduction: 1844
+# predicates pruned (NA or size): 61
+# R calls: 2135
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 34.309
+Deduction on partial evaluation:0
+R calls: 1625.47
+Total time: 1915.04
+[Percentage] R=84.879 Z3=1.79155 other=13.3295
+==================================================
+R program: 
+TBL_3=filter(p84_input1,`d` > 0.000000)
+TBL_1=group_by(TBL_3,`a`,`b`)
+morpheus=summarise(TBL_1,MORPH1580=mean(`d`))
+morpheus=as.data.frame(morpheus)
+morpheus

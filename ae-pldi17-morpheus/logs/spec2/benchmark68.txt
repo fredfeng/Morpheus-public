@@ -1,0 +1,74 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/79/input.json
+Specs: ../../benchmarks/pldi17/79/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Output table:p79_output1
+Input tables:p79_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+# sketches with deduction: 14
+# sketches without deduction: 52
+# predicates with deduction: 177
+# predicates without deduction: 2554
+# predicates pruned (NA or size): 14
+# R calls: 2630
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 313.336
+Deduction on partial evaluation:260.309
+R calls: 1600.42
+Total time: 2657.97
+[Percentage] R=60.2123 Z3=21.5821 other=18.2056
+==================================================
+R program: 
+TBL_3=unite(p79_input1,MORPH2257,`am`,`vs`)
+TBL_1=group_by(TBL_3,`MORPH2257`)
+morpheus=summarise(TBL_1,MORPH2285=n())
+morpheus=as.data.frame(morpheus)
+morpheus
+Warning messages:
+1: Too few values at 8 locations: 1, 2, 3, 4, 5, 6, 7, 8 
+2: Too few values at 8 locations: 1, 2, 3, 4, 5, 6, 7, 8 
+3: Too few values at 8 locations: 1, 2, 3, 4, 5, 6, 7, 8 
+4: Too few values at 2 locations: 1, 2 
+5: Too few values at 8 locations: 1, 2, 3, 4, 5, 6, 7, 8 
+6: Too few values at 8 locations: 1, 2, 3, 4, 5, 6, 7, 8 
+7: Too few values at 8 locations: 1, 2, 3, 4, 5, 6, 7, 8 
+8: Too few values at 2 locations: 1, 2 

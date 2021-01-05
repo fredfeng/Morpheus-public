@@ -1,0 +1,146 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/32875699/how-to-combine-two-data-frames-in-r-see-details
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 26
+Category= C7
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input1:
+
+  frame X1 X2 X3
+1     1  0  0  0
+2     2 10 15  0
+3     3 15 10  0
+4     4 15 10  0
+
+Input2:
+
+  frame    X1    X2 X3
+1     1  0.00  0.00  0
+2     2 14.53 12.57  0
+3     3 13.90 14.65  0
+4     4 14.10 14.70  0
+
+Output:
+
+  frame pos carid speed
+1     2  X1    10 14.53
+2     3  X2    10 14.65
+3     4  X2    10 14.70
+4     2  X2    15 12.57
+5     3  X1    15 13.90
+6     4  X1    15 14.10
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_4=gather(p26_input1,pos,carid,-`frame`)
+
+   frame pos carid
+1      1  X1     0
+2      2  X1    10
+3      3  X1    15
+4      4  X1    15
+5      1  X2     0
+6      2  X2    15
+7      3  X2    10
+8      4  X2    10
+9      1  X3     0
+10     2  X3     0
+11     3  X3     0
+12     4  X3     0
+
+TBL_3=gather(p26_input2,pos,speed,-`frame`)
+
+   frame pos speed
+1      1  X1  0.00
+2      2  X1 14.53
+3      3  X1 13.90
+4      4  X1 14.10
+5      1  X2  0.00
+6      2  X2 12.57
+7      3  X2 14.65
+8      4  X2 14.70
+9      1  X3  0.00
+10     2  X3  0.00
+11     3  X3  0.00
+12     4  X3  0.00
+
+TBL_1=inner_join(TBL_3,TBL_4)
+
+   frame pos speed carid
+1      1  X1  0.00     0
+2      2  X1 14.53    10
+3      3  X1 13.90    15
+4      4  X1 14.10    15
+5      1  X2  0.00     0
+6      2  X2 12.57    15
+7      3  X2 14.65    10
+8      4  X2 14.70    10
+9      1  X3  0.00     0
+10     2  X3  0.00     0
+11     3  X3  0.00     0
+12     4  X3  0.00     0
+
+morpheus=filter(TBL_1,`carid` > 0.000000)
+
+  frame pos speed carid
+1     2  X1 14.53    10
+2     3  X1 13.90    15
+3     4  X1 14.10    15
+4     2  X2 12.57    15
+5     3  X2 14.65    10
+6     4  X2 14.70    10
+
+morpheus=select(morpheus,1,2,4,3)
+
+  frame pos carid speed
+1     2  X1    10 14.53
+2     3  X1    15 13.90
+3     4  X1    15 14.10
+4     2  X2    15 12.57
+5     3  X2    10 14.65
+6     4  X2    10 14.70
+
+morpheus=arrange(morpheus,`carid`,`frame`)
+
+  frame pos carid speed
+1     2  X1    10 14.53
+2     3  X2    10 14.65
+3     4  X2    10 14.70
+4     2  X2    15 12.57
+5     3  X1    15 13.90
+6     4  X1    15 14.10
+
+
+R program:
+
+TBL_4=gather(p26_input1,pos,carid,-`frame`)
+TBL_3=gather(p26_input2,pos,speed,-`frame`)
+TBL_1=inner_join(TBL_3,TBL_4)
+morpheus=filter(TBL_1,`carid` > 0.000000)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,2,4,3)
+morpheus=arrange(morpheus,`carid`,`frame`)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 131
+#sketches without SMT-based deduction= 462
+#partial programs with partial evaluation= 45567
+#partial programs without partial evaluation= 87394
+Total time= 130.92 s

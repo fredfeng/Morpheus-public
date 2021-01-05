@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/39956852/r-sum-every-n-rows-across-n-columns

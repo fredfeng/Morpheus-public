@@ -1,0 +1,246 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/51/input.json
+Specs: ../../benchmarks/pldi17/51/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p51_output1
+Input tables:p51_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `site`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+Adding missing grouping variables: `day`
+# sketches with deduction: 8
+# sketches without deduction: 8
+# predicates with deduction: 17650
+# predicates without deduction: 17650
+# predicates pruned (NA or size): 635
+# R calls: 18455
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 35.046
+Deduction on partial evaluation:3871.88
+R calls: 11344.6
+Total time: 20152.3
+[Percentage] R=56.2941 Z3=19.387 other=24.3189
+==================================================
+R program: 
+TBL_3=gather(p51_input1,MORPH11004,MORPH11003,`value.1`,`value.2`)
+TBL_1=unite(TBL_3,MORPH11010,`site`,`MORPH11004`)
+morpheus=spread(TBL_1,`MORPH11010`,`MORPH11003`)
+morpheus=as.data.frame(morpheus)
+morpheus

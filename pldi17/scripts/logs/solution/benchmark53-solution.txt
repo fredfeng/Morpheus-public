@@ -1,0 +1,5 @@
+TBL_3=gather(p53_input1,MORPH2,MORPH1,-`MemberID`,-`years`)
+TBL_1=unite(TBL_3,MORPH598,`years`,`MORPH2`)
+morpheus=spread(TBL_1,`MORPH598`,`MORPH1`)
+morpheus=as.data.frame(morpheus)
+morpheus

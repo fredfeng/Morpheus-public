@@ -1,0 +1,132 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/35277274/r-data-frame-get-value-from-variable-which-is-selected-by-another-variable-vect
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 24
+Category= C1
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  id  yr1  yr2  yr3  yr4 var
+1  1 1090 2066 3050 4012 yr3
+2  2 1026 2062 3071 4026 yr2
+3  3 1036 2006 3098 4038 yr1
+4  4 1056 2020 3037 4001 yr4
+
+Output:
+
+   id var value
+1   1 yr3  2066
+2   1 yr3  3050
+3   1 yr3  4012
+4   2 yr2  2062
+5   2 yr2  3071
+6   2 yr2  4026
+7   3 yr1  2006
+8   3 yr1  3098
+9   3 yr1  4038
+10  4 yr4  2020
+11  4 yr4  3037
+12  4 yr4  4001
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p24_input1,MORPH1429,value,-`id`,-`var`)
+
+   id var MORPH1429 value
+1   1 yr3       yr1  1090
+2   2 yr2       yr1  1026
+3   3 yr1       yr1  1036
+4   4 yr4       yr1  1056
+5   1 yr3       yr2  2066
+6   2 yr2       yr2  2062
+7   3 yr1       yr2  2006
+8   4 yr4       yr2  2020
+9   1 yr3       yr3  3050
+10  2 yr2       yr3  3071
+11  3 yr1       yr3  3098
+12  4 yr4       yr3  3037
+13  1 yr3       yr4  4012
+14  2 yr2       yr4  4026
+15  3 yr1       yr4  4038
+16  4 yr4       yr4  4001
+
+TBL_1=filter(TBL_3,`value` > 1090.000000)
+
+   id var MORPH1429 value
+1   1 yr3       yr2  2066
+2   2 yr2       yr2  2062
+3   3 yr1       yr2  2006
+4   4 yr4       yr2  2020
+5   1 yr3       yr3  3050
+6   2 yr2       yr3  3071
+7   3 yr1       yr3  3098
+8   4 yr4       yr3  3037
+9   1 yr3       yr4  4012
+10  2 yr2       yr4  4026
+11  3 yr1       yr4  4038
+12  4 yr4       yr4  4001
+
+morpheus=select(TBL_1,-`MORPH1429`)
+
+   id var value
+1   1 yr3  2066
+2   2 yr2  2062
+3   3 yr1  2006
+4   4 yr4  2020
+5   1 yr3  3050
+6   2 yr2  3071
+7   3 yr1  3098
+8   4 yr4  3037
+9   1 yr3  4012
+10  2 yr2  4026
+11  3 yr1  4038
+12  4 yr4  4001
+
+morpheus=arrange(morpheus,`id`)
+
+   id var value
+1   1 yr3  2066
+2   1 yr3  3050
+3   1 yr3  4012
+4   2 yr2  2062
+5   2 yr2  3071
+6   2 yr2  4026
+7   3 yr1  2006
+8   3 yr1  3098
+9   3 yr1  4038
+10  4 yr4  2020
+11  4 yr4  3037
+12  4 yr4  4001
+
+
+R program:
+
+TBL_3=gather(p24_input1,MORPH1429,value,-`id`,-`var`)
+TBL_1=filter(TBL_3,`value` > 1090.000000)
+morpheus=select(TBL_1,-`MORPH1429`)
+morpheus=as.data.frame(morpheus)
+morpheus=arrange(morpheus,`id`)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 5
+#sketches without SMT-based deduction= 17
+#partial programs with partial evaluation= 946
+#partial programs without partial evaluation= 5059
+Total time= 6.25 s

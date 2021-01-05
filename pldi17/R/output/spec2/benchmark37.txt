@@ -1,0 +1,261 @@
+Morheus thread 3 finished.
+Loading benchmark: ../../benchmarks/pldi17/37/input.json
+Specs: ../../benchmarks/pldi17/37/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p37_output1
+Input tables:p37_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec2/*
+specs/spec2/filter.json compName: filter
+specs/spec2/gather.json compName: gather
+specs/spec2/group_by.json compName: group_by
+specs/spec2/inner_join.json compName: inner_join
+specs/spec2/mutate.json compName: mutate
+specs/spec2/select.json compName: select
+specs/spec2/separate.json compName: separate
+specs/spec2/spread.json compName: spread
+specs/spec2/summarise.json compName: summarise
+specs/spec2/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size4-ngram.txt
+Mapping from string to vector file: sketches/size4-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "am"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Joining, by = "gear"
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `am`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Adding missing grouping variables: `gear`
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("am", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "n")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+Joining, by = c("gear", "am")
+# sketches with deduction: 42
+# sketches without deduction: 65
+# predicates with deduction: 9738
+# predicates without deduction: 66287
+# predicates pruned (NA or size): 9953
+# R calls: 77735
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 319.945
+Deduction on partial evaluation:8418.61
+R calls: 70279.9
+Total time: 94727.8
+[Percentage] R=74.1915 Z3=9.22492 other=16.5836
+==================================================
+R program: 
+TBL_7=mutate(p37_input1,MORPH56555=n / sum(n))
+TBL_3=gather(TBL_7,MORPH56557,MORPH56556,`n`,`MORPH56555`)
+TBL_1=unite(TBL_3,MORPH56565,`am`,`MORPH56557`)
+morpheus=spread(TBL_1,`MORPH56565`,`MORPH56556`)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,3,2,5,4)
+morpheus=rename(morpheus,0_percent=0_MORPH56555,1_percent=1_MORPH56555)
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

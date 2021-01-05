@@ -1,0 +1,175 @@
+
+%
+% LaTeX template for prepartion of submissions to PLDI'15
+%
+% Requires temporary version of sigplanconf style file provided on
+% PLDI'15 web site.
+% 
+%\documentclass[nocopyrightspace,pldi]{sigplanconf-pldi16}
+\documentclass[preprint,nocopyrightspace,numbers,10pt]{sigplanconf-pldi17}
+
+
+%
+% the following standard packages may be helpful, but are not required
+%
+%\usepackage{SIunits}            % typset units correctly
+\usepackage{courier}            % standard fixed width font
+\usepackage[scaled]{helvet} % see www.ctan.org/get/macros/latex/required/psnfss/psnfss2e.pdf
+\usepackage[hyphens]{url}                  % format URLs
+\usepackage{listings}          % format code
+\usepackage{enumitem}      % adjust spacing in enums
+\usepackage{algorithm,algorithmicx}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{bbm, dsfont}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{esvect}
+\usepackage{xspace}
+\usepackage{array, multirow} % multirow in table
+\usepackage{rotating, makecell} % cell rotation
+\usepackage[noend]{algpseudocode}
+\usepackage{balance}
+\usepackage{qtree}
+%\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{fancyvrb}
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,arrows}
+\usepackage{pgfplots}
+
+\def\ojoin{\setbox0=\hbox{$\bowtie$}%
+\rule[-.02ex]{.25em}{.4pt}\llap{\rule[\ht0]{.25em}{.4pt}}}
+\def\leftouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie}}
+\def\rightouterjoin{\mathbin{\bowtie\mkern-5.8mu\ojoin}}
+\def\fullouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie\mkern-5.8mu\ojoin}}
+
+%\usepackage[colorlinks=true,allcolors=blue,breaklinks,draft=false]{hyperref}   % hyperlinks, including DOIs and URLs in bibliography
+% known bug: http://tex.stackexchange.com/questions/1522/pdfendlink-ended-up-in-different-nesting-level-than-pdfstartlink
+\newcommand{\doi}[1]{doi:~\href{http://dx.doi.org/#1}{\Hurl{#1}}}   % print a hyperlinked DOI
+\newcommand{\comps}{\Lambda}
+\newcommand{\prog}{\mathcal{P}}
+\newcommand{\tables}{\mathcal{U}}
+\newcommand{\inputTable}{\mathcal{I}}
+\newcommand{\outputTable}{\mathcal{O}}
+\newcommand{\predTable}{\mathcal{T}}
+\newcommand{\sketch}{\mathcal{S}}
+\newcommand{\project}{\pi}
+\newcommand{\select}{\sigma}
+\newcommand{\cst}{\mathcal{C}}
+\newcommand{\constraint}{\phi}
+\newcommand{\comp}{\mathcal{X}}
+\newcommand{\preds}{\Sigma}
+\newcommand{\abs}{\alpha}
+\newcommand{\inhabit}{\Omega}
+\newcommand{\tab}{\textsf{T}}
+\newcommand{\map}{\mathcal{M}}
+\newcommand{\sample}{\mathcal{E}}
+\newcommand{\hypo}{\mathcal{H}}
+\newcommand{\var}{\upsilon}
+\newcommand{\subprog}{\rho}
+\newcommand{\qual}{\mathcal{Q}}
+\newcommand{\lea}{{\mathcal{L}}}
+\newcommand{\cols}{\kappa}
+\newcommand{\contents}{\varsigma}
+\newcommand{\ex}{\sample}
+\newcommand{\rows}{\small \textsf{row}}
+\newcommand{\columns}{\small \textsf{col}}
+\newcommand{\groups}{\small \textsf{group}}
+\newcommand{\cells}{\small \textsf{newVals}}
+\newcommand{\heads}{\small \textsf{newCols}}
+\newcommand{\eval}[1]{{[\![#1]\!]}}
+\newcommand{\peval}[1]{{[\![#1]\!]_\partial}}
+\newcommand{\worklist}{W}
+\newcommand{\toConstraint}{\Phi}
+\newcommand{\complete}{\mathcal{C}}
+
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newcommand{\nat}{{\mathbb{N}}}
+
+\newcommand{\code}[1]{{\small {\tt #1}}\xspace}
+
+\newcommand{\tuple}[1]{{\langle #1 \rangle}}
+\newcommand\bigforall{\mbox{\Large $\mathsurround0pt\forall$}} 
+\newcommand{\ms}[1]{\ensuremath{\mathsf{#1}}}
+
+%\newcommand{\eval}[1]{\llbracket#1\rrbracket}
+
+\newcommand*{\comments}{} %comment to remove comments
+\ifdefined\comments
+\newcommand{\yu}[1]{\textcolor{blue}{\textbf{YU:} #1}}
+\newcommand{\ruben}[1]{\textcolor{magenta}{\textbf{RUBEN:} #1}}
+\newcommand{\isil}[1]{\textcolor{red}{\textbf{I\c{S}IL:} #1}}
+\newcommand{\todo}[1]{\textcolor{black}{#1}}
+\else
+\newcommand{\yu}[1]{}
+\newcommand{\ruben}[1]{}
+\newcommand{\isil}[1]{}
+\newcommand{\todo}[1]{}
+\fi
+
+\newtheorem{example}{Example}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newcommand{\toolname}{{\sc Morpheus}\xspace}
+\newcommand{\sql}{{\sc SQLSynthesizer}\xspace}
+
+\usepackage{xcolor,colortbl}
+\definecolor{babypurple}{RGB}{222,201,255}
+\definecolor{lightgoldenrodyellow}{rgb}{0.98, 0.98, 0.82}
+\definecolor{babyred}{RGB}{220,210,214}
+%\definecolor{babygreen}{RGB}{169,189,183}
+\definecolor{camouflagegreen}{rgb}{0.47, 0.53, 0.42}
+\definecolor{babygreen}{rgb}{0.47, 0.53, 0.42}
+\definecolor{camel}{rgb}{0.76, 0.6, 0.42}
+\definecolor{darkpastelpurple}{rgb}{0.59, 0.44, 0.84}
+
+\algrenewcommand{\algorithmiccomment}[1]{\hfill $\triangleright${#1}}
+
+\begin{document}
+
+
+\authorinfo{}
+%
+% any author declaration will be ignored  when using 'plid' option (for double blind review)
+%
+
+%\title{Automating Data Preparation Tasks from Input-Output Examples}
+
+\title{Component-based Synthesis of Table Consolidation and Transformation Tasks from Examples}
+
+\maketitle
+
+\input{abstract}
+
+\setcounter{figure}{15}
+\input{table-eval.tex}
+
+\input{intro}
+\input{main-results}
+% \input{new-benchmark}
+% \input{options}
+% \input{directory}
+% \input{limitations}
+
+
+% \bibliographystyle{abbrvnat}
+% {\small
+% \bibliography{main}
+% }
+
+%\newcommand*{\appendixes}{} %comment to remove comments
+% \ifdefined\appendixes
+% %\newpage
+% \appendix
+% \input{appendixA}
+% \fi
+
+\end{document}

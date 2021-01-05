@@ -1,0 +1,99 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/28535489/creating-factor-level-indicator-variables-in-r-using-spread-or-cast
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 50
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  MemberID years a b c d
+1      123    Y1 0 0 1 0
+2      123    Y2 0 0 1 0
+3      234    Y1 1 0 0 1
+4      234    Y2 0 1 0 0
+
+Output:
+
+  MemberID Y1_a Y1_b Y1_c Y1_d Y2_a Y2_b Y2_c Y2_d
+1      123    0    0    1    0    0    0    1    0
+2      234    1    0    0    1    0    1    0    0
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p50_input1,MORPH2,MORPH1,-`MemberID`,-`years`)
+
+   MemberID years MORPH2 MORPH1
+1       123    Y1      a      0
+2       123    Y2      a      0
+3       234    Y1      a      1
+4       234    Y2      a      0
+5       123    Y1      b      0
+6       123    Y2      b      0
+7       234    Y1      b      0
+8       234    Y2      b      1
+9       123    Y1      c      1
+10      123    Y2      c      1
+11      234    Y1      c      0
+12      234    Y2      c      0
+13      123    Y1      d      0
+14      123    Y2      d      0
+15      234    Y1      d      1
+16      234    Y2      d      0
+
+TBL_1=unite(TBL_3,MORPH598,`years`,`MORPH2`)
+
+   MemberID MORPH598 MORPH1
+1       123     Y1_a      0
+2       123     Y2_a      0
+3       234     Y1_a      1
+4       234     Y2_a      0
+5       123     Y1_b      0
+6       123     Y2_b      0
+7       234     Y1_b      0
+8       234     Y2_b      1
+9       123     Y1_c      1
+10      123     Y2_c      1
+11      234     Y1_c      0
+12      234     Y2_c      0
+13      123     Y1_d      0
+14      123     Y2_d      0
+15      234     Y1_d      1
+16      234     Y2_d      0
+
+morpheus=spread(TBL_1,`MORPH598`,`MORPH1`)
+
+  MemberID Y1_a Y1_b Y1_c Y1_d Y2_a Y2_b Y2_c Y2_d
+1      123    0    0    1    0    0    0    1    0
+2      234    1    0    0    1    0    1    0    0
+
+
+R program:
+
+TBL_3=gather(p50_input1,MORPH2,MORPH1,-`MemberID`,-`years`)
+TBL_1=unite(TBL_3,MORPH598,`years`,`MORPH2`)
+morpheus=spread(TBL_1,`MORPH598`,`MORPH1`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 1
+#sketches without SMT-based deduction= 8
+#partial programs with partial evaluation= 230
+#partial programs without partial evaluation= 649
+Total time= 1.52 s

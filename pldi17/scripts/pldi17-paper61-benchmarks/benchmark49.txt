@@ -1,0 +1,134 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= https://stackoverflow.com/questions/37215378/tidyr-extract-regular-expression
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 49
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  Scenario x_min x_mean x_max y_min y_mean y_max z_min z_mean z_max
+1     base  -3.0   0.00     2  -1.5      1   5.0     0   0.25     2
+2   stress  -2.0   0.25     1  -2.0      2   3.0     1   2.00     4
+3  extreme  -2.5   1.00     3  -3.0      3   3.5     3   5.00     7
+
+Output:
+
+  Scenario varNew max mean  min
+1     base      x 2.0 0.00 -3.0
+2     base      y 5.0 1.00 -1.5
+3     base      z 2.0 0.25  0.0
+4  extreme      x 3.0 1.00 -2.5
+5  extreme      y 3.5 3.00 -3.0
+6  extreme      z 7.0 5.00  3.0
+7   stress      x 1.0 0.25 -2.0
+8   stress      y 3.0 2.00 -2.0
+9   stress      z 4.0 2.00  1.0
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p49_input1,MORPH118,MORPH117,-`Scenario`)
+
+   Scenario MORPH118 MORPH117
+1      base    x_min    -3.00
+2    stress    x_min    -2.00
+3   extreme    x_min    -2.50
+4      base   x_mean     0.00
+5    stress   x_mean     0.25
+6   extreme   x_mean     1.00
+7      base    x_max     2.00
+8    stress    x_max     1.00
+9   extreme    x_max     3.00
+10     base    y_min    -1.50
+11   stress    y_min    -2.00
+12  extreme    y_min    -3.00
+13     base   y_mean     1.00
+14   stress   y_mean     2.00
+15  extreme   y_mean     3.00
+16     base    y_max     5.00
+17   stress    y_max     3.00
+18  extreme    y_max     3.50
+19     base    z_min     0.00
+20   stress    z_min     1.00
+21  extreme    z_min     3.00
+22     base   z_mean     0.25
+23   stress   z_mean     2.00
+24  extreme   z_mean     5.00
+25     base    z_max     2.00
+26   stress    z_max     4.00
+27  extreme    z_max     7.00
+
+TBL_1=separate(TBL_3,`MORPH118`,into=c('varNew','MORPH194'))
+
+   Scenario varNew MORPH194 MORPH117
+1      base      x      min    -3.00
+2    stress      x      min    -2.00
+3   extreme      x      min    -2.50
+4      base      x     mean     0.00
+5    stress      x     mean     0.25
+6   extreme      x     mean     1.00
+7      base      x      max     2.00
+8    stress      x      max     1.00
+9   extreme      x      max     3.00
+10     base      y      min    -1.50
+11   stress      y      min    -2.00
+12  extreme      y      min    -3.00
+13     base      y     mean     1.00
+14   stress      y     mean     2.00
+15  extreme      y     mean     3.00
+16     base      y      max     5.00
+17   stress      y      max     3.00
+18  extreme      y      max     3.50
+19     base      z      min     0.00
+20   stress      z      min     1.00
+21  extreme      z      min     3.00
+22     base      z     mean     0.25
+23   stress      z     mean     2.00
+24  extreme      z     mean     5.00
+25     base      z      max     2.00
+26   stress      z      max     4.00
+27  extreme      z      max     7.00
+
+morpheus=spread(TBL_1,`MORPH194`,`MORPH117`)
+
+  Scenario varNew max mean  min
+1     base      x 2.0 0.00 -3.0
+2     base      y 5.0 1.00 -1.5
+3     base      z 2.0 0.25  0.0
+4  extreme      x 3.0 1.00 -2.5
+5  extreme      y 3.5 3.00 -3.0
+6  extreme      z 7.0 5.00  3.0
+7   stress      x 1.0 0.25 -2.0
+8   stress      y 3.0 2.00 -2.0
+9   stress      z 4.0 2.00  1.0
+
+
+R program:
+
+TBL_3=gather(p49_input1,MORPH118,MORPH117,-`Scenario`)
+TBL_1=separate(TBL_3,`MORPH118`,into=c('varNew','MORPH194'))
+morpheus=spread(TBL_1,`MORPH194`,`MORPH117`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 11
+#partial programs with partial evaluation= 127
+#partial programs without partial evaluation= 401
+Total time= 1.00 s

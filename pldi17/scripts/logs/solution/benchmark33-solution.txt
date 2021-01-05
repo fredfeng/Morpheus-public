@@ -1,0 +1,7 @@
+TBL_7=gather(p33_input1,MORPH26186,MORPH26185,-`rowname`,-`CA`)
+TBL_3=separate(TBL_7,`MORPH26186`,into=c('MORPH26841','MORPH26842'))
+TBL_1=spread(TBL_3,`MORPH26841`,`MORPH26185`)
+morpheus=select(TBL_1,-`rowname`,-`MORPH26842`)
+morpheus=as.data.frame(morpheus)
+morpheus[,3] = as.numeric(morpheus[,3])
+morpheus

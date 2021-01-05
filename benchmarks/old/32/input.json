@@ -1,0 +1,16 @@
+{
+  "id":32,
+  "depth":1,
+  "input":
+  [
+    "b32_input1",
+    "b32_input2"
+  ],
+  "output":"b32_output1",
+  "sketch":
+  [
+    1,
+    0,
+    -1 
+  ]
+}

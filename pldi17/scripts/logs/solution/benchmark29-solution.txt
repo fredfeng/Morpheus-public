@@ -1,0 +1,6 @@
+TBL_7=inner_join(p29_input2,p29_input1)
+TBL_3=filter(TBL_7,`Attribute` == "MI")
+TBL_1=group_by(TBL_3,`ID`)
+morpheus=summarise(TBL_1,Total=sum(`Value`))
+morpheus=as.data.frame(morpheus)
+morpheus

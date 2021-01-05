@@ -1,0 +1,6 @@
+TBL_3=gather(p20_input1,MORPH72,MORPH71,`action_rate`,`action_rate2`)
+TBL_1=unite(TBL_3,MORPH77,`MORPH72`,`times`)
+morpheus=spread(TBL_1,`MORPH77`,`MORPH71`)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,4,5,2,3)
+morpheus

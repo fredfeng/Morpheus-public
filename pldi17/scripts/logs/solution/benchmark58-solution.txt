@@ -1,0 +1,6 @@
+TBL_7=gather(p58_input1,Var,MORPH116131,-`ID`,-`occ`)
+TBL_3=group_by(TBL_7,`Var`,`MORPH116131`)
+TBL_1=summarise(TBL_3,MORPH117459=mean(`occ`))
+morpheus=spread(TBL_1,`MORPH116131`,`MORPH117459`)
+morpheus=as.data.frame(morpheus)
+morpheus

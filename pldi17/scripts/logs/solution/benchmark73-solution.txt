@@ -1,0 +1,6 @@
+TBL_7=group_by(p73_input1,`ST`,`dist.km`)
+TBL_3=summarise(TBL_7,total=n())
+TBL_1=filter(TBL_3,`dist.km` < 28.112340)
+morpheus=select(TBL_1,`ST`,`total`)
+morpheus=as.data.frame(morpheus)
+morpheus

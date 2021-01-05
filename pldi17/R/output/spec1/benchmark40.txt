@@ -1,0 +1,111 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/40/input.json
+Specs: ../../benchmarks/pldi17/40/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p40_output1
+Input tables:p40_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+Adding missing grouping variables: `income`
+Adding missing grouping variables: `income`
+Adding missing grouping variables: `income`
+Adding missing grouping variables: `income`
+Adding missing grouping variables: `income`
+Adding missing grouping variables: `income`
+Adding missing grouping variables: `income`
+Adding missing grouping variables: `income`
+Adding missing grouping variables: `income`
+Adding missing grouping variables: `income`
+Adding missing grouping variables: `income`
+Adding missing grouping variables: `income`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Adding missing grouping variables: `event_id`
+Joining, by = c("income", "location")
+Joining, by = c("income", "location")
+Joining, by = c("income", "location")
+Joining, by = c("income", "location")
+Joining, by = c("event_id", "location")
+# sketches with deduction: 8
+# sketches without deduction: 8
+# predicates with deduction: 1803
+# predicates without deduction: 1803
+# predicates pruned (NA or size): 129
+# R calls: 2094
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 33.335
+Deduction on partial evaluation:359.689
+R calls: 1521.49
+Total time: 2091.05
+[Percentage] R=72.7619 Z3=18.7955 other=8.4426
+==================================================
+R program: 
+TBL_5=group_by(p40_input1,`event_id`,`location`)
+TBL_2=summarise(TBL_5,MORPH897=mean(`income`))
+morpheus=inner_join(p40_input1,TBL_2)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,4,2,3)
+morpheus=arrange(morpheus,`MORPH897`)
+morpheus=rename(morpheus,mean_inc=MORPH897)
+morpheus

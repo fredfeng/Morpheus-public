@@ -1,0 +1,104 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/29756767/r-summarize-qualitative-data-based-on-quantitative-subsets-dplyr
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 16
+Category= C2
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  ID  Color    Type     W1     W2
+1  1    red Outdoor  74.22  26.86
+2  2    red  Indoor  78.59 138.80
+3  7    red  Indoor  38.41  84.81
+4  8    red Outdoor 140.68  93.33
+5  9 yellow Outdoor  65.95 104.31
+
+Output:
+
+   Color sumCount sumMean
+1    red        3       3
+2 yellow        1       1
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_15=filter(p16_input1,`W2` > 26.860000)
+
+  ID  Color    Type     W1     W2
+1  2    red  Indoor  78.59 138.80
+2  7    red  Indoor  38.41  84.81
+3  8    red Outdoor 140.68  93.33
+4  9 yellow Outdoor  65.95 104.31
+
+TBL_7=group_by(TBL_15,`Color`)
+
+Source: local data frame [4 x 5]
+Groups: Color [2]
+
+     ID  Color    Type     W1     W2
+  <dbl>  <chr>   <chr>  <dbl>  <dbl>
+1     2    red  Indoor  78.59 138.80
+2     7    red  Indoor  38.41  84.81
+3     8    red Outdoor 140.68  93.33
+4     9 yellow Outdoor  65.95 104.31
+
+TBL_3=summarise(TBL_7,sumCount=n())
+
+# A tibble: 2 x 2
+   Color sumCount
+   <chr>    <int>
+1    red        3
+2 yellow        1
+
+TBL_1=group_by(TBL_3,`Color`,`sumCount`)
+
+Source: local data frame [2 x 2]
+Groups: Color, sumCount [2]
+
+   Color sumCount
+   <chr>    <int>
+1    red        3
+2 yellow        1
+
+morpheus=summarise(TBL_1,sumMean=mean(`sumCount`))
+
+Source: local data frame [2 x 3]
+Groups: Color [?]
+
+   Color sumCount sumMean
+   <chr>    <int>   <dbl>
+1    red        3       3
+2 yellow        1       1
+
+
+R program:
+
+TBL_15=filter(p16_input1,`W2` > 26.860000)
+TBL_7=group_by(TBL_15,`Color`)
+TBL_3=summarise(TBL_7,sumCount=n())
+TBL_1=group_by(TBL_3,`Color`,`sumCount`)
+morpheus=summarise(TBL_1,sumMean=mean(`sumCount`))
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 8
+#sketches without SMT-based deduction= 9
+#partial programs with partial evaluation= 4833
+#partial programs without partial evaluation= 24686
+Total time= 28.09 s

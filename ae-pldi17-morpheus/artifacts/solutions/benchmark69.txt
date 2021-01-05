@@ -1,0 +1,96 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/31766469/reshaping-before-and-after-data
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 69
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  Subject Var1 Var2
+1   A-pre   25   27
+2  A-post   25   26
+3   B-pre   30   28
+4  B-post   30   28
+
+Output:
+
+  SubjectNew Var1_post Var1_pre Var2_post Var2_pre
+1          A        25       25        26       27
+2          B        30       30        28       28
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_7=gather(p69_input1,MORPH2127,MORPH2126,`Var1`,`Var2`)
+
+  Subject MORPH2127 MORPH2126
+1   A-pre      Var1        25
+2  A-post      Var1        25
+3   B-pre      Var1        30
+4  B-post      Var1        30
+5   A-pre      Var2        27
+6  A-post      Var2        26
+7   B-pre      Var2        28
+8  B-post      Var2        28
+
+TBL_3=separate(TBL_7,`Subject`,into=c('SubjectNew','MORPH2137'))
+
+  SubjectNew MORPH2137 MORPH2127 MORPH2126
+1          A       pre      Var1        25
+2          A      post      Var1        25
+3          B       pre      Var1        30
+4          B      post      Var1        30
+5          A       pre      Var2        27
+6          A      post      Var2        26
+7          B       pre      Var2        28
+8          B      post      Var2        28
+
+TBL_1=unite(TBL_3,MORPH2142,`MORPH2127`,`MORPH2137`)
+
+  SubjectNew MORPH2142 MORPH2126
+1          A  Var1_pre        25
+2          A Var1_post        25
+3          B  Var1_pre        30
+4          B Var1_post        30
+5          A  Var2_pre        27
+6          A Var2_post        26
+7          B  Var2_pre        28
+8          B Var2_post        28
+
+morpheus=spread(TBL_1,`MORPH2142`,`MORPH2126`)
+
+  SubjectNew Var1_post Var1_pre Var2_post Var2_pre
+1          A        25       25        26       27
+2          B        30       30        28       28
+
+
+R program:
+
+TBL_7=gather(p69_input1,MORPH2127,MORPH2126,`Var1`,`Var2`)
+TBL_3=separate(TBL_7,`Subject`,into=c('SubjectNew','MORPH2137'))
+TBL_1=unite(TBL_3,MORPH2142,`MORPH2127`,`MORPH2137`)
+morpheus=spread(TBL_1,`MORPH2142`,`MORPH2126`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 16
+#sketches without SMT-based deduction= 104
+#partial programs with partial evaluation= 857
+#partial programs without partial evaluation= 2031
+Total time= 4.57 s

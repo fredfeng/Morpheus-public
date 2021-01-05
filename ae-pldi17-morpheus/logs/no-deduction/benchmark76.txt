@@ -1,0 +1,190 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/90/input.json
+Specs: ../../benchmarks/pldi17/90/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Output table:p90_output1
+Input tables:p90_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `value.1`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `y`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+Adding missing grouping variables: `x`
+# sketches with deduction: 8
+# sketches without deduction: 8
+# predicates with deduction: 11506
+# predicates without deduction: 11506
+# predicates pruned (NA or size): 485
+# R calls: 12023
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 34.739
+Deduction on partial evaluation:2468.1
+R calls: 7504.03
+Total time: 12830.5
+[Percentage] R=58.4861 Z3=19.507 other=22.0069
+==================================================
+R program: 
+TBL_3=gather(p90_input1,MORPH6513,MORPH6512,`value.1`,`value.2`)
+TBL_1=unite(TBL_3,MORPH6520,`MORPH6513`,`y`)
+morpheus=spread(TBL_1,`MORPH6520`,`MORPH6512`)
+morpheus=as.data.frame(morpheus)
+morpheus

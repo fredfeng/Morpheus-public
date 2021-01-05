@@ -1,0 +1,67 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/21/input.json
+Specs: ../../benchmarks/pldi17/21/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 0
+----------------------------------
+BenchmarkId:21
+Depth:1
+Output table:p21_output1
+Input tables:p21_input1 
+Sketch (Components):1 4 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+# sketches with deduction: 2
+# sketches without deduction: 11
+# predicates with deduction: 963
+# predicates without deduction: 963
+# predicates pruned (NA or size): 3794
+# R calls: 4777
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 68.363
+Deduction on partial evaluation:0
+R calls: 3999.93
+Total time: 4589.91
+[Percentage] R=87.1462 Z3=1.48942 other=11.3644
+==================================================
+R program: 
+TBL_3=gather(p21_input1,MORPH356,MORPH355,-`obs`)
+TBL_1=separate(TBL_3,`MORPH356`,into=c('MORPH567','MORPH568'))
+morpheus=spread(TBL_1,`MORPH568`,`MORPH355`)
+morpheus=as.data.frame(morpheus)
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

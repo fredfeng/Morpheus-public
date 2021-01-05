@@ -1,0 +1,68 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/49/input.json
+Specs: ../../benchmarks/pldi17/49/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 0
+----------------------------------
+BenchmarkId:1
+Output table:p49_output1
+Input tables:p49_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec2/*
+specs/spec2/filter.json compName: filter
+specs/spec2/gather.json compName: gather
+specs/spec2/group_by.json compName: group_by
+specs/spec2/inner_join.json compName: inner_join
+specs/spec2/mutate.json compName: mutate
+specs/spec2/select.json compName: select
+specs/spec2/separate.json compName: separate
+specs/spec2/spread.json compName: spread
+specs/spec2/summarise.json compName: summarise
+specs/spec2/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+# sketches with deduction: 2
+# sketches without deduction: 10
+# predicates with deduction: 1517
+# predicates without deduction: 1517
+# predicates pruned (NA or size): 322
+# R calls: 1862
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 46.084
+Deduction on partial evaluation:0
+R calls: 1408.01
+Total time: 1628.69
+[Percentage] R=86.4506 Z3=2.82952 other=10.7199
+==================================================
+R program: 
+TBL_3=gather(p49_input1,MORPH1148,MORPH1147,-`id`)
+TBL_1=separate(TBL_3,`MORPH1148`,into=c('MORPH1359','MORPH1360'))
+morpheus=spread(TBL_1,`MORPH1359`,`MORPH1147`)
+morpheus=as.data.frame(morpheus)
+morpheus[,2] = as.numeric(morpheus[,2])
+morpheus[,3] = as.numeric(morpheus[,3])
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

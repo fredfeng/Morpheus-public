@@ -1,0 +1,6 @@
+TBL_7=gather(p32_input1,MORPH26762,MORPH26761,-`id`)
+TBL_3=group_by(TBL_7,`id`)
+TBL_1=summarise(TBL_3,mean=mean(`MORPH26761`))
+morpheus=inner_join(TBL_1,p32_input1)
+morpheus=as.data.frame(morpheus)
+morpheus

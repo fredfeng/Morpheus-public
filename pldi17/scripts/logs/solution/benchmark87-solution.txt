@@ -1,0 +1,5 @@
+TBL_3=gather(p87_input1,MORPH72,MORPH71,`Response`,`Count`)
+TBL_1=unite(TBL_3,MORPH83,`MORPH72`,`Which`)
+morpheus=spread(TBL_1,`MORPH83`,`MORPH71`)
+morpheus=as.data.frame(morpheus)
+morpheus

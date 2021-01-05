@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/35459547/how-to-melt-a-dataframe-with-measured-variables-and-associated-standard-deviatio

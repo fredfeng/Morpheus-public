@@ -1,0 +1,95 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/33207263/finding-proportions-in-flights-dataset-in-r
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 12
+Category= C2
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+   flight origin dest
+1    1141    JFK  MIA
+2     725    JFK  BQN
+3     461    LGA  ATL
+4    1696    EWR  ORD
+5     507    EWR  FLL
+6    5708    LGA  IAD
+7      79    JFK  MCO
+8     301    LGA  ORD
+9      11    EWR  SEA
+10    495    JFK  SEA
+11   1670    EWR  SEA
+
+Output:
+
+  origin n      freq
+1    EWR 2 0.6666667
+2    JFK 1 0.3333333
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_7=filter(p12_input1,`dest` == "SEA")
+
+  flight origin dest
+1     11    EWR  SEA
+2    495    JFK  SEA
+3   1670    EWR  SEA
+
+TBL_3=group_by(TBL_7,`origin`)
+
+Source: local data frame [3 x 3]
+Groups: origin [2]
+
+  flight origin  dest
+   <dbl>  <chr> <chr>
+1     11    EWR   SEA
+2    495    JFK   SEA
+3   1670    EWR   SEA
+
+TBL_1=summarise(TBL_3,n=n())
+
+# A tibble: 2 x 2
+  origin     n
+   <chr> <int>
+1    EWR     2
+2    JFK     1
+
+morpheus=mutate(TBL_1,freq=n / sum(n))
+
+# A tibble: 2 x 3
+  origin     n      freq
+   <chr> <int>     <dbl>
+1    EWR     2 0.6666667
+2    JFK     1 0.3333333
+
+
+R program:
+
+TBL_7=filter(p12_input1,`dest` == "SEA")
+TBL_3=group_by(TBL_7,`origin`)
+TBL_1=summarise(TBL_3,n=n())
+morpheus=mutate(TBL_1,freq=n / sum(n))
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 25
+#sketches without SMT-based deduction= 33
+#partial programs with partial evaluation= 1621
+#partial programs without partial evaluation= 10446
+Total time= 10.65 s

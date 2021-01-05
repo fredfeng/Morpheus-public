@@ -1,0 +1,15 @@
+{
+  "id":3,
+  "name":"select",
+  "arguments":
+  [
+    "Table", 
+    "ColList"
+  ],
+  "template":"select(#table,#Unknown)",
+  "constraint":
+  [
+  "(declare-const CO_SPEC Int)(declare-const CI_SPEC Int)(declare-const RO_SPEC Int)(declare-const RI_SPEC Int)(assert (< CO_SPEC CI_SPEC))(assert (= RO_SPEC RI_SPEC))",
+  "(define-sort Set () (Array Int Bool))(declare-const SET_I_SPEC (Set))(declare-const SET_O_SPEC (Set))(assert (not (= SET_I_SPEC SET_O_SPEC)))(assert (subset SET_O_SPEC SET_I_SPEC))"
+  ]
+}

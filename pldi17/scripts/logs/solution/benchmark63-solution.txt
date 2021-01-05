@@ -1,0 +1,5 @@
+TBL_3=gather(p63_input1,MORPH2,MORPH1,-`Market`,-`Variables`)
+TBL_1=unite(TBL_3,MORPH68,`Variables`,`MORPH2`)
+morpheus=spread(TBL_1,`MORPH68`,`MORPH1`)
+morpheus=as.data.frame(morpheus)
+morpheus

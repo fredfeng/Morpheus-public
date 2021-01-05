@@ -1,0 +1,3498 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/64/input.json
+Specs: ../../benchmarks/pldi17/64/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Output table:p64_output1
+Input tables:p64_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Clarity_3`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Effort_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Clarity_2`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Effort_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `Clarity_1`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `roleInDebate`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Clarity_3", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Effort_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Effort_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Effort_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Clarity_3")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Clarity_2", "Effort_2")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Effort_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Clarity_3")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Effort_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Effort_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Effort_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Clarity_3")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Effort_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Clarity_2")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("Clarity_1", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Effort_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Clarity_3")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Effort_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Clarity_2")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Effort_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("roleInDebate", "Clarity_1")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Effort_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Clarity_3")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Effort_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Clarity_2")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Effort_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "Clarity_1")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = c("year", "roleInDebate")
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Effort_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Clarity_3"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Effort_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Clarity_2"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Effort_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "Clarity_1"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "roleInDebate"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+# sketches with deduction: 11
+# sketches without deduction: 11
+# predicates with deduction: 94961
+# predicates without deduction: 94961
+# predicates pruned (NA or size): 25850
+# R calls: 124032
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 51.366
+Deduction on partial evaluation:20581.2
+R calls: 109566
+Total time: 163979
+[Percentage] R=66.817 Z3=12.5824 other=20.6006
+==================================================
+R program: 
+TBL_3=gather(p64_input1,MORPH67440,MORPH67439,-`year`,-`roleInDebate`)
+TBL_1=separate(TBL_3,`MORPH67440`,into=c('MORPH68095','MORPH68096'))
+morpheus=spread(TBL_1,`MORPH68095`,`MORPH67439`)
+morpheus=as.data.frame(morpheus)
+morpheus[,3] = as.numeric(morpheus[,3])
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

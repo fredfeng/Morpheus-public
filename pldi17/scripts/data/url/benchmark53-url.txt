@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/28535489/creating-factor-level-indicator-variables-in-r-using-spread-or-cast

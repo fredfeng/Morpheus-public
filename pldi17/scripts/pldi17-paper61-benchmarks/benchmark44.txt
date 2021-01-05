@@ -1,0 +1,111 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/23945350/reshaping-wide-to-long-with-multiple-values-columns
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 44
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  sbj f1.avg f1.sd f2.avg f2.sd blabla
+1   A     10     6     50    10     bA
+2   B     12     5     70    11     bB
+3   C     20     7     20     8     bC
+4   D     22     8     22     9     bD
+
+Output:
+
+  sbj blabla var avg sd
+1   A     bA  f1  10  6
+2   A     bA  f2  50 10
+3   B     bB  f1  12  5
+4   B     bB  f2  70 11
+5   C     bC  f1  20  7
+6   C     bC  f2  20  8
+7   D     bD  f1  22  8
+8   D     bD  f2  22  9
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p44_input1,MORPH672,MORPH671,-`sbj`,-`blabla`)
+
+   sbj blabla MORPH672 MORPH671
+1    A     bA   f1.avg       10
+2    B     bB   f1.avg       12
+3    C     bC   f1.avg       20
+4    D     bD   f1.avg       22
+5    A     bA    f1.sd        6
+6    B     bB    f1.sd        5
+7    C     bC    f1.sd        7
+8    D     bD    f1.sd        8
+9    A     bA   f2.avg       50
+10   B     bB   f2.avg       70
+11   C     bC   f2.avg       20
+12   D     bD   f2.avg       22
+13   A     bA    f2.sd       10
+14   B     bB    f2.sd       11
+15   C     bC    f2.sd        8
+16   D     bD    f2.sd        9
+
+TBL_1=separate(TBL_3,`MORPH672`,into=c('var','MORPH760'))
+
+   sbj blabla var MORPH760 MORPH671
+1    A     bA  f1      avg       10
+2    B     bB  f1      avg       12
+3    C     bC  f1      avg       20
+4    D     bD  f1      avg       22
+5    A     bA  f1       sd        6
+6    B     bB  f1       sd        5
+7    C     bC  f1       sd        7
+8    D     bD  f1       sd        8
+9    A     bA  f2      avg       50
+10   B     bB  f2      avg       70
+11   C     bC  f2      avg       20
+12   D     bD  f2      avg       22
+13   A     bA  f2       sd       10
+14   B     bB  f2       sd       11
+15   C     bC  f2       sd        8
+16   D     bD  f2       sd        9
+
+morpheus=spread(TBL_1,`MORPH760`,`MORPH671`)
+
+  sbj blabla var avg sd
+1   A     bA  f1  10  6
+2   A     bA  f2  50 10
+3   B     bB  f1  12  5
+4   B     bB  f2  70 11
+5   C     bC  f1  20  7
+6   C     bC  f2  20  8
+7   D     bD  f1  22  8
+8   D     bD  f2  22  9
+
+
+R program:
+
+TBL_3=gather(p44_input1,MORPH672,MORPH671,-`sbj`,-`blabla`)
+TBL_1=separate(TBL_3,`MORPH672`,into=c('var','MORPH760'))
+morpheus=spread(TBL_1,`MORPH760`,`MORPH671`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 11
+#partial programs with partial evaluation= 719
+#partial programs without partial evaluation= 1235
+Total time= 10.20 s

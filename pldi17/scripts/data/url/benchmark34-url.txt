@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/34594641/dplyr-summary-table-for-multiple-variables

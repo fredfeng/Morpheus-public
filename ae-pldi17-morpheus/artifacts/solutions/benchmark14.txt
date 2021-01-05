@@ -1,0 +1,184 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/29447325/collapsing-multiple-columns-containing-the-same-variable-into-one-column
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 14
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+   ID Diagnosis_1 Diagnosis_2 Diagnosis_3 Diagnosis_4
+1   A           1           0           0           0
+2   A           1           0           0           0
+3   A           1           0           0           0
+4   B           0           1           0           0
+5   C           0           0           0           1
+6   C           0           1           0           0
+7   D           0           0           0           1
+8   E           0           0           1           0
+9   E           0           1           0           0
+10  E           0           0           1           0
+
+Output:
+
+   ID value
+1   A     1
+2   A     1
+3   A     1
+4   B     2
+5   C     2
+6   E     2
+7   E     3
+8   E     3
+9   C     4
+10  D     4
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_7=gather(p14_input1,MORPH144074,MORPH144073,-`ID`)
+
+   ID MORPH144074 MORPH144073
+1   A Diagnosis_1           1
+2   A Diagnosis_1           1
+3   A Diagnosis_1           1
+4   B Diagnosis_1           0
+5   C Diagnosis_1           0
+6   C Diagnosis_1           0
+7   D Diagnosis_1           0
+8   E Diagnosis_1           0
+9   E Diagnosis_1           0
+10  E Diagnosis_1           0
+11  A Diagnosis_2           0
+12  A Diagnosis_2           0
+13  A Diagnosis_2           0
+14  B Diagnosis_2           1
+15  C Diagnosis_2           0
+16  C Diagnosis_2           1
+17  D Diagnosis_2           0
+18  E Diagnosis_2           0
+19  E Diagnosis_2           1
+20  E Diagnosis_2           0
+21  A Diagnosis_3           0
+22  A Diagnosis_3           0
+23  A Diagnosis_3           0
+24  B Diagnosis_3           0
+25  C Diagnosis_3           0
+26  C Diagnosis_3           0
+27  D Diagnosis_3           0
+28  E Diagnosis_3           1
+29  E Diagnosis_3           0
+30  E Diagnosis_3           1
+31  A Diagnosis_4           0
+32  A Diagnosis_4           0
+33  A Diagnosis_4           0
+34  B Diagnosis_4           0
+35  C Diagnosis_4           1
+36  C Diagnosis_4           0
+37  D Diagnosis_4           1
+38  E Diagnosis_4           0
+39  E Diagnosis_4           0
+40  E Diagnosis_4           0
+
+TBL_3=separate(TBL_7,`MORPH144074`,into=c('MORPH144281','value'))
+
+   ID MORPH144281 value MORPH144073
+1   A   Diagnosis     1           1
+2   A   Diagnosis     1           1
+3   A   Diagnosis     1           1
+4   B   Diagnosis     1           0
+5   C   Diagnosis     1           0
+6   C   Diagnosis     1           0
+7   D   Diagnosis     1           0
+8   E   Diagnosis     1           0
+9   E   Diagnosis     1           0
+10  E   Diagnosis     1           0
+11  A   Diagnosis     2           0
+12  A   Diagnosis     2           0
+13  A   Diagnosis     2           0
+14  B   Diagnosis     2           1
+15  C   Diagnosis     2           0
+16  C   Diagnosis     2           1
+17  D   Diagnosis     2           0
+18  E   Diagnosis     2           0
+19  E   Diagnosis     2           1
+20  E   Diagnosis     2           0
+21  A   Diagnosis     3           0
+22  A   Diagnosis     3           0
+23  A   Diagnosis     3           0
+24  B   Diagnosis     3           0
+25  C   Diagnosis     3           0
+26  C   Diagnosis     3           0
+27  D   Diagnosis     3           0
+28  E   Diagnosis     3           1
+29  E   Diagnosis     3           0
+30  E   Diagnosis     3           1
+31  A   Diagnosis     4           0
+32  A   Diagnosis     4           0
+33  A   Diagnosis     4           0
+34  B   Diagnosis     4           0
+35  C   Diagnosis     4           1
+36  C   Diagnosis     4           0
+37  D   Diagnosis     4           1
+38  E   Diagnosis     4           0
+39  E   Diagnosis     4           0
+40  E   Diagnosis     4           0
+
+TBL_1=filter(TBL_3,`MORPH144073` > 0.000000)
+
+   ID MORPH144281 value MORPH144073
+1   A   Diagnosis     1           1
+2   A   Diagnosis     1           1
+3   A   Diagnosis     1           1
+4   B   Diagnosis     2           1
+5   C   Diagnosis     2           1
+6   E   Diagnosis     2           1
+7   E   Diagnosis     3           1
+8   E   Diagnosis     3           1
+9   C   Diagnosis     4           1
+10  D   Diagnosis     4           1
+
+morpheus=select(TBL_1,`ID`,`value`)
+
+   ID value
+1   A     1
+2   A     1
+3   A     1
+4   B     2
+5   C     2
+6   E     2
+7   E     3
+8   E     3
+9   C     4
+10  D     4
+
+
+R program:
+
+TBL_7=gather(p14_input1,MORPH144074,MORPH144073,-`ID`)
+TBL_3=separate(TBL_7,`MORPH144074`,into=c('MORPH144281','value'))
+TBL_1=filter(TBL_3,`MORPH144073` > 0.000000)
+morpheus=select(TBL_1,`ID`,`value`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 74
+#sketches without SMT-based deduction= 111
+#partial programs with partial evaluation= 21501
+#partial programs without partial evaluation= 181516
+Total time= 204.83 s

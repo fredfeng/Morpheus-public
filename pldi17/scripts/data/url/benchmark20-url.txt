@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/37332076/from-long-to-wide-data-with-multiple-columns

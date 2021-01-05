@@ -1,0 +1,2050 @@
+Morheus thread 3 finished.
+Loading benchmark: ../../benchmarks/pldi17/92/input.json
+Specs: ../../benchmarks/pldi17/92/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Output table:p92_output1
+Input tables:p92_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size4-ngram.txt
+Mapping from string to vector file: sketches/size4-map.txt
+begin to synthesize.....
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = c("year", "type")
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = c("year", "type")
+Joining, by = "type"
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Joining, by = "year"
+Adding missing grouping variables: `year`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Adding missing grouping variables: `obs`
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "year"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = "obs"
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("year", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "type")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = c("obs", "year")
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+Joining, by = "type"
+# sketches with deduction: 68
+# sketches without deduction: 168
+# predicates with deduction: 5428
+# predicates without deduction: 10788
+# predicates pruned (NA or size): 4780
+# R calls: 21964
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 1182.57
+Deduction on partial evaluation:2665.77
+R calls: 17367.4
+Total time: 24791.8
+[Percentage] R=70.0529 Z3=15.5226 other=14.4245
+==================================================
+R program: 
+TBL_7=filter(p92_input1,`year` > 2014.000000)
+TBL_3=group_by(TBL_7,`type`)
+TBL_1=summarise(TBL_3,freq=n())
+morpheus=inner_join(TBL_1,p92_input1)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,3,4,1,2)
+morpheus=arrange(morpheus,`obs`)
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,92 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/34365578/dplyr-filtering-based-on-two-variables
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 17
+Category= C4
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  Id Group Var1 Var2
+1  1     A good   10
+2  2     A good    6
+3  3     A  bad    9
+4  4     B good    3
+5  5     B good    3
+6  6     B  bad    8
+
+Output:
+
+  Group bad good
+1     A   9   16
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_7=filter(p17_input1,`Group` == "A")
+
+  Id Group Var1 Var2
+1  1     A good   10
+2  2     A good    6
+3  3     A  bad    9
+
+TBL_3=group_by(TBL_7,`Group`,`Var1`)
+
+Source: local data frame [3 x 4]
+Groups: Group, Var1 [2]
+
+     Id Group  Var1  Var2
+  <dbl> <chr> <chr> <dbl>
+1     1     A  good    10
+2     2     A  good     6
+3     3     A   bad     9
+
+TBL_1=summarise(TBL_3,MORPH3405=sum(`Var2`))
+
+Source: local data frame [2 x 3]
+Groups: Group [?]
+
+  Group  Var1 MORPH3405
+  <chr> <chr>     <dbl>
+1     A   bad         9
+2     A  good        16
+
+morpheus=spread(TBL_1,`Var1`,`MORPH3405`)
+
+Source: local data frame [1 x 3]
+Groups: Group [1]
+
+  Group   bad  good
+* <chr> <dbl> <dbl>
+1     A     9    16
+
+
+R program:
+
+TBL_7=filter(p17_input1,`Group` == "A")
+TBL_3=group_by(TBL_7,`Group`,`Var1`)
+TBL_1=summarise(TBL_3,MORPH3405=sum(`Var2`))
+morpheus=spread(TBL_1,`Var1`,`MORPH3405`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 14
+#sketches without SMT-based deduction= 36
+#partial programs with partial evaluation= 3491
+#partial programs without partial evaluation= 9332
+Total time= 31.63 s

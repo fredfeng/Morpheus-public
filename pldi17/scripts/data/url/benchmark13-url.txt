@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/27247078/reshape-multiple-values-at-once-in-r

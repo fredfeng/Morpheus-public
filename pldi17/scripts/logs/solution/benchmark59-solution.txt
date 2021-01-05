@@ -1,0 +1,5 @@
+TBL_3=gather(p59_input1,MORPH118,MORPH117,-`sample`,-`BMI`)
+TBL_1=separate(TBL_3,`MORPH118`,into=c('varNew','MORPH186'))
+morpheus=spread(TBL_1,`MORPH186`,`MORPH117`)
+morpheus=as.data.frame(morpheus)
+morpheus

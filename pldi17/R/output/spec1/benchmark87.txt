@@ -1,0 +1,192 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/87/input.json
+Specs: ../../benchmarks/pldi17/87/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p87_output1
+Input tables:p87_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Response`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Color`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+Adding missing grouping variables: `Which`
+# sketches with deduction: 8
+# sketches without deduction: 8
+# predicates with deduction: 6773
+# predicates without deduction: 6773
+# predicates pruned (NA or size): 497
+# R calls: 7338
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 33.632
+Deduction on partial evaluation:1387.29
+R calls: 4820.18
+Total time: 7559.42
+[Percentage] R=63.7639 Z3=18.7968 other=17.4393
+==================================================
+R program: 
+TBL_3=gather(p87_input1,MORPH3993,MORPH3992,`Response`,`Count`)
+TBL_1=unite(TBL_3,MORPH4004,`MORPH3993`,`Which`)
+morpheus=spread(TBL_1,`MORPH4004`,`MORPH3992`)
+morpheus=as.data.frame(morpheus)
+morpheus

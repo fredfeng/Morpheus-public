@@ -1,0 +1,109 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/36783872/r-dplyr-how-to-include-more-columns-from-the-original-data-frame-data-table-a
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 39
+Category= C5
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  event_id income location
+1        A      1   PlaceX
+2        B      2   PlaceY
+3        A      3   PlaceX
+4        A      4   PlaceX
+5        B      5   PlaceY
+
+Output:
+
+  event_id mean_inc income location
+1        A 2.666667      1   PlaceX
+2        A 2.666667      3   PlaceX
+3        A 2.666667      4   PlaceX
+4        B 3.500000      2   PlaceY
+5        B 3.500000      5   PlaceY
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_5=group_by(p39_input1,`event_id`,`location`)
+
+Source: local data frame [5 x 3]
+Groups: event_id, location [2]
+
+  event_id income location
+     <chr>  <dbl>    <chr>
+1        A      1   PlaceX
+2        B      2   PlaceY
+3        A      3   PlaceX
+4        A      4   PlaceX
+5        B      5   PlaceY
+
+TBL_2=summarise(TBL_5,mean_inc=mean(`income`))
+
+Source: local data frame [2 x 3]
+Groups: event_id [?]
+
+  event_id location mean_inc
+     <chr>    <chr>    <dbl>
+1        A   PlaceX 2.666667
+2        B   PlaceY 3.500000
+
+morpheus=inner_join(p39_input1,TBL_2)
+
+  event_id income location mean_inc
+1        A      1   PlaceX 2.666667
+2        B      2   PlaceY 3.500000
+3        A      3   PlaceX 2.666667
+4        A      4   PlaceX 2.666667
+5        B      5   PlaceY 3.500000
+
+morpheus=select(morpheus,1,4,2,3)
+
+  event_id mean_inc income location
+1        A 2.666667      1   PlaceX
+2        B 3.500000      2   PlaceY
+3        A 2.666667      3   PlaceX
+4        A 2.666667      4   PlaceX
+5        B 3.500000      5   PlaceY
+
+morpheus=arrange(morpheus,`mean_inc`)
+
+  event_id mean_inc income location
+1        A 2.666667      1   PlaceX
+2        A 2.666667      3   PlaceX
+3        A 2.666667      4   PlaceX
+4        B 3.500000      2   PlaceY
+5        B 3.500000      5   PlaceY
+
+
+R program:
+
+TBL_5=group_by(p39_input1,`event_id`,`location`)
+TBL_2=summarise(TBL_5,mean_inc=mean(`income`))
+morpheus=inner_join(p39_input1,TBL_2)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,4,2,3)
+morpheus=arrange(morpheus,`mean_inc`)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 8
+#partial programs with partial evaluation= 10
+#partial programs without partial evaluation= 38
+Total time= .14 s

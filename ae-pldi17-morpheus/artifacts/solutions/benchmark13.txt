@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/27247078/reshape-multiple-values-at-once-in-r
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 13
+Category= C3
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  id    type transactions amount
+1 20  income           20    100
+2 20 expense           25     95
+3 30  income           50    300
+4 30 expense           45    250
+
+Output:
+
+  id expense_amount expense_transactions income_amount income_transactions
+1 20             95                   25           100                  20
+2 30            250                   45           300                  50
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p13_input1,MORPH102,MORPH101,`transactions`,`amount`)
+
+  id    type     MORPH102 MORPH101
+1 20  income transactions       20
+2 20 expense transactions       25
+3 30  income transactions       50
+4 30 expense transactions       45
+5 20  income       amount      100
+6 20 expense       amount       95
+7 30  income       amount      300
+8 30 expense       amount      250
+
+TBL_1=unite(TBL_3,MORPH110,`type`,`MORPH102`)
+
+  id             MORPH110 MORPH101
+1 20  income_transactions       20
+2 20 expense_transactions       25
+3 30  income_transactions       50
+4 30 expense_transactions       45
+5 20        income_amount      100
+6 20       expense_amount       95
+7 30        income_amount      300
+8 30       expense_amount      250
+
+morpheus=spread(TBL_1,`MORPH110`,`MORPH101`)
+
+  id expense_amount expense_transactions income_amount income_transactions
+1 20             95                   25           100                  20
+2 30            250                   45           300                  50
+
+
+R program:
+
+TBL_3=gather(p13_input1,MORPH102,MORPH101,`transactions`,`amount`)
+TBL_1=unite(TBL_3,MORPH110,`type`,`MORPH102`)
+morpheus=spread(TBL_1,`MORPH110`,`MORPH101`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 2
+#sketches without SMT-based deduction= 8
+#partial programs with partial evaluation= 22
+#partial programs without partial evaluation= 123
+Total time= .33 s

@@ -1,0 +1,65 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/42/input.json
+Specs: ../../benchmarks/pldi17/42/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 0
+----------------------------------
+BenchmarkId:1
+Output table:p42_output1
+Input tables:p42_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+# sketches with deduction: 2
+# sketches without deduction: 11
+# predicates with deduction: 560
+# predicates without deduction: 560
+# predicates pruned (NA or size): 1624
+# R calls: 2204
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 71.15
+Deduction on partial evaluation:0
+R calls: 1870.96
+Total time: 2131.79
+[Percentage] R=87.7649 Z3=3.33757 other=8.89755
+==================================================
+R program: 
+TBL_3=gather(p42_input1,MORPH356,MORPH355,-`row`)
+TBL_1=separate(TBL_3,`MORPH356`,into=c('MORPH543','MORPH544'))
+morpheus=spread(TBL_1,`MORPH544`,`MORPH355`)
+morpheus=as.data.frame(morpheus)
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

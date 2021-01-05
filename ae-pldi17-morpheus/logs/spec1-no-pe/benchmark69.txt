@@ -1,0 +1,2087 @@
+Morheus thread 3 finished.
+Loading benchmark: ../../benchmarks/pldi17/81/input.json
+Specs: ../../benchmarks/pldi17/81/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 0
+----------------------------------
+BenchmarkId:1
+Output table:p81_output1
+Input tables:p81_input1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec2/*
+specs/spec2/filter.json compName: filter
+specs/spec2/gather.json compName: gather
+specs/spec2/group_by.json compName: group_by
+specs/spec2/inner_join.json compName: inner_join
+specs/spec2/mutate.json compName: mutate
+specs/spec2/select.json compName: select
+specs/spec2/separate.json compName: separate
+specs/spec2/spread.json compName: spread
+specs/spec2/summarise.json compName: summarise
+specs/spec2/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size4-ngram.txt
+Mapping from string to vector file: sketches/size4-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Var1", "Var2")
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Joining, by = c("Var1", "Var2")
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Joining, by = c("Var1", "Var2")
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Joining, by = c("Var1", "Var2")
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Joining, by = c("Var1", "Var2")
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Joining, by = c("Var1", "Var2")
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Joining, by = c("Var1", "Var2")
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Joining, by = c("Subject", "Var2")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var2")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var2")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var2")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var2")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var2")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var2")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var1")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var1")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var1")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var1")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var1")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var1")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Subject", "Var1")
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Var1`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Adding missing grouping variables: `Subject`
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Error: object 'Var2_B' not found
+In addition: Warning messages:
+1: Too few values at 8 locations: 5, 6, 7, 8, 9, 10, 11, 12 
+2: Too few values at 12 locations: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 
+3: Too few values at 8 locations: 1, 2, 3, 4, 5, 6, 7, 8 
+4: Too few values at 8 locations: 1, 2, 3, 4, 5, 6, 7, 8 
+5: Too few values at 4 locations: 5, 6, 7, 8 
+6: Too few values at 8 locations: 1, 2, 3, 4, 5, 6, 7, 8 
+7: Too few values at 8 locations: 1, 2, 3, 4, 5, 6, 7, 8 
+8: Too few values at 4 locations: 5, 6, 7, 8 
+9: Too few values at 8 locations: 1, 2, 3, 4, 5, 6, 7, 8 
+10: Too few values at 8 locations: 1, 2, 3, 4, 5, 6, 7, 8 
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_B' not found
+Error: object 'Var2_A' not found
+Error: object 'Var2_A' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_B' not found
+Error: object 'Var1_A' not found
+Error: object 'Var1_A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'B' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Error: object 'A' not found
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = c("Var1", "Var2")
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var2")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = c("Subject", "Var1")
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var2"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Var1"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+Joining, by = "Subject"
+# sketches with deduction: 65
+# sketches without deduction: 104
+# predicates with deduction: 108318
+# predicates without deduction: 108318
+# predicates pruned (NA or size): 11536
+# R calls: 171423
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 507.111
+Deduction on partial evaluation:0
+R calls: 131219
+Total time: 156406
+[Percentage] R=83.8968 Z3=0.324228 other=15.779
+==================================================
+R program: 
+TBL_7=gather(p81_input1,MORPH71634,MORPH71633,`Var1`,`Var2`)
+TBL_3=separate(TBL_7,`Subject`,into=c('MORPH71643','MORPH71644'))
+TBL_1=unite(TBL_3,MORPH71649,`MORPH71634`,`MORPH71644`)
+morpheus=spread(TBL_1,`MORPH71649`,`MORPH71633`)
+morpheus=as.data.frame(morpheus)
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/34056781/tidyrspread-without-creating-seperate-rows
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 67
+Category= C1
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  year sex   name    n
+1 1955   F  Kerry  615
+2 1955   M  Kerry 1600
+3 1980   F  Kerry 1000
+4 1980   M  Kerry  432
+5 1988   F  Kerry  598
+6 1988   M  Kerry  421
+7 1980   F Sherry  234
+8 1980   M Sherry 1200
+
+Output:
+
+  year    F    M
+1 1955  615 1600
+2 1980 1000  432
+3 1988  598  421
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=filter(p67_input1,`name` == "Kerry")
+
+  year sex  name    n
+1 1955   F Kerry  615
+2 1955   M Kerry 1600
+3 1980   F Kerry 1000
+4 1980   M Kerry  432
+5 1988   F Kerry  598
+6 1988   M Kerry  421
+
+TBL_1=select(TBL_3,-`name`)
+
+  year sex    n
+1 1955   F  615
+2 1955   M 1600
+3 1980   F 1000
+4 1980   M  432
+5 1988   F  598
+6 1988   M  421
+
+morpheus=spread(TBL_1,`sex`,`n`)
+
+  year    F    M
+1 1955  615 1600
+2 1980 1000  432
+3 1988  598  421
+
+
+R program:
+
+TBL_3=filter(p67_input1,`name` == "Kerry")
+TBL_1=select(TBL_3,-`name`)
+morpheus=spread(TBL_1,`sex`,`n`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 14
+#sketches without SMT-based deduction= 33
+#partial programs with partial evaluation= 1690
+#partial programs without partial evaluation= 6039
+Total time= 7.15 s

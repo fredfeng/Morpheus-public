@@ -1,0 +1,7 @@
+TBL_15=group_by(p11_input1,`expr`)
+TBL_7=summarise(TBL_15,MORPH6832=mean(`time`))
+TBL_3=separate(TBL_7,`expr`,into=c('MORPH6835','size'))
+TBL_1=spread(TBL_3,`MORPH6835`,`MORPH6832`)
+morpheus=mutate(TBL_1,ratio=base / dplyr)
+morpheus=as.data.frame(morpheus)
+morpheus

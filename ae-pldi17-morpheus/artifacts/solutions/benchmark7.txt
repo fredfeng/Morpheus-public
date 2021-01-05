@@ -1,0 +1,103 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/28310730/using-gather-to-tidy-dataset-in-r-attributes-are-not-identical
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 7
+Category= C8
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  GeneID D.1 T.1 D.2 T.2 D.8
+1    A2M  18  50   2   6  A1
+2   ABL1  20  48   4   8  C1
+
+Output:
+
+  GeneID pt.num  D  T     Ratio
+1    A2M      1 18 50 0.3600000
+2    A2M      2  2  6 0.3333333
+3   ABL1      1 20 48 0.4166667
+4   ABL1      2  4  8 0.5000000
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_15=gather(p7_input1,MORPH72960,MORPH72959,-`GeneID`,-`D.8`)
+
+  GeneID D.8 MORPH72960 MORPH72959
+1    A2M  A1        D.1         18
+2   ABL1  C1        D.1         20
+3    A2M  A1        T.1         50
+4   ABL1  C1        T.1         48
+5    A2M  A1        D.2          2
+6   ABL1  C1        D.2          4
+7    A2M  A1        T.2          6
+8   ABL1  C1        T.2          8
+
+TBL_7=separate(TBL_15,`MORPH72960`,into=c('MORPH73167','pt.num'))
+
+  GeneID D.8 MORPH73167 pt.num MORPH72959
+1    A2M  A1          D      1         18
+2   ABL1  C1          D      1         20
+3    A2M  A1          T      1         50
+4   ABL1  C1          T      1         48
+5    A2M  A1          D      2          2
+6   ABL1  C1          D      2          4
+7    A2M  A1          T      2          6
+8   ABL1  C1          T      2          8
+
+TBL_3=spread(TBL_7,`MORPH73167`,`MORPH72959`)
+
+  GeneID D.8 pt.num  D  T
+1    A2M  A1      1 18 50
+2    A2M  A1      2  2  6
+3   ABL1  C1      1 20 48
+4   ABL1  C1      2  4  8
+
+TBL_1=mutate(TBL_3,Ratio=D / T)
+
+  GeneID D.8 pt.num  D  T     Ratio
+1    A2M  A1      1 18 50 0.3600000
+2    A2M  A1      2  2  6 0.3333333
+3   ABL1  C1      1 20 48 0.4166667
+4   ABL1  C1      2  4  8 0.5000000
+
+morpheus=select(TBL_1,-`D.8`)
+
+  GeneID pt.num  D  T     Ratio
+1    A2M      1 18 50 0.3600000
+2    A2M      2  2  6 0.3333333
+3   ABL1      1 20 48 0.4166667
+4   ABL1      2  4  8 0.5000000
+
+
+R program:
+
+TBL_15=gather(p7_input1,MORPH72960,MORPH72959,-`GeneID`,-`D.8`)
+TBL_7=separate(TBL_15,`MORPH72960`,into=c('MORPH73167','pt.num'))
+TBL_3=spread(TBL_7,`MORPH73167`,`MORPH72959`)
+TBL_1=mutate(TBL_3,Ratio=D / T)
+morpheus=select(TBL_1,-`D.8`)
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 14
+#sketches without SMT-based deduction= 146
+#partial programs with partial evaluation= 21140
+#partial programs without partial evaluation= 80051
+Total time= 160.32 s

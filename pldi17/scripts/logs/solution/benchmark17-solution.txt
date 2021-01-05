@@ -1,0 +1,6 @@
+TBL_7=filter(p17_input1,`Group` == "A")
+TBL_3=group_by(TBL_7,`Group`,`Var1`)
+TBL_1=summarise(TBL_3,MORPH3405=sum(`Var2`))
+morpheus=spread(TBL_1,`Var1`,`MORPH3405`)
+morpheus=as.data.frame(morpheus)
+morpheus

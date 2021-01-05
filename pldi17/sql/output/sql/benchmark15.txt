@@ -1,0 +1,269 @@
+Morheus thread 3 finished.
+Loading benchmark: ../../benchmarks/sql/15/input.json
+Specs: ../../benchmarks/sql/15/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:15
+Depth:1
+Output table:s15_output1
+Input tables:s15_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec4/*
+specs/spec4/anti_join.json compName: anti_join
+specs/spec4/distinct.json compName: distinct
+specs/spec4/filter.json compName: filter
+specs/spec4/group_by.json compName: group_by
+specs/spec4/inner_join.json compName: inner_join
+specs/spec4/intersect.json compName: intersect
+specs/spec4/select.json compName: select
+specs/spec4/summarise.json compName: summarise
+Ngram re-reranked sketch file: sketches/size4-ngram.txt
+Mapping from string to vector file: sketches/size4-map.txt
+begin to synthesize.....
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+Adding missing grouping variables: `supplier_key`
+# sketches with deduction: 1
+# sketches without deduction: 2
+# predicates with deduction: 189
+# predicates without deduction: 2674
+# predicates pruned (NA or size): 555
+# R calls: 3440
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 14.462
+Deduction on partial evaluation:653.337
+R calls: 2550.22
+Total time: 3699.61
+[Percentage] R=68.9322 Z3=18.0505 other=13.0173
+==================================================
+R program: 
+TBL_7=group_by(s15_input1,`supplier_key`,`sname`)
+TBL_3=summarise(TBL_7,MORPH2=n()) %>% ungroup()
+TBL_1=filter(TBL_3,`sname` == "SN1" | `MORPH2` > 2)
+morpheus=select(TBL_1,`sname`)
+morpheus=as.data.frame(morpheus)
+morpheus

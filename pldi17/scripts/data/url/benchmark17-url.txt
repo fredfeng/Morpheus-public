@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/34365578/dplyr-filtering-based-on-two-variables

@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/38511378/finding-the-mean-of-a-value-based-on-multiple-variables

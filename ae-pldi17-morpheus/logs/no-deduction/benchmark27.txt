@@ -1,0 +1,613 @@
+Morheus thread 3 finished.
+Loading benchmark: ../../benchmarks/pldi17/28/input.json
+Specs: ../../benchmarks/pldi17/28/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 1
+----------------------------------
+BenchmarkId:28
+Output table:p28_output1
+Input tables:p28_input1 p28_input2 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec1/*
+specs/spec1/filter.json compName: filter
+specs/spec1/gather.json compName: gather
+specs/spec1/group_by.json compName: group_by
+specs/spec1/inner_join.json compName: inner_join
+specs/spec1/mutate.json compName: mutate
+specs/spec1/select.json compName: select
+specs/spec1/separate.json compName: separate
+specs/spec1/spread.json compName: spread
+specs/spec1/summarise.json compName: summarise
+specs/spec1/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size4-ngram.txt
+Mapping from string to vector file: sketches/size4-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("prod", "clnt")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "order")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "clnt")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = c("id", "prod")
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "order"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "clnt"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "prod"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = "id"
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("clnt", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "order")
+Joining, by = c("prod", "clnt")
+# sketches with deduction: 3
+# sketches without deduction: 3
+# predicates with deduction: 14959
+# predicates without deduction: 14959
+# predicates pruned (NA or size): 0
+# R calls: 18105
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 13.951
+Deduction on partial evaluation:3598.33
+R calls: 12689.9
+Total time: 20051.2
+[Percentage] R=63.2873 Z3=18.0152 other=18.6974
+==================================================
+R program: 
+TBL_9=group_by(p28_input1,`prod`,`clnt`)
+TBL_4=summarise(TBL_9,MORPH13547=mean(`order`))
+TBL_1=inner_join(p28_input2,TBL_4)
+morpheus=select(TBL_1,-`id`,-`order`)
+morpheus=as.data.frame(morpheus)
+morpheus

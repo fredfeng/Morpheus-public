@@ -1,0 +1,88 @@
+--------------------------------------------------------------------------------
+| Stackoverflow                                                                |
+--------------------------------------------------------------------------------
+
+URL= http://stackoverflow.com/questions/27388193/segregating-top-spending-customers
+
+--------------------------------------------------------------------------------
+| Benchmark                                                                    |
+--------------------------------------------------------------------------------
+
+ID= 23
+Category= C4
+
+--------------------------------------------------------------------------------
+| Input-Output Example                                                          |
+--------------------------------------------------------------------------------
+
+Input:
+
+  custno     X1    X2     X3
+1    100  29.85 49.75 146.70
+2    100 122.70 49.75  39.80
+3    100   0.00  9.95  44.95
+
+Output:
+
+  custno totalspent
+1    100     493.45
+
+--------------------------------------------------------------------------------
+| Synthesized Solution                                                         |
+--------------------------------------------------------------------------------
+
+TBL_3=gather(p23_input1,MORPH3988,MORPH3987,-`custno`)
+
+  custno MORPH3988 MORPH3987
+1    100        X1     29.85
+2    100        X1    122.70
+3    100        X1      0.00
+4    100        X2     49.75
+5    100        X2     49.75
+6    100        X2      9.95
+7    100        X3    146.70
+8    100        X3     39.80
+9    100        X3     44.95
+
+TBL_1=group_by(TBL_3,`custno`)
+
+Source: local data frame [9 x 3]
+Groups: custno [1]
+
+  custno MORPH3988 MORPH3987
+   <dbl>     <chr>     <dbl>
+1    100        X1     29.85
+2    100        X1    122.70
+3    100        X1      0.00
+4    100        X2     49.75
+5    100        X2     49.75
+6    100        X2      9.95
+7    100        X3    146.70
+8    100        X3     39.80
+9    100        X3     44.95
+
+morpheus=summarise(TBL_1,totalspent=sum(`MORPH3987`))
+
+# A tibble: 1 x 2
+  custno totalspent
+   <dbl>      <dbl>
+1    100     493.45
+
+
+R program:
+
+TBL_3=gather(p23_input1,MORPH3988,MORPH3987,-`custno`)
+TBL_1=group_by(TBL_3,`custno`)
+morpheus=summarise(TBL_1,totalspent=sum(`MORPH3987`))
+morpheus=as.data.frame(morpheus)
+morpheus
+
+--------------------------------------------------------------------------------
+| Statistics                                                                   |
+--------------------------------------------------------------------------------
+
+#sketches with SMT-based deduction= 3
+#sketches without SMT-based deduction= 4
+#partial programs with partial evaluation= 573
+#partial programs without partial evaluation= 5141
+Total time= 5.03 s

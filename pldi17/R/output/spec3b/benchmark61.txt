@@ -1,0 +1,69 @@
+Morheus thread 2 finished.
+Loading benchmark: ../../benchmarks/pldi17/61/input.json
+Specs: ../../benchmarks/pldi17/61/input.json
+Searching between lengths [1,5]
+Fixing sketch: 0
+Caching R programs: 0
+Partial evaluation: 0
+----------------------------------
+BenchmarkId:1
+Depth:1
+Output table:p61_output1
+Input tables:p61_input1 
+Sketch (Components):1 5 -1 2 -1 -1 -1 0 -1 -1 -1 -1 -1 -1 -1 
+----------------------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘compare’
+
+The following object is masked from ‘package:base’:
+
+    isTRUE
+
+Init specifications: specs/spec3/*
+specs/spec3/filter.json compName: filter
+specs/spec3/gather.json compName: gather
+specs/spec3/group_by.json compName: group_by
+specs/spec3/inner_join.json compName: inner_join
+specs/spec3/mutate.json compName: mutate
+specs/spec3/select.json compName: select
+specs/spec3/separate.json compName: separate
+specs/spec3/spread.json compName: spread
+specs/spec3/summarise.json compName: summarise
+specs/spec3/unite.json compName: unite
+Ngram re-reranked sketch file: sketches/size3-ngram.txt
+Mapping from string to vector file: sketches/size3-map.txt
+begin to synthesize.....
+Numeric computations needed to solve this benchmark!
+# sketches with deduction: 1
+# sketches without deduction: 10
+# predicates with deduction: 645
+# predicates without deduction: 645
+# predicates pruned (NA or size): 13445
+# R calls: 14111
+# R cached calls: 0
+==================Profiling (ms)==================
+Deduction on sketch generation: 62.897
+Deduction on partial evaluation:0
+R calls: 15911.7
+Total time: 17478.7
+[Percentage] R=91.0344 Z3=0.359849 other=8.60571
+==================================================
+R program: 
+TBL_3=gather(p61_input1,MORPH2,MORPH1,-`ID`)
+TBL_1=separate(TBL_3,`MORPH2`,into=c('MORPH993','MORPH994'))
+morpheus=spread(TBL_1,`MORPH993`,`MORPH1`)
+morpheus=as.data.frame(morpheus)
+morpheus[,2] = as.numeric(morpheus[,2])
+morpheus
+There were 50 or more warnings (use warnings() to see the first 50)

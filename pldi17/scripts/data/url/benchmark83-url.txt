@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/26733449/split-data-frame-by-a-repetitive-column

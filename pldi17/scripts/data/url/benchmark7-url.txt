@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/28310730/using-gather-to-tidy-dataset-in-r-attributes-are-not-identical

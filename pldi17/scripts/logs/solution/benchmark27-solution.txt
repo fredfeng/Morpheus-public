@@ -1,0 +1,8 @@
+TBL_4=gather(p27_input1,pos,carid,-`frame`)
+TBL_3=gather(p27_input2,pos,speed,-`frame`)
+TBL_1=inner_join(TBL_3,TBL_4)
+morpheus=filter(TBL_1,`carid` > 0.000000)
+morpheus=as.data.frame(morpheus)
+morpheus=select(morpheus,1,2,4,3)
+morpheus=arrange(morpheus,`carid`,`frame`)
+morpheus
